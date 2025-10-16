@@ -69,6 +69,10 @@ Jean-pierre Stickman se fait kidnapper par des bandits du maléfique Velkar. Joh
 
 Dessinez ou décrivez l'arbre de décisions de votre histoire:
 
+<img width="3704" height="4456" alt="image" src="https://github.com/user-attachments/assets/c9beefa8-4e6a-45a5-81e5-a09c3a4ec972" />
+
+
+
 *Structure globale:*
 
 - *Acte 1:* Introduction (1-2 chapitres linéaires)
@@ -99,13 +103,17 @@ Minimum 8 niveaux (chapitres/scènes). Listez-les avec leurs informations:
 
 | # | Nom du chapitre | Type | Description courte | Choix proposés | Conséquences |
 |---|----------------|------|-------------------|----------------|--------------|
-| 1 | [Le Réveil] | Linéaire | Introduction du personnage et du contexte | Aucun (intro) | N/A |
-| 2 | [La Découverte] | Choix | Découverte de la machine temporelle | 2 choix: "Activer" ou "Rapporter" | Branche A ou B |
-| 3A | [Premier Voyage] | Choix | Voyage dans le passé | 3 choix d'époque | Impact sur suite |
-| 3B | [L' Enquête] | Linéaire | Investigation scientifique | Aucun | Progression histoire |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | [L'arrivé] | Linéaire | Introduction du personnage et du contexte | Aucun (intro) | N/A |
+| 2 | [le premier pas] | Choix | arriver devant un intersection dans le dongeon | 2 choix: "aller à droite" ou "aller à gauche" | Branche A ou B |
+| 3A | [rarw goblin] | Choix | des goblin dort dans la pièce| choix 1: passer les goblin choix 2: voler des goblins choix 3: chargé! | Branche A ou B ou C |
+| 3B | [Le coffre] | Choix | un coffre se retrouve dans cette pièce | choix 1: passer a l'autre pièce choix 2: ouvrir le coffre | Branche C ou D |
+| 4A | [La surprise]| Linéaire | tu te fait téléporter dans une autre chambre| Aucun | t'arrive dans le chapitre 5A|
+| 4B | [Chasse au Goblin]| Linéaire | tu combat les goblin après avoir voler leur butin | auncun | t'arrive en retard pour sauvé jean-Pierre acces à une fin spécial|
+| 4C | [L'apprentis mage]| Linéaire | tu te retrouve dans une pièce avec des sort magique| choix du sort | tu peut apprendre une sort pour aider à combattre le necromance|
+| 4D | [aveugler par l'or]| | | | |
+| 5A | [L'apprentis combatant]| choix |tu te retrouvent dans une pièce avec des armes  | choix d'arme/armure| tu prend des arme pour aider dans le combat contre le nécromance|
+| 5B | [le combat]| linéaire |tu combat le nécromance  | si Jean-pierre n'est pas sauvé il y aurra un autre méchant a combattre| fin Héroique/ fin anti Héroique si Jean-Pierre est pas sauvé|
+| 5D | [le zéro]| linéaire| ta perdu | aucun | perdu|
 | 7 | | | | | |
 | 8 | | | | | |
 
@@ -117,9 +125,9 @@ Listez toutes les fins de votre histoire (minimum 3, idéal 4-6):
 
 | # | Nom de la fin | Condition pour l'atteindre | Type (bonne/mauvaise/neutre) |
 |---|--------------|---------------------------|------------------------------|
-| 1 | [Fin Héroïque] | Avoir fait 3+ choix altruistes | Bonne |
-| 2 | [Fin Sombre] | Avoir fait 3+ choix égoïstes | Mauvaise |
-| 3 | [Fin Paradoxale] | Avoir créé un paradoxe temporel | Neutre/Spéciale |
+| 1 | [Fin Héroïque] | éliminer le necromancer et sauvé Jean-Pierre | Bonne |
+| 2 | [Fin Héro a Zéro] | perdu contre une mimic | Mauvaise |
+| 3 | [Fin anti Héroïque] | éliminer le necromancer et le Demon sans réussir de savé Jean-Pierre | Neutre|
 | 4 | | | |
 | 5 | | | |
 | 6 | | | |
