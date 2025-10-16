@@ -6,7 +6,7 @@
 *Nom de l'équipe:* [Nom de votre équipe]  
 *Membres:* Érick Ouellette, Michaël Un Dupré, Keven Malric
 
-- [Nom] - Chef de projet / [Rôle principal]
+- [Érick Ouellette] - Chef de projet / [Rôle principal]
 - [Nom] - [Rôle principal]
 - [Nom] - [Rôle principal]
 - [Nom] - [Rôle principal] (si équipe de 4)
