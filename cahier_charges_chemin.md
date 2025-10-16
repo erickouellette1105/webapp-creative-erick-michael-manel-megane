@@ -7,12 +7,12 @@
 *Membres:* Érick Ouellette, Michaël Un Dupré, Keven Malric
 
 - [Érick Ouellette] - Chef de projet / [Rôle principal]
-- [Nom] - [Rôle principal]
-- [Nom] - [Rôle principal]
-- [Nom] - [Rôle principal] (si équipe de 4)
+- [Michaël Un Dupré] - [Rôle principal]
+- [Keven Malric] - [Rôle principal]
 
-*Date de début:* [Date]  
-*Date de livraison finale:* [Date]  
+
+*Date de début:* [8 octobre 2025]  
+*Date de livraison finale:* [10 décembre 2025]  
 *Version du document:* 1.0
 
 
@@ -35,13 +35,16 @@ Décrivez en 2-3 paragraphes le concept de votre histoire interactive:
 *Exemple (interdit de prendre l'exemple comme histoire pour votre projet):*
 > "Les Échos du Temps" est une histoire interactive de science-fiction où le joueur incarne un scientifique qui découvre une machine à voyager dans le temps. Chaque décision modifie le cours de l'histoire et peut créer des paradoxes temporels. L'utilisateur doit faire des choix difficiles qui influencent non seulement sa propre destinée, mais aussi celle de l'humanité. Le système de branches permet 6 fins différentes selon les décisions prises.
 
+> L'aventure de Stickman est une histoire interactive fantastique où le joueur incarne John Stickman, un homme pitoyable qui doit sauver son frère des griffes du méchant nécromancien pour stopper son plan machiavélique. Stickman va devoir prendre son courage à deux mains et pénétrer le manoir de Velkar l'impitoyable. 
+
+Le joueur doit faire des choix de tactiques durant des combats et résoudre des énigmes qui vont influencer le progrès de Stickman que ce soit vers sa montée à la gloire où sa descente au purgatoire.  
 
 ### 1.2 Public cible
 
-- *Âge:* [ex: 16-35 ans]
-- *Profil:* [ex: Amateurs de récits interactifs, fans de sci-fi]
+- *Âge: 8-18 ans
+- *Profil:* fans de fantaisie/comédie/drame
 - *Niveau technique:* [ex: Utilisateurs grand public]
-- *Temps de lecture estimé:* [ex: 20-45 minutes pour une partie complète]
+- *Temps de lecture estimé:* 5-12 minutes
 
 ### 1.3 Objectifs du projet
 
@@ -60,7 +63,7 @@ Décrivez en 2-3 paragraphes le concept de votre histoire interactive:
 
 Racontez votre histoire en 1-2 paragraphes (sans spoiler les fins):
 
-[Écrivez votre synopsis ici]
+Jean-pierre Stickman se fait kidnapper par des bandits du maléfique Velkar. John Stickman doit arrêter le sacrifice de son frère pour stopper l'invoquation d'un démon primordial qui menace l'univers dans son entièreté. Il entre dans le manoir de Velkar et fait face à des multitudes de monstres qu'il doit battre pour progresser et devenir assez puissant pour sauver son frère.
 
 ### 2.2 Arbre narratif
 
@@ -125,9 +128,9 @@ Listez toutes les fins de votre histoire (minimum 3, idéal 4-6):
 
 | Nom | Rôle | Description | Apparaît dans |
 |-----|------|-------------|---------------|
-| [Ex: Dr. Sarah Chen] | Protagoniste | Scientifique brillante mais impulsive | Tous les chapitres |
-| [Ex: Marcus] | Mentor | Professeur sage et prudent | Chapitres 1, 2, 5 |
-| [Ex: L'IA CHRONOS] | Antagoniste | Intelligence artificielle de la machine | Chapitres 3+, certaines fins |
+| [John Stickman] | Protagoniste | Guerrier pathétique | Tous les chapitres |
+| [Saour Do] | Allié | Marchand d'armes nucléaire | Menu du marchand|
+| [Velkram] | Antagoniste | Sorcier maléfique | Certaines fins |
 | | | | |
 | | | | |
 
@@ -139,7 +142,7 @@ Comment les choix influencent l'histoire?
 
 - [ ] *Système de karma/moralité* (points bons/mauvais)
 - [ ] *Stats du personnage* (courage, intelligence, empathie)
-- [ ] *Inventaire d'objets* (collecte d'items)
+- [x] *Inventaire d'objets* (collecte d'items)
 - [ ] *Relations avec personnages* (affinités)
 - [ ] *Flags de choix* (choix X débloque scène Y)
 - [ ] *Combinaison de plusieurs systèmes*
@@ -202,8 +205,8 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 Choisissez un ou plusieurs styles:
 
 - [ ] Cinématique (film noir, thriller)
-- [ ] Illustratif (dessins, concept art)
-- [ ] Minimaliste (focus sur le texte)
+- [x] Illustratif (dessins, concept art)
+- [x] Minimaliste (focus sur le texte)
 - [ ] Immersif (photos, ambiances réalistes)
 - [ ] Stylisé (flat design, géométrique)
 
