@@ -8,7 +8,7 @@
 
 *Membres:* Érick Ouellette, Michaël Un Dupré, Keven Malric
 
-- [Érick Ouellette] - Chef de projet / [Rôle principal]
+- [Érick Ouellette] - Chef de projet / 
 - [Michaël Un Dupré] - [Rôle principal]
 - [Keven Malric] - [Rôle principal]
 
