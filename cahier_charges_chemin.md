@@ -8,9 +8,9 @@
 
 *Membres:* Érick Ouellette, Michaël Un Dupré, Keven Malric
 
-- [Érick Ouellette] - Chef de projet / 
-- [Michaël Un Dupré] - [Rôle principal]
-- [Keven Malric] - [Rôle principal]
+- Érick Ouellette - Chef de projet + Architecture
+- Michaël Un Dupré - Données + Systèmes
+- Keven Malric - Responsable du Design + Animations
 
 
 *Date de début:* [8 octobre 2025]  
@@ -105,7 +105,7 @@ Minimum 8 niveaux (chapitres/scènes). Listez-les avec leurs informations:
 
 | # | Nom du chapitre | Type | Description courte | Choix proposés | Conséquences |
 |---|----------------|------|-------------------|----------------|--------------|
-| 1 | [L'arrivé] | Linéaire | Introduction du personnage et du contexte | Aucun (intro) | N/A |
+| 1 | [L'arrivée] | Linéaire | Introduction du personnage et du contexte | Aucun (intro) | N/A |
 | 2 | [le premier pas] | Choix | arriver devant un intersection dans le dongeon | 2 choix: "aller à droite" ou "aller à gauche" | Branche A ou B |
 | 3A | [rarw goblin] | Choix | des goblin dort dans la pièce| choix 1: passer les goblin choix 2: voler des goblins choix 3: chargé! | Branche A ou B ou C |
 | 3B | [Le coffre] | Choix | un coffre se retrouve dans cette pièce | choix 1: passer a l'autre pièce choix 2: ouvrir le coffre | Branche C ou D |
