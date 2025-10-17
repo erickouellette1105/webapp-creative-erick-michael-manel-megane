@@ -179,8 +179,12 @@ playerState: {
 
 Insérez ici 3-5 images d'inspiration (ou liens):
 
-- Image 1: Ambiance générale: <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTLct-PHjAMMgXYBItTS_MOY9eGHmyDikaqVDkvD-vzXKRWhODn0BhE-uO7Fcr4I0rV_PFO091zmtZh-SjVfJuL2wgU3e_lSODNcx280lHx-Y5CdOWa4Bi5fUD3rcpv5DotnMvCSK53jM/s1600/Delver-Wallpaper1440x900.jpg" width="100%">
-- Image 2: Style visuel des personnages: <img src="https://images.launchbox-app.com/7f3af12a-fa7b-42e7-aec1-846cd7145910.png">
+- Image 1: Ambiance générale: 
+<br>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTLct-PHjAMMgXYBItTS_MOY9eGHmyDikaqVDkvD-vzXKRWhODn0BhE-uO7Fcr4I0rV_PFO091zmtZh-SjVfJuL2wgU3e_lSODNcx280lHx-Y5CdOWa4Bi5fUD3rcpv5DotnMvCSK53jM/s1600/Delver-Wallpaper1440x900.jpg" width="100%">
+- Image 2: Style visuel des personnages: 
+<br>
+<img src="https://images.launchbox-app.com/7f3af12a-fa7b-42e7-aec1-846cd7145910.png">
 - [Image 3: Palette de couleurs](https://coolors.co/768948-ff3800-cdcacc-333138-6e0d25)
 - [Image 4: Typographie inspirante](https://fonts.google.com/specimen/MedievalSharp)
 
