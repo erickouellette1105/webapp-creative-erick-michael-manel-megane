@@ -564,10 +564,10 @@ Comment stockez-vous les chapitres et choix?
 
 | Membre | Rôle principal | Responsabilités |
 |--------|----------------|-----------------|
-| [Nom] | Chef de projet + Architecture Vue | Coordination, Vue Router, stores Pinia, structure de l'histoire |
-| [Nom] | Design + Animations | CSS, design visuel, animations GSAP, transitions |
-| [Nom] | Contenu + Narration | Écriture des chapitres, création de l'arbre narratif, dialogues |
-| [Nom] | Données + Système | Gestion des sauvegardes, LocalStorage, logique de choix, stats |
+| [Érick Ouellette] | Chef de projet + Architecture Vue | Coordination, Vue Router, stores Pinia, structure de l'histoire |
+| [Michaël Un Dupré] | Design + Animations | CSS, design visuel, animations GSAP, transitions |
+| [Toute l'équipe] | Contenu + Narration | Écriture des chapitres, création de l'arbre narratif, dialogues |
+| [Keven Malric] | Données + Système | Gestion des sauvegardes, LocalStorage, logique de choix, stats |
 
 *Note:* Tous participent au développement, mais chacun a sa spécialité.
 
