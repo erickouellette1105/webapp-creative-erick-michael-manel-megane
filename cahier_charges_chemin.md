@@ -2,8 +2,8 @@
 
 ## 📌 Informations du Projet
 
-*Nom du projet:* [Nom de votre musée]  
-*Nom de l'équipe:* [Nom de votre équipe]  
+*Nom du projet:* L'aventure de Stickamn  
+*Nom de l'équipe:* Paladin
 *Membres:* Érick Ouellette, Michaël Un Dupré, Keven Malric
 
 - [Érick Ouellette] - Chef de projet / [Rôle principal]
