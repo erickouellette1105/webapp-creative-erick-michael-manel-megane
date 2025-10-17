@@ -2,8 +2,10 @@
 
 ## 📌 Informations du Projet
 
-*Nom du projet:* L'aventure de Stickamn  
+*Nom du projet:* L'aventure de Stickamn 
+
 *Nom de l'équipe:* Paladin
+
 *Membres:* Érick Ouellette, Michaël Un Dupré, Keven Malric
 
 - [Érick Ouellette] - Chef de projet / [Rôle principal]
