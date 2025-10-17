@@ -186,8 +186,10 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 - Image 2: Style visuel des personnages: 
 <br>
 <img src="https://images.launchbox-app.com/7f3af12a-fa7b-42e7-aec1-846cd7145910.png">
+
 - [Image 3: Palette de couleurs](https://coolors.co/768948-ff3800-cdcacc-333138-6e0d25)
 <br>
+
 - [Image 4: Typographie inspirante](https://fonts.google.com/specimen/MedievalSharp)
 
 ### 3.2 Palette de couleurs
