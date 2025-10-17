@@ -45,7 +45,7 @@ Le joueur doit faire des choix de tactiques durant des combats et résoudre des 
 
 - *Âge: 8-18 ans
 - *Profil:* fans de fantaisie/comédie/drame
-- *Niveau technique:* [ex: Utilisateurs grand public]
+- *Niveau technique:* Utilisateurs grand public
 - *Temps de lecture estimé:* 5-12 minutes
 
 ### 1.3 Objectifs du projet
@@ -55,7 +55,6 @@ Le joueur doit faire des choix de tactiques durant des combats et résoudre des 
 - [ ] Implémenter un système de sauvegarde de progression
 - [ ] Démontrer la maîtrise de Vue.js, GSAP et Pinia
 - [ ] Créer une interface accessible et responsive
-- [ ] [Autre objectif spécifique]
 
 
 
@@ -245,9 +244,6 @@ Choisissez un ou plusieurs styles:
 *Librairies additionnelles envisagées:*
 
 - [ ] VueUse (composables utilitaires)
-- [ ] Typed.js (effet de machine à écrire)
-- [ ] Howler.js (gestion audio avancée)
-- [ ] [Autre]
 
 ### 4.2 Architecture des composants
 
@@ -270,7 +266,7 @@ Listez vos composants Vue principaux:
 *Composants système:*
 
 - `InventoryDisplay.vue` - Affichage de l'inventaire
-- `StatsPanel.vue` - Affichage des stats du joueur
+- `HealthPanel.vue` - Affichage de la vie du joueur
 - `EndingScreen.vue` - Écran de fin avec récapitulatif
 - `Modal.vue` - Fenêtre modale (sauvegarde, options)
 
@@ -373,40 +369,38 @@ Comment stockez-vous les chapitres et choix?
 {
   "ch-1": {
     "id": "ch-1",
-    "title": "Le Réveil",
-    "text": "Vous vous réveillez dans votre laboratoire...",
-    "backgroundImage": "/images/bg-lab.jpg",
+    "title": "L'arrivé",
+    "text": "Vous êtes arrivée devant l'entrer du dongeon...",
+    "backgroundImage": "/",
     "music": "intro-theme.mp3",
     "choices": null,  // Chapitre linéaire
     "nextChapter": "ch-2"
   },
   "ch-2": {
     "id": "ch-2",
-    "title": "La Découverte",
-    "text": "Face à la machine, vous devez décider...",
-    "backgroundImage": "/images/bg-machine.jpg",
+    "title": "le premier pas",
+    "text": "Face à un eintersection le choix est le votre",
+    "backgroundImage": "/",
     "music": "tension-theme.mp3",
     "choices": [
       {
-        "id": "activate",
-        "text": "Activer la machine",
-        "consequence": "Vous entrez dans l'inconnu...",
+        "id": "doite",
+        "text": "aller a droite",
+        "consequence": "vous partez vers la droite",
         "nextChapter": "ch-3a",
         "effects": {
-          "karma": -2,
-          "stats": { "courage": +1 },
-          "flags": { "hasActivatedMachine": true }
+          "vie": 10,
+          "monnaie": 100 ,
         }
       },
       {
-        "id": "report",
-        "text": "Rapporter la découverte",
-        "consequence": "La prudence avant tout...",
+        "id": "gauche",
+        "text": "aller a gauche",
+        "consequence": "vous partez vers la gauche",
         "nextChapter": "ch-3b",
         "effects": {
-          "karma": +2,
-          "stats": { "intelligence": +1 },
-          "flags": { "hasReported": true }
+          "vie": 10,
+          "monnaie": 100 ,
         }
       }
     ]
@@ -779,15 +773,13 @@ Comment stockez-vous les chapitres et choix?
 
 *Inspiration narrative:*
 
-- Bandersnatch (Black Mirror)
-- Life is Strange
-- Detroit: Become Human
-- Twine games
+- Dongeon et dragon
+- Henry stickman
 
 *Tutoriels utiles:*
 
-- [Lien vers tuto 1]
-- [Lien vers tuto 2]
+- [code pour monnie](https://youtu.be/BTQgFlbq5HU)
+- [code pour system de vie](https://youtu.be/Wh2kVSPi_sE)
 
 ### 11.2 Glossaire
 
