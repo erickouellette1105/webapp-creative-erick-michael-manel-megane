@@ -183,32 +183,31 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 - Image 1: Ambiance générale: <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTLct-PHjAMMgXYBItTS_MOY9eGHmyDikaqVDkvD-vzXKRWhODn0BhE-uO7Fcr4I0rV_PFO091zmtZh-SjVfJuL2wgU3e_lSODNcx280lHx-Y5CdOWa4Bi5fUD3rcpv5DotnMvCSK53jM/s1600/Delver-Wallpaper1440x900.jpg">
 - Image 2: Style visuel des personnages: <img src="https://images.launchbox-app.com/7f3af12a-fa7b-42e7-aec1-846cd7145910.png">
 - [Image 3: Palette de couleurs](https://coolors.co/768948-ff3800-cdcacc-333138-6e0d25)
-- [Image 4: Typographie inspirante]
-- [Image 5: Animations de référence]
+- [Image 4: Typographie inspirante](https://fonts.google.com/specimen/MedievalSharp)
 
 ### 3.2 Palette de couleurs
 
 *Couleurs par ambiance/chapitre:*
 
-- *Chapitres introduction:* [#XXXXXX] - Tons neutres
-- *Chapitres tension:* [#XXXXXX] - Tons sombres/dramatiques
-- *Chapitres espoir:* [#XXXXXX] - Tons clairs/lumineux
-- *Chapitres danger:* [#XXXXXX] - Rouge/orange
+- *Chapitres introduction:* [#CDCACC] - Tons neutres
+- *Chapitres tension:* [#333138] - Tons sombres/dramatiques
+- *Chapitres espoir:* [#768948] - Tons clairs/lumineux
+- *Chapitres danger:* [#FF3800] - Rouge/orange
 
 *Couleurs système:*
 
 - Primaire (actions principales): [#XXXXXX]
 - Secondaire (choix): [#XXXXXX]
 - Succès: [#10B981]
-- Danger: [#EF4444]
-- Neutre: [#6B7280]
+- Danger: [#6E0D25]
+- Neutre: [#CDCACC]
 
 ### 3.3 Typographie
 
-- *Titres narratifs:* [Nom de la police] - [Lien Google Fonts]
-- *Texte de narration:* [Nom de la police] - Lisible, serif ou sans-serif
-- *Dialogues:* [Nom de la police] - Différencié du texte narratif
-- *Boutons de choix:* [Nom de la police] - Bold, impactant
+- *Titres narratifs:* [MedievalSharp](https://fonts.google.com/specimen/MedievalSharp)
+- *Texte de narration:* [Baldur](https://www.1001freefonts.com/fr/baldur.font)
+- *Dialogues:* [Golden Swing](https://www.1001freefonts.com/fr/golden-swing.font)
+- *Boutons de choix:* [Darker](https://www.1001freefonts.com/fr/darker-font.font)
 
 ### 3.4 Style visuel
 
