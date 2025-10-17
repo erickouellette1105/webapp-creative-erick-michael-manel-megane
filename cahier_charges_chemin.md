@@ -181,7 +181,7 @@ playerState: {
 Insérez ici 3-5 images d'inspiration (ou liens):
 
 - [Image 1: Ambiance générale]
-- [Image 2: Style visuel des personnages]
+- [Image 2: Style visuel des personnages] <img src="https://images.launchbox-app.com/7f3af12a-fa7b-42e7-aec1-846cd7145910.png">
 - [Image 3: Palette de couleurs]
 - [Image 4: Typographie inspirante]
 - [Image 5: Animations de référence]
