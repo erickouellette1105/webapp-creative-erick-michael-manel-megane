@@ -128,7 +128,7 @@ Listez toutes les fins de votre histoire (minimum 3, idéal 4-6):
 |---|--------------|---------------------------|------------------------------|
 | 1 | [Fin Héroïque] | éliminer le necromancer et sauvé Jean-Pierre | Bonne |
 | 2 | [Fin Héro a Zéro] | perdu contre une mimic | Mauvaise |
-| 3 | [Fin anti Héroïque] | éliminer le necromancer et le Demon sans réussir de savé Jean-Pierre | Neutre|
+| 3 | [Fin anti Héroïque] | éliminer le necromancer et le Demon sans réussir de sauvé Jean-Pierre | Neutre|
 | 4 | | | |
 | 5 | | | |
 | 6 | | | |
