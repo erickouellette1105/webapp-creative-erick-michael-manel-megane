@@ -113,9 +113,9 @@ Minimum 8 niveaux (chapitres/scènes). Listez-les avec leurs informations:
 | 4C | [L'apprentis mage]| Linéaire | tu te retrouve dans une pièce avec des sort magique| choix du sort | tu peut apprendre une sort pour aider à combattre le necromance|
 | 4D | [aveugler par l'or]| | | | |
 | 5A | [L'apprentis combatant]| choix |tu te retrouvent dans une pièce avec des armes  | choix d'arme/armure| tu prend des arme pour aider dans le combat contre le nécromance|
-| 5B | [le combat]| linéaire |tu combat le nécromance  | si Jean-pierre n'est pas sauvé il y aurra un autre méchant a combattre| fin Héroique/ fin anti Héroique si Jean-Pierre est pas sauvé|
+| 5B | [le combat]| linéaire |tu combat le nécromance mais tu est trop tard pour sauvé Jean-Pierre  | Jean-pierre n'est pas sauvé donc il y aurra un autre méchant a combattre| fin anti Héroique|
+| 5C | [le combat]| linéaire| tu combat le nécromance| aucun| fin héroique|
 | 5D | [le zéro]| linéaire| ta perdu | aucun | perdu|
-| 7 | | | | | |
 | 8 | | | | | |
 
 ### 2.4 Fins possibles
@@ -796,7 +796,7 @@ Comment stockez-vous les chapitres et choix?
 
 *Tutoriels utiles:*
 
-- [code pour monnie](https://youtu.be/BTQgFlbq5HU)
+- [code pour monnaie](https://youtu.be/BTQgFlbq5HU)
 - [code pour system de vie](https://youtu.be/Wh2kVSPi_sE)
 
 ### 11.2 Glossaire
@@ -804,7 +804,7 @@ Comment stockez-vous les chapitres et choix?
 - *Branche:* Chemin narratif distinct selon les choix
 - *Flag:* Variable booléenne qui track un événement
 - *Ending:* Fin possible de l'histoire
-- *Karma:* Système de moralité basé sur les choix
+- *argent:* Système de monnaie
 - *Node:* Point de décision dans l'arbre narratif
 - *Save slot:* Emplacement de sauvegarde
 
