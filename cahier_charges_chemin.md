@@ -187,7 +187,7 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 <br>
 <img src="https://images.launchbox-app.com/7f3af12a-fa7b-42e7-aec1-846cd7145910.png">
 
-- [Image 3: Palette de couleurs](https://coolors.co/768948-ff3800-cdcacc-333138-6e0d25)
+- [Image 3: Palette de couleurs](https://coolors.co/087e8b-eb5e28-cdcacc-333138-6e0d25)
 <br>
 
 - [Image 4: Typographie inspirante](https://fonts.google.com/specimen/MedievalSharp)
@@ -198,15 +198,15 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 
 - *Chapitres introduction:* [#CDCACC] - Tons neutres
 - *Chapitres tension:* [#333138] - Tons sombres/dramatiques
-- *Chapitres espoir:* [#768948] - Tons clairs/lumineux
-- *Chapitres danger:* [#FF3800] - Rouge/orange
+- *Chapitres espoir:* [#087e8b] - Tons clairs/lumineux
+- *Chapitres danger:* [#eb5e28] - Rouge/orange
 
 *Couleurs système:*
 
-- Primaire (actions principales): [#XXXXXX]
-- Secondaire (choix): [#XXXXXX]
-- Succès: [#10B981]
-- Danger: [#6E0D25]
+- Primaire (actions principales): [#6E0D25]
+- Secondaire (choix): [#333138] [#EB5E28]
+- Succès: [#087e8b]
+- Danger: [#EB5E28]
 - Neutre: [#CDCACC]
 
 ### 3.3 Typographie
