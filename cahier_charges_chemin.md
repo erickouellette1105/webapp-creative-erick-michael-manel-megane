@@ -230,10 +230,20 @@ Choisissez un ou plusieurs styles:
 
 | Chapitre | Image de fond | Effets visuels | Sons/musique |
 |----------|---------------|----------------|--------------|
-| 1 | [Description ou lien] | Fade in progressif | Musique douce, intro |
-| 2 | | | |
-| 3 | | | |
-| ... | | | |
+| 1 | [Introduction personnage] | Fade in progressif | Musique douce, intro |
+| 2 | [l'entré qui mènent au donjon et l'intérieur] | zoom in | musique donjon |
+| 3A | [Des goblins qui dorts au sol] | fade in / fade out  | musique donjon  |
+| 3B | [stickman voie un coffre] | fade in / fade out | musique donjon |
+| 4A | [tu te fait téléporter] | fade in / fade out | surprise sound effect |
+| 4B | [combat contre les boblin] | fade in / fade out | musique de combat |
+| 4C | [Stickman trouve une bibliothèque] | fade in / fade out | musique calme |
+| 4D | [le coffre se transforme en mimic] | fade in / fade out | surprise sound effect + musique de combat |
+| 5A | [Stickman trouve La salle d'arme] | fade in / fade out | musique calme |
+| 5B | [tu est en retard] | fade in / fade out | musique stressante |
+| 5C | [Stickman vs necromancer] | fade in / fade out | musique de BOSS |
+| 5D | [tu est mort] | fade to black | you died sound effect |
+| fin (mauvaise) | [chtullu est invoqué et tu dois le combattre] | fade to black | you died sound effect 
+| fin (bonne) | [tu sauve Jean-Pière] | fade in / fade out | win musique |
 
 
 ## 💻 4. Spécifications Techniques
