@@ -181,7 +181,7 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 
 - Image 1: Ambiance générale: 
 <br>
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTLct-PHjAMMgXYBItTS_MOY9eGHmyDikaqVDkvD-vzXKRWhODn0BhE-uO7Fcr4I0rV_PFO091zmtZh-SjVfJuL2wgU3e_lSODNcx280lHx-Y5CdOWa4Bi5fUD3rcpv5DotnMvCSK53jM/s1600/Delver-Wallpaper1440x900.jpg" width="100%">
+<img src="img/Group 1.png" width="100%">
 
 - Image 2: Style visuel des personnages: 
 <br>
