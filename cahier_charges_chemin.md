@@ -6,11 +6,12 @@
 
 *Nom de l'équipe:* Paladin
 
-*Membres:* Érick Ouellette, Michaël Un Dupré, Keven Malric
+*Membres:* Érick Ouellette, Michaël Un Dupré, Manel Yaya, Mégane Ranger
 
 - Érick Ouellette - Chef de projet + Architecture
 - Michaël Un Dupré - Données + Systèmes
-- Keven Malric - Responsable du Design + Animations
+- Mégane Ranger - Responsable du Design + Animations
+- Manel Yaya
 
 
 *Date de début:* [8 octobre 2025]  
