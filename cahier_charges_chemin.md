@@ -35,9 +35,6 @@ Décrivez en 2-3 paragraphes le concept de votre histoire interactive:
 - Qui est le personnage principal?
 - Quel est le mécanisme de choix? (décisions morales, énigmes, actions, etc.)
 
-*Exemple (interdit de prendre l'exemple comme histoire pour votre projet):*
-> "Les Échos du Temps" est une histoire interactive de science-fiction où le joueur incarne un scientifique qui découvre une machine à voyager dans le temps. Chaque décision modifie le cours de l'histoire et peut créer des paradoxes temporels. L'utilisateur doit faire des choix difficiles qui influencent non seulement sa propre destinée, mais aussi celle de l'humanité. Le système de branches permet 6 fins différentes selon les décisions prises.
-
 > L'aventure de Stickman est une histoire interactive fantastique où le joueur incarne John Stickman, un homme pitoyable qui doit sauver son frère des griffes du méchant nécromancien pour stopper son plan machiavélique. Stickman va devoir prendre son courage à deux mains et pénétrer le manoir de Velkar l'impitoyable. 
 
 Le joueur doit faire des choix de tactiques durant des combats et résoudre des énigmes qui vont influencer le progrès de Stickman que ce soit vers sa montée à la gloire où sa descente au purgatoire.  
