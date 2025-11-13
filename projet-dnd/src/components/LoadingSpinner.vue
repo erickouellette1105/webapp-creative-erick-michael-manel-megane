@@ -1,5 +1,5 @@
 <template>
-
+    <div class="spinner" v-if="show"></div>
 </template>
 
 <script>
@@ -11,8 +11,18 @@ export default {
     },
     methods: {
 
+    },
+    props: {
+       type: Boolean,
+       default: true 
     }
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
