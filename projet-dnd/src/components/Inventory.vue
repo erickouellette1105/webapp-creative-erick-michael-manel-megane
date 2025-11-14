@@ -42,6 +42,18 @@ export default {
 <style scoped>
     .btn-open {
         position: absolute;
+        right: 50px;
+    }
+
+    .btn-close {
+        position: absolute;
+        right: 50px;
+    }
+
+    .inventory-modal {
+        width: 100%;
+        height: 100%;
+        background-color: white;
     }
 
 </style>
