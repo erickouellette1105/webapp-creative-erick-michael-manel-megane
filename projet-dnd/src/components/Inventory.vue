@@ -1,7 +1,7 @@
-<template>
+<template>fdasdasf
     <div class="inventory-wrapper">
         <button @click="isOpen = true" class="btn-open">
-            îcone coffre
+            <img src="../assets/coffre.png" alt="">
         </button>
 
         <!-- Inventaire -->
@@ -16,7 +16,7 @@
                 </ul>
 
                 <button @click="isOpen = false" class="btn-close">
-                    îcone coffre
+                    <img src="../assets/coffre.png" alt="">
                 </button>
             </div>
          </div>
@@ -39,4 +39,9 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+    .btn-open {
+        position: absolute;
+    }
+
+</style>
