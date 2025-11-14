@@ -20,5 +20,8 @@ export default {
     width: 5vw;
 }
 
+.audio:hover {
+    width: 7vw;
+}
 
 </style>

@@ -1,22 +1,46 @@
 <template>
-    <header>
-        <img class="audio" src="../assets/img/audio_icon.png" alt="audio"></img>
-        <img class="inventory" src="../assets/img/inventory_icon.png" alt="audio"></img>
-    </header>
+       
+        <div class="inventory-wrapper">
+            <img class="audio" src="../assets/img/audio_icon.png" alt="audio"></img>
+        <button @click="isOpen = true" class="btn-open">
+            <img src="../assets/coffre.png" alt="">
+        </button>
+
+        <!-- Inventaire -->
+         <div v-if="isOpen" class="inventory-modal">
+            <div class="inventory-content">
+                <h2>Inventaire</h2>
+
+                <ul>
+                    <li v-for="item in items" :key="item.id">
+                        {{ item.name }} - {{ item.img }}
+                    </li>
+                </ul>
+
+                <button @click="isOpen = false" class="btn-close">
+                    <img src="../assets/coffre.png" alt="">
+                </button>
+            </div>
+         </div>
+    </div>
+
     </template>
     
     <script>
-    export default {
-        data() {
-            return {
-    
-            }
-        },
-        methods: {
-    
+export default {
+    data() {
+        return {
+            isOpen: false,
+            items: [
+                { id: 1, name: "placeholder", img: ""},
+            ]
         }
+    },
+    methods: {
+
     }
-    </script>
+}
+</script>
     
     <style scoped>
     .audio {
@@ -27,8 +51,8 @@
         width: 7vw;
     }
 
-    .inventory {
-        margin-left: 90vw;
+   
+    .btn-open {
+        position: absolute;
     }
-    
     </style>
