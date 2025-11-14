@@ -1,6 +1,6 @@
 <template>
     <div class="inventory-wrapper">
-        <button @click="isOpen = true" class="btn-open">
+        <button @click="toggleInventory" class="toggle">
             <img src="../assets/coffre.png" alt="">
         </button>
 
@@ -15,9 +15,7 @@
                     </li>
                 </ul>
 
-                <button @click="isOpen = false" class="btn-close">
-                    <img src="../assets/coffre.png" alt="">
-                </button>
+                
             </div>
          </div>
     </div>
@@ -27,7 +25,7 @@
 export default {
     data() {
         return {
-            isOpen: false,
+            toggleInventory: false,
             items: [
                 { id: 1, name: "placeholder", img: ""},
             ]
