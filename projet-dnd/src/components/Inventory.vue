@@ -1,4 +1,4 @@
-<template>fdasdasf
+<template>
     <div class="inventory-wrapper">
         <button @click="isOpen = true" class="btn-open">
             <img src="../assets/coffre.png" alt="">
