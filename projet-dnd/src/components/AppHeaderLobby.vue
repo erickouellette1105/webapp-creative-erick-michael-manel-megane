@@ -1,5 +1,5 @@
 <template>
-
+<img src="../assets/img/audio_icon.png" alt="audio"></img>
 </template>
 
 <script>
@@ -15,4 +15,7 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+
+
+</style>
