@@ -1,4 +1,5 @@
 <template>
+  <h1> Aventure de Stickman</h1>
   <div class="home">
     <h1> Aventure de Stickman</h1>
   </div>

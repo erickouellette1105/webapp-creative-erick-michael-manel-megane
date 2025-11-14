@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import AccueiView from '@/views/AccueiView.vue';
-import ChapitresView from '@/views/ChapitresView.vue';
-import SauvegardeView from '@/views/SauvegardeView.vue';
+import AccueilView from '../views/AccueilView.vue';
+import ChapitresView from '../views/ChapitresView.vue';
+import SauvegardeView from '../views/SauvegardeView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/accueil',
+      path: '/',
       name: 'accueil',
-      component: AccueiView,
+      component: AccueilView,
     },
     {
-      path: '/chapitres',
+      path: '/chapitres/:id',
       name: 'chapitres',
       component: ChapitresView,
     },
