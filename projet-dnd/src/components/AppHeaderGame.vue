@@ -1,7 +1,7 @@
 <template>
-       
+    <header>
+        <img class="audio" src="../assets/img/audio_icon.png" alt="audio"></img>
         <div class="inventory-wrapper">
-            <img class="audio" src="../assets/img/audio_icon.png" alt="audio"></img>
         <button @click="isOpen = true" class="btn-open">
             <img src="../assets/coffre.png" alt="">
         </button>
@@ -23,24 +23,24 @@
             </div>
          </div>
     </div>
-
+    </header>
     </template>
     
     <script>
-export default {
-    data() {
-        return {
-            isOpen: false,
-            items: [
-                { id: 1, name: "placeholder", img: ""},
-            ]
+    export default {
+        data() {
+            return {
+                isOpen: false,
+                items: [
+                    { id: 1, name: "placeholder", img: ""},
+                ]
+            }
+        },
+        methods: {
+    
         }
-    },
-    methods: {
-
     }
-}
-</script>
+    </script>
     
     <style scoped>
     .audio {
@@ -51,8 +51,20 @@ export default {
         width: 7vw;
     }
 
-   
     .btn-open {
         position: absolute;
+        right: 50px;
     }
+ 
+    .btn-close {
+        position: absolute;
+        right: 50px;
+    }
+ 
+    .inventory-modal {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+ 
     </style>
