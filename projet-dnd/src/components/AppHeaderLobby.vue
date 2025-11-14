@@ -1,5 +1,5 @@
 <template>
-<img src="../assets/img/audio_icon.png" alt="audio"></img>
+<img class="audio" src="../assets/img/audio_icon.png" alt="audio"></img>
 </template>
 
 <script>
@@ -16,6 +16,12 @@ export default {
 </script>
 
 <style scoped>
+.audio {
+    width: 5vw;
+}
 
+.audio:hover {
+    width: 7vw;
+}
 
 </style>

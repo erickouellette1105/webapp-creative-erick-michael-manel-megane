@@ -1,4 +1,5 @@
 <script setup>
+import AppHeaderGame from './components/AppHeaderGame.vue';
 import Inventory from './components/Inventory.vue';
 import AppHeaderLobby from './components/AppHeaderLobby.vue';
 
@@ -10,7 +11,7 @@ import AppHeaderLobby from './components/AppHeaderLobby.vue';
 <template>
   <header>
     <AppHeaderLobby></AppHeaderLobby>
-
+    <AppHeaderGame></AppHeaderGame>
   </header>
 
   <main>
