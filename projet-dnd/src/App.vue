@@ -8,11 +8,6 @@ import AppHeaderLobby from './components/AppHeaderLobby.vue';
 </script>
 
 <template>
-  <header>
-    <AppHeaderLobby></AppHeaderLobby>
-    <AppHeaderGame></AppHeaderGame>
-  </header>
-
   <main>
 
   
