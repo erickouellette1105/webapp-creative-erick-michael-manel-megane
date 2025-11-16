@@ -1,6 +1,5 @@
 <script setup>
 import AppHeaderGame from './components/AppHeaderGame.vue';
-import Inventory from './components/Inventory.vue';
 import AppHeaderLobby from './components/AppHeaderLobby.vue';
 
 
@@ -23,7 +22,7 @@ import AppHeaderLobby from './components/AppHeaderLobby.vue';
 
 
 
-    <router-link to="/"></router-link>
+    <router-link to="/"></router-link>    
     <router-link to="/chapitres/:id"></router-link>
     <router-view />
   </main>
