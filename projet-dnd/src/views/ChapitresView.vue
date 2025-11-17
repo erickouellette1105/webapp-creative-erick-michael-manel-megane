@@ -1,4 +1,6 @@
 <template>
+<div class="title">frfre</div>
+
     <div class="chapter">
         <div class="chapter-header">
             <h2>{{ currentChapter.title }}</h2>
@@ -195,9 +197,18 @@ body {
 
 <style scoped>
 
+.title {
+    background-image: url('../assets/img/chapterTitles.svg');
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
 .chapter {
     max-width: 1000px;
-    margin: 10rem auto;
+    margin: 0.1rem auto;
     padding: 2rem;
     background: #960002;
     border-radius: 12px;
