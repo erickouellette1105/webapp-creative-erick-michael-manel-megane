@@ -19,13 +19,7 @@ import SaveButton from '@/components/SaveButton.vue';
     </div>
   </div>
 
-  <div class="start-button">
-      <!-- TODO: sur le click du bouton, appeler la méthode startAdventure() -->
-      <button @click="startAdventure()">
-        Commencer l'aventure →
-      </button>
-      
-    </div>
+
     
 </template>
 

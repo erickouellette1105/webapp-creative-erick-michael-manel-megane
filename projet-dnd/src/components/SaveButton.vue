@@ -15,7 +15,7 @@ export default {
         saveBtn() {
             this.$router.push({
                 name: 'chapter',
-                params: { id: this.nextChapterId }
+                params: { id: 1 }
             })
         }
     }

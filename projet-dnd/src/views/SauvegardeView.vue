@@ -26,9 +26,7 @@ export default {
 </script>
 
 <style scoped>
-html {
-    
-}
+
 
 .home {
     background-color: #6b0f1a;
