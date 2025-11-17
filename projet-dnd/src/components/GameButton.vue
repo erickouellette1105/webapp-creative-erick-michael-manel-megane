@@ -1,6 +1,6 @@
 <template>
 
-    <button @click="saveBtn">Nouvelle partie</button>
+    <button @click="saveBtn"></button>
 
 </template>
 
@@ -14,7 +14,7 @@ export default {
     methods: {
         saveBtn() {
             this.$router.push({
-                name: 'chapter',
+                name: 'sauvegardes',
                 params: { id: this.nextChapterId }
             })
         }
