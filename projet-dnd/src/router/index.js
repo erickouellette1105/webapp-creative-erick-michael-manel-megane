@@ -15,6 +15,7 @@ const router = createRouter({
       path: '/chapter/:id',
       name: 'chapter',
       component: ChapitresView,
+      meta: { bodyColor: '#6b0f1a' } 
     },
     {
       path: '/sauvegardes',
@@ -22,6 +23,15 @@ const router = createRouter({
       component: SauvegardeView,
     },
   ],
+});
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.bodyColor) {
+    document.body.style.backgroundColor = to.meta.bodyColor;
+  } else {
+    document.body.style.backgroundColor = ''; // Default or reset
+  }
+  next();
 });
 
 export default router
