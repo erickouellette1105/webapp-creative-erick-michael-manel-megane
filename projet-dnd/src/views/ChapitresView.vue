@@ -1,11 +1,13 @@
 <template>
-<div class="title">frfre</div>
+<div class="title">
+    <div class="chapter-header">
+            <h2>{{ currentChapter.title }}</h2>
+            
+        </div>
+</div>
 
     <div class="chapter">
-        <div class="chapter-header">
-            <h2>{{ currentChapter.title }}</h2>
-            <p class="chapter-number">Chapitre {{ chapterId }}</p>
-        </div>
+       
 
 
 
@@ -199,7 +201,7 @@ body {
 
 .title {
     background-image: url('../assets/img/chapterTitles.svg');
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -210,25 +212,24 @@ body {
     max-width: 1000px;
     margin: 0.1rem auto;
     padding: 2rem;
-    background: #960002;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .chapter-header {
     text-align: center;
+    margin-top: 8rem;
     margin-bottom: 2rem;
-    border-bottom: 2px solid #960002;
     padding-bottom: 1rem;
+    rotate: 8deg;
+    font-size: 30px;
 }
 
 .chapter-header h2 {
-    color: white;
+    color: black;
     margin-bottom: 0.5rem;
 }
 
 .chapter-number {
-    color: white;
+    color: bal;
     font-style: italic;
 }
 
