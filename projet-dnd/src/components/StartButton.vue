@@ -31,7 +31,6 @@ export default {
         background-color: #960002;
         border: 5px solid #FF4649;
         border-radius: 20px;
-        margin-bottom: 50vw;
     }
 
     .saveButton:hover{
