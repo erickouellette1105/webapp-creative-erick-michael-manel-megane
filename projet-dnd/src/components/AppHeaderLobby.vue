@@ -21,7 +21,7 @@ export default {
 }
 
 .audio:hover {
-    width: 7vw;
+    transform: scale(1.1);
 }
 
 </style>
