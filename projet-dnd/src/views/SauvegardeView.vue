@@ -5,10 +5,11 @@ import SaveButton from '@/components/SaveButton.vue';
 <template>
     <div class="home">
         <div class="title"></div>
-
+        <div class="buttons">
         <SaveButton />
         <SaveButton />
         <SaveButton />
+    </div>
     </div>
 </template>
 
@@ -34,11 +35,22 @@ export default {
 }
 
 .title {
-    background-image: url('../assets/img/Group 4.png');
+    background-image: url('../assets/img/chapterTitles.svg');
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     overflow-x: hidden;
 }
+
+
+.buttons {
+    margin-top: 15px;
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
 </style>

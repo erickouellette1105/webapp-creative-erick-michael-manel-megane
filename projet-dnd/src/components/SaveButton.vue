@@ -1,6 +1,6 @@
 <template>
 
-    <button @click="saveBtn">Nouvelle partie</button>
+    <button @click="saveBtn" class="saveBtn">Nouvelle partie</button>
 
 </template>
 
@@ -22,4 +22,14 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+    .saveBtn {
+        width: 10vw;
+        height: 7vh;
+        font-size: 1vw;
+        color: white;
+        background-color: #960002;
+        border: 5px solid #FF4649;
+        border-radius: 20px;
+    }
+</style>

@@ -26,7 +26,7 @@ export default {
     .saveButton {
         width: 10vw;
         height: 7vh;
-        font-size: 30px;
+        font-size: 1vw;
         color: white;
         background-color: #960002;
         border: 5px solid #FF4649;
