@@ -3,6 +3,7 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
 import AppHeaderLobby from '@/components/AppHeaderLobby.vue'
 import StartButton from '@/components/StartButton.vue';
 import SaveButton from '@/components/SaveButton.vue';
+import AppCredit from '@/components/AppCredit.vue';
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import SaveButton from '@/components/SaveButton.vue';
     <header class="header-area">
       
       <AppHeaderLobby />
-      
+      <AppCredit />
       
     </header>
     <div class="home">
@@ -53,7 +54,7 @@ export default {
 
 .title {
   font-size: 100px;
-  margin-bottom: 80px;
+  margin: 100px;
   font-family: "Cinzel Decorative", serif;
   color: white;
 }
