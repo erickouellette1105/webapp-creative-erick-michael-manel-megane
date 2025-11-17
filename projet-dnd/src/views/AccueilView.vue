@@ -1,7 +1,7 @@
 <script setup>
 import AppHeaderGame from '@/components/AppHeaderGame.vue'
 import AppHeaderLobby from '@/components/AppHeaderLobby.vue'
-import BaseButton from '@/components/BaseButton.vue';
+import StartButton from '@/components/StartButton.vue';
 </script>
 
 <template>
