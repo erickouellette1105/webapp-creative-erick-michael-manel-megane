@@ -12,8 +12,8 @@ const router = createRouter({
       component: AccueilView,
     },
     {
-      path: '/chapitres/:id',
-      name: 'chapitres',
+      path: '/chapter/:id',
+      name: 'chapter',
       component: ChapitresView,
     },
     {

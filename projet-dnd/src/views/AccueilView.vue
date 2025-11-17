@@ -14,7 +14,30 @@ import BaseButton from '@/components/BaseButton.vue';
       <h1 class="title"> Aventure de Stickman</h1>
     </div>
   </div>
+
+  <div class="start-button">
+      <!-- TODO: sur le click du bouton, appeler la méthode startAdventure() -->
+      <button @click="startAdventure()">
+        Commencer l'aventure →
+      </button>
+    </div>
+    
 </template>
+
+<script>
+export default {
+  name: 'HomeView',
+    // TODO: Navigation vers le premier chapitre (celui avec l'ID 1)
+      // Notes de cours: https://tim-montmorency.com/compendium/582-511-web5/vue/router-and-views.html#32-navigation-programmatique-dans-les-methodes 
+  methods: {
+    startAdventure() {
+      this.$router.push({
+            name: 'chapter',
+            params: { id: 1 }
+        });
+    }
+  }
+};</script>
 
 <style scoped>
 .container {
