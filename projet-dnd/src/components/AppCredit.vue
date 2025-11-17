@@ -1,5 +1,5 @@
 <template>     
-        
+        <!-- Ajouter les crédits d'images utilisés-->
         <ul>
             <li></li>
         </ul>
