@@ -25,12 +25,28 @@ export default {
 
 <style scoped>
     .saveBtn {
-        width: 10vw;
+        width: 25vw;
         height: 7vh;
-        font-size: 1vw;
+        font-size: 2vw;
         color: white;
         background-color: #960002;
         border: 5px solid #FF4649;
         border-radius: 20px;
     }
+    @media (max-width: 300px) {
+        .saveBtn {
+        width: 25vw;
+        height: 7vh;
+        font-size: 2vw;
+        color: white;
+        background-color: #960002;
+        border: 5px solid #FF4649;
+        border-radius: 20px;
+    }
+}
+
+
+
+
+
 </style>

@@ -60,11 +60,11 @@ export default {
     font-size: 100px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Centers correctly */
+    transform: translateX(-50%); 
     color: black;
 }
 
-/* Medium screens (tablets) */
+
 @media (max-width: 768px) {
     .save-header {
         font-size: 70px;
@@ -72,7 +72,7 @@ export default {
     }
 }
 
-/* Small screens (phones) */
+
 @media (max-width: 480px) {
     .save-header {
         font-size: 30px;
@@ -87,6 +87,8 @@ export default {
     display: grid;
     justify-content: center;
     gap: 30px;
+ 
+  
 }
 
 
