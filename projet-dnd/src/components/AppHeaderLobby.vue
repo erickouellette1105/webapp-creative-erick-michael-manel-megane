@@ -25,3 +25,11 @@ export default {
 }
 
 </style>
+
+import { usePlayerStore } from '@/stores/player';
+
+const player = usePlayerStore();
+
+player.setUsername('');
+player.addItem('');
+console.log(player.inventory);  
