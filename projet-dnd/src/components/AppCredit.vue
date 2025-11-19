@@ -54,7 +54,25 @@ export default {
 .credit-img {
     width: 60px;
     transition: transform 0.2s;
+    margin-top: 10px;
+    margin-right: -25px;
+
 }
+
+/* Écran médium */
+@media (max-width: 768px) {
+    .credit-img {
+    width: 40px;
+}
+}
+
+/* Écran petit */
+@media (max-width: 480px) {
+    .credit-img {
+    width: 15px;
+}
+}
+
 
 .credit-img:hover {
     transform: scale(1.1);
