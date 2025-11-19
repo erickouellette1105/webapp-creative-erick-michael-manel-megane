@@ -12,6 +12,7 @@ export default {
         }
     },
     methods: {
+        /* Méthode pour aller au chapitre 1 */
         saveBtn() {
             this.$router.push({
                 name: 'chapter',

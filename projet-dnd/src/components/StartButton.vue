@@ -12,6 +12,7 @@ export default {
         }
     },
     methods: {
+        /* Méthode pour envoyer à la page des sauvegardes */
         startBtn() {
             this.$router.push({
                 name: 'sauvegardes',
