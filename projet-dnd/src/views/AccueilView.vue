@@ -27,8 +27,7 @@ import AppCredit from '@/components/AppCredit.vue';
 <script>
 export default {
   name: 'HomeView',
-    // TODO: Navigation vers le premier chapitre (celui avec l'ID 1)
-      // Notes de cours: https://tim-montmorency.com/compendium/582-511-web5/vue/router-and-views.html#32-navigation-programmatique-dans-les-methodes 
+  //Navigation vers le premier chapitre (celui avec l'ID 1)
   methods: {
     startAdventure() {
       this.$router.push({
