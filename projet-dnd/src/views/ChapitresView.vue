@@ -1,8 +1,17 @@
+<script setup>
+import AppHeaderGame from '@/components/AppHeaderGame.vue'
+</script>
+
+
+
 <template>
 <div class="title">
+    <div class="game-manager">
+        <app-header-game></app-header-game>
+    </div>
     <div class="chapter-header">
             <h2>{{ currentChapter.title }}</h2>
-            
+        
         </div>
 </div>
 
@@ -206,6 +215,7 @@ body {
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .chapter {
