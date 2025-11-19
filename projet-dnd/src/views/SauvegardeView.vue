@@ -14,6 +14,7 @@ import SaveButton from '@/components/SaveButton.vue';
         <SaveButton />
         <SaveButton />
     </div>
+    
     </div>
 </template>
 
@@ -35,6 +36,7 @@ export default {
 
 .home {
     background-color: #6b0f1a;
+    height: 100vh;
 
 }
 
@@ -54,7 +56,7 @@ export default {
     margin-top: 10rem;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    rotate: 12deg;
+    rotate: 9deg;
     font-size: 100px;
     position: absolute;
     left: 50%;
