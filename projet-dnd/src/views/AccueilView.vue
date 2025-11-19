@@ -54,7 +54,7 @@ export default {
 
 .title {
   font-size: 100px;
-  font-family: "Cinzel Decorative", serif;
+  font-family: GoldenSwing;
   color: white;
   margin-top: 300px;
 }
