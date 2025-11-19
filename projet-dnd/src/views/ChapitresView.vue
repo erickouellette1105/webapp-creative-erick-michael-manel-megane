@@ -16,10 +16,6 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
 </div>
 
     <div class="chapter">
-       
-
-
-
         <div class="chapter-content">
             <p>{{ currentChapter.text }}</p>
         </div>
@@ -38,6 +34,11 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
             ← Retour à l'accueil
         </button>
     </div>
+
+    <div class="stickman">
+            <img src="../assets/img/stickman.png"></img>
+        </div>
+
 </template>
 
 <script>
@@ -216,6 +217,13 @@ body {
     background-position: center;
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+.stickman {
+    position: relative;
+    width: 100%;
+    margin-left: 80vw;
+    bottom: 55vh;
 }
 
 .chapter {
