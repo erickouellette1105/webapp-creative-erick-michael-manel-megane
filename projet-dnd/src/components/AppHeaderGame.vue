@@ -64,7 +64,7 @@ export default {
 }
 
 .btn-toggle {
-    position: absolute;
+    position: fixed;
     right: 50px;
     background: none;
     border: none;
@@ -72,6 +72,8 @@ export default {
     cursor: pointer;
     z-index: 2000;
     top: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .coffre-img {
@@ -108,24 +110,6 @@ ul {
        list-style-type: none;
 }
 
-.title-banner {
-    background-image: url('../assets/img/title-banner-inventory.png');
-    width: 100vw;
-    height: 100%;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    margin-top: 40vh;
-    
-}
-
-h2 {
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    left: 20vw;
-    top: 24vh;
-}
 
 
 </style>
