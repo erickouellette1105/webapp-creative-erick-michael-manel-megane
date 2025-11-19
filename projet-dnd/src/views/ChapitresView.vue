@@ -240,6 +240,7 @@ body {
     margin-bottom: 2rem;
     line-height: 1.6;
     font-size: 1.1rem;
+    color: black;
 }
 
 .choices {
@@ -247,7 +248,7 @@ body {
 }
 
 .choices h3 {
-    color: #2c3e50;
+    color: white;
     margin-bottom: 1rem;
 }
 

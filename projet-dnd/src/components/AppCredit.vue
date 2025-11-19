@@ -49,6 +49,7 @@ export default {
     padding: 0;
     cursor: pointer;
     z-index: 2000;
+    top: 20px;
 }
 
 .credit-img {
