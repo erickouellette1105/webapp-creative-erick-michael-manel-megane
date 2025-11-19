@@ -19,6 +19,7 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
         <div class="chapter-content">
             <p>{{ currentChapter.text }}</p>
         </div>
+        
 
         <div class="choices">
             <h3>Que fais-tu ?</h3>
@@ -220,10 +221,10 @@ body {
 }
 
 .stickman {
-    position: relative;
-    width: 100%;
-    margin-left: 80vw;
-    bottom: 55vh;
+    position: absolute;
+    right: 0;
+    width: auto;
+    bottom: 0;
 }
 
 .chapter {
@@ -252,13 +253,14 @@ body {
 }
 
 .chapter-content {
-    background: white;
+    background-color: white;
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 2rem;
     line-height: 1.6;
     font-size: 1.1rem;
     color: black;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
 }
 
 .choices {
@@ -287,8 +289,9 @@ body {
 
 .choice-button:hover {
     background: white;
+    border: 3px solid #960002;
     color: black;
-    transform: translateX(10px);
+    transform: scale(1.05);
 }
 
 .choices-content {
@@ -298,7 +301,7 @@ body {
 }
 
 .back-button {
-    background: #6c757d;
+    background-color: #960002;
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -308,6 +311,10 @@ body {
 }
 
 .back-button:hover {
-    background: #5a6268;
+    background: white;
+    border: 3px solid #960002;
+    color: black;
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
 </style>
