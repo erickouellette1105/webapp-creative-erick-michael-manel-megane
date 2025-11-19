@@ -53,8 +53,7 @@ export default {
 }
 
 .title {
-  font-size: 100px;
-  font-family: "Cinzel Decorative", serif;
+  font-size: 8vw;
   color: white;
   margin-top: 300px;
 }

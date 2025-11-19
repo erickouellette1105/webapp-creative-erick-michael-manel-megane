@@ -56,7 +56,7 @@ export default {
     width: 60px;
     transition: transform 0.2s;
     margin-top: 10px;
-    margin-right: -25px;
+    margin-right: -10px;
 
 }
 

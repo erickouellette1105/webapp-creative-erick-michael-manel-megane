@@ -18,6 +18,9 @@ export default {
 <style scoped>
 .audio {
     width: 80px;
+    top: 25px;
+    position: absolute;
+    left: 25px;
 }
 
 /* medium */

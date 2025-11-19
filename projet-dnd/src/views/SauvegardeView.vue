@@ -50,17 +50,36 @@ export default {
     overflow-x: hidden;
 }
 
+
 .save-header {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 10rem;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     rotate: 9deg;
     font-size: 100px;
     position: absolute;
     left: 50%;
+    transform: translateX(-50%); /* Centers correctly */
     color: black;
 }
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .save-header {
+        font-size: 70px;
+        margin-top: 10rem;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    .save-header {
+        font-size: 30px;
+        margin-top: 10rem;
+    }
+}
+
 
 
 .buttons {
@@ -68,7 +87,9 @@ export default {
     display: grid;
     justify-content: center;
     gap: 30px;
-    
 }
+
+
+
 
 </style>
