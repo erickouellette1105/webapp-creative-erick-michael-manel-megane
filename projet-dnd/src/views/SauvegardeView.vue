@@ -56,7 +56,7 @@ export default {
     margin-top: 10rem;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    rotate: 9deg;
+    rotate: 7deg;
     font-size: 100px;
     position: absolute;
     left: 50%;

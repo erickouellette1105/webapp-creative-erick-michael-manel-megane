@@ -33,6 +33,10 @@ export default {
         border: 5px solid #FF4649;
         border-radius: 20px;
     }
+
+    .saveBtn:hover{
+        transform: scale(1.1);
+    }
     @media (max-width: 300px) {
         .saveBtn {
         width: 25vw;
