@@ -54,8 +54,19 @@ export default {
 
 .title {
   font-size: 100px;
-  margin: 100px;
   font-family: "Cinzel Decorative", serif;
   color: white;
+  margin-top: 300px;
 }
+
+/* Écran médium */
+@media (max-width: 1000px) {
+  .title {
+  font-size: 50px;
+margin-top: 300px;
+}
+
+}
+
+
 </style>

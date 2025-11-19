@@ -25,16 +25,37 @@ export default {
 
 <style scoped>
     .saveButton {
-        width: 10vw;
-        height: 7vh;
-        font-size: 1vw;
-        color: white;
-        background-color: #960002;
-        border: 5px solid #FF4649;
-        border-radius: 20px;
+    padding: 0.8rem 1.5rem;       /* Flexible instead of fixed width/height */
+    font-size: 1rem;             /* Normal text size */
+    color: white;
+    background-color: #960002;
+    border: 5px solid #FF4649;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
+    .saveButton {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.3rem;
+        border-width: 4px;
     }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .saveButton {
+        font-size: 0.8rem;
+        padding: 0.6rem 1.1rem;
+        border-width: 3px;
+        border-radius: 16px;
+    }
+}
+
 
     .saveButton:hover{
         transform: scale(1.1);
     }
 </style>
+

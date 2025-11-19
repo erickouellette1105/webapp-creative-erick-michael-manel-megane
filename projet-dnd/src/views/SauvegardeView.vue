@@ -4,7 +4,11 @@ import SaveButton from '@/components/SaveButton.vue';
 
 <template>
     <div class="home">
-        <div class="title"></div>
+        <div class="title">
+            <div class="save-header">
+                <h2>Sauvegardes</h2>
+            </div>
+        </div>
         <div class="buttons">
         <SaveButton />
         <SaveButton />
@@ -44,12 +48,25 @@ export default {
     overflow-x: hidden;
 }
 
+.save-header {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    rotate: 12deg;
+    font-size: 100px;
+    position: absolute;
+    left: 50%;
+
+    color: black;
+}
+
 
 .buttons {
-    margin-top: 15px;
+    margin: 50px 50px;
     display: grid;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
     
 }
 

@@ -48,11 +48,15 @@ export default {
 
 <style scoped>
 .audio {
-    width: 5vw;
+    width: 3vw;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transition: transform 0.2s;
 }
 
 .audio:hover {
-    width: 7vw;
+    transform: scale(1.1);
 }
 
 .btn-toggle {
@@ -63,6 +67,7 @@ export default {
     padding: 0;
     cursor: pointer;
     z-index: 2000;
+    top: 50px;
 }
 
 .coffre-img {
