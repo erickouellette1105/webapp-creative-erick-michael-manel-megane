@@ -2,29 +2,47 @@
 
 @font-face {
   font-family: Bladur;
-  src: url(/projet-dnd/src/assets/font/Baldur.ttf);
+  src: url(../assets/font/Baldur.ttf) format('truetype');
   font-weight: lighter;
 }
 
 @font-face {
   font-family: Darker;
-  src: url(/projet-dnd/src/assets/font/Darker.ttf);
+  src: url(../assets/font/Darker.ttf) format('truetype');
 }
 
 @font-face {
   font-family: GoldenSwing;
-  src: url(/projet-dnd/src/assets/font/GoldenSwing.ttf);
+  src: url(../assets/font/GoldenSwing.ttf) format('truetype');
 }
 
 @font-face {
   font-family: Medieval;
-  src: url(/projet-dnd/src/assets/font/MedievalSharp-Regular.ttf);
+  src: url(../assets/font/MedievalSharp-Regular.ttf) format('truetype');
 }
 
 
 #app {
   margin: 0 auto;
   font-weight: normal;
+}
+
+h1 {
+  font-family: Medieval;
+  text-transform: uppercase;
+}
+
+button {
+  font-family: GoldenSwing;
+  text-transform: lowercase;
+}
+
+p {
+  font-family: GoldenSwing;
+}
+
+h3 {
+  font-family: Bladur;
 }
 
 a {
