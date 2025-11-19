@@ -17,8 +17,23 @@ export default {
 
 <style scoped>
 .audio {
-    width: 5vw;
+    width: 80px;
 }
+
+/* medium */
+@media (max-width: 768px) {
+    .audio {
+        width: 45px;
+    }
+}
+
+/* petit */
+@media (max-width: 480px) {
+    .audio {
+        width: 50px;
+    }
+}
+
 
 .audio:hover {
     transform: scale(1.1);
