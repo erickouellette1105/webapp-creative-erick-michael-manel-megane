@@ -38,6 +38,7 @@ export default {
         }
     },
     methods: {
+        /* Méthode pour ouvrir l'inventaire */
         toggleInventory() {
             this.isOpen = !this.isOpen;
         }
