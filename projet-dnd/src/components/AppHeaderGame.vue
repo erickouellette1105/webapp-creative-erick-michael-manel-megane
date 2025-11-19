@@ -13,13 +13,17 @@
             <img class="audio audio-in-modal" src="../assets/img/audio_icon.png" alt="audio"></img>
 
             <div class="inventory-content">
+                <div class="title-banner">
                 <h2>Inventaire</h2>
-
+                </div>
                 <ul>
                     <li v-for="item in items" :key="item.id">
                         {{ item.name }}
                     </li>
                 </ul>
+                <div class="inventory-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
             </div>
         </div>
     </header>
@@ -88,10 +92,12 @@ export default {
     height: 100%;
     background-color: white;
     z-index: 999;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .inventory-content {
-    color: black;
+    color: white;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -102,7 +108,24 @@ ul {
        list-style-type: none;
 }
 
-h2 {
-    font-size: 7rem;
+.title-banner {
+    background-image: url('../assets/img/title-banner-inventory.png');
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 40vh;
+    
 }
+
+h2 {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    left: 20vw;
+    top: 24vh;
+}
+
+
 </style>
