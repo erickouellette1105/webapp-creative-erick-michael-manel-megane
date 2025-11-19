@@ -27,6 +27,9 @@
       {
         "id": 2,
         "text": "Voler les armes des goblins pour vous enforcer ",
+        "effects": {
+          "inventory": { "add": "épée rouiller" }
+        },
         "nextChapter": 6
       },
       { "id": 3, "text": "Passer discrètement les goblins ", "nextChapter": 7 }
