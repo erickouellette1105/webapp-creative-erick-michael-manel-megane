@@ -8,7 +8,7 @@
   },
   "2": {
     "title": "Chapitre 2",
-    "text": "John arrive aux portes du manoir de Velkram. Il entre le domaine maléfique et est immédiatement confronté à deux couloirs opposés menaçants.",
+    "text": "John arrive à l'entré du dongeon de Velkram. Il entre le domaine maléfique et est immédiatement confronté à deux couloirs opposés menaçants.",
     "choices": [
       { "id": 1, "text": "Couloir droit", "nextChapter": "3" },
       { "id": 2, "text": "Couloir gauche", "nextChapter": "4" }
@@ -49,7 +49,10 @@
     "title": "Chapitre 4c",
     "text": "Vous trouvez une bibliothèque secrète contenant trois grimoires d’attributs légendaires. Vous pouvez choisir un des trois pour recevoir un pouvoir spécial.",
     "choices": [
-      { "id": 1, "text": "Continuer", "nextChapter": "11" }
+      { "id": 1, "text": "grimoire de feu", "nextChapter": "11", "inventory": "grimoire de feu" },
+      { "id": 2, "text": "magie des ombres", "nextChapter": "11", "inventory": "magie des ombres" },
+      { "id": 3, "text": "sort du ???", "nextChapter": "11" ,"inventory": "???" }
+
     ]
   },
   "8": {

@@ -41,7 +41,12 @@
     </header>
 </template>
 
-<script>
+<script>    
+
+import { mapStores } from 'pinia'
+import { useStoryStore } from '../stores/story'
+import { usePlayerStore } from '../stores/player'
+
 export default {
     data() {
         return {
@@ -52,6 +57,11 @@ export default {
                 { id: 3, name: "placeholder", img: "" },
             ]
         }
+    },
+    computed: {
+        ...mapStores(useStoryStore),
+        ...mapStores(usePlayerStore),
+
     },
     methods: {
         /* Méthode pour ouvrir l'inventaire */
@@ -104,7 +114,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #6b0f1a;
     z-index: 999;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -125,16 +135,20 @@ export default {
 
 .titre-banner {
     width: 50vw;
+    min-width: 400px;
 }
 
 .texte-banner {
     width: 50vw;
+    min-width: 500px;
 }
 
 .text {
     position: absolute;
-    top: 20px;
+    top: 20;
     left: 30px;
+    font-size: 1vw;
+    
 }
 
 .image-container-title {
@@ -172,7 +186,7 @@ export default {
 
 ul {
     list-style-type: none;
-    
+    margin: -25px;
 }
 
 .items {
@@ -182,10 +196,11 @@ ul {
   color: white;
   width: 50vw;
   height: 6vh;
-  border-radius: 15px;
+  border-radius: 0px 15px 15px 0px ;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 300px;
 }
 
 .stickman {

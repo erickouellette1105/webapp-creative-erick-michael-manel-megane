@@ -49,6 +49,7 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
 
 import { mapStores } from 'pinia'
 import { useStoryStore } from '../stores/story'
+import { usePlayerStore } from '../stores/player'
 
 export default {
     name: 'ChapterView',
@@ -64,6 +65,7 @@ export default {
 
     computed: {
         ...mapStores(useStoryStore),
+        ...mapStores(usePlayerStore),
 
         currentChapter() {
             // Retourne le chapitre actuel ou un chapitre par défaut
@@ -83,9 +85,10 @@ export default {
 
     methods: {
         makeChoice(nextChapterId) {
-            // TODO: Naviguer vers le prochain chapitre
-            // Note de cours: https://tim-montmorency.com/compendium/582-511-web5/vue/router-and-views.html#32-navigation-programmatique-dans-les-methodes
-            // Navigation par nom
+       
+            // Ici envoyer au store Pinia player l'historique du choix et l'item d'inventaire du choix (si applicable)
+           
+           //  Naviguer vers le prochain chapitre
             this.$router.push({
                 name: 'chapter',
                 params: { id: nextChapterId }

@@ -3,7 +3,8 @@ import { defineStore } from 'pinia';
 export const usePlayerStore = defineStore('player', {
   state: () => ({
     username: '',        
-    inventory: []       
+    inventory: [] ,
+    choiceHistory: []      
   }),
 
   getters: {
@@ -21,9 +22,9 @@ export const usePlayerStore = defineStore('player', {
       this.inventory.push(item);
     },
 
-    removeItem(item) {
+    /*removeItem(item) {
       this.inventory = this.inventory.filter(i => i !== item);
-    },
+    },*/
 
     clearInventory() {
       this.inventory = [];
