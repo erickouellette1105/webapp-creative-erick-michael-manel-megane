@@ -87,8 +87,6 @@ export default {
     display: grid;
     justify-content: center;
     gap: 30px;
- 
-  
 }
 
 
