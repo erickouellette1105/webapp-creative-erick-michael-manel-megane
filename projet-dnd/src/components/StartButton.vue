@@ -25,8 +25,8 @@ export default {
 
 <style scoped>
     .saveButton {
-    padding: 0.8rem 1.5rem;       /* Flexible instead of fixed width/height */
-    font-size: 1rem;             /* Normal text size */
+        /* Flexible instead of fixed width/height */
+    font-size: 2rem;             /* Normal text size */
     color: white;
     background-color: #960002;
     border: 5px solid #FF4649;
