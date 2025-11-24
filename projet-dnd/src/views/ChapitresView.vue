@@ -141,7 +141,7 @@ body {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     rotate: 8deg;
-    font-size: 30px;
+    font-size: 60px;
 }
 
 .chapter-header h2 {
