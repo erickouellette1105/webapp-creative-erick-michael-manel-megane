@@ -34,6 +34,8 @@
                         facilisis id, sagittis eget massa. Aliquam erat volutpat. </p>
                 </div>
 
+                <img src="../assets/img/stickman.png" alt="stickman" class="stickman">
+
             </div>
         </div>
     </header>
@@ -184,5 +186,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.stickman {
+    position: absolute;
+    width: 15vw;
+    right: 20vw;
+    bottom: 0;
 }
 </style>
