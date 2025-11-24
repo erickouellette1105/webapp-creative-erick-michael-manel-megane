@@ -1,5 +1,7 @@
 <script setup>
+
 import AppHeaderGame from '@/components/AppHeaderGame.vue'
+
 </script>
 
 
@@ -43,6 +45,11 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
 </template>
 
 <script>
+
+
+import { mapStores } from 'pinia'
+import { useStoryStore } from '../stores/story'
+
 export default {
     name: 'ChapterView',
 
@@ -163,8 +170,12 @@ export default {
     },
 
     computed: {
+        ...mapStores(useStoryStore),
+
         currentChapter() {
             // Retourne le chapitre actuel ou un chapitre par défaut
+
+            // this.storyStore.storyData[this.chapterId]
             return this.chapters[this.chapterId] || {
                 title: 'Chapitre introuvable',
                 text: 'Ce chapitre n\'existe pas encore.',
