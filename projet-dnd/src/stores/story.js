@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import chapters from '../data/chapitres.json'
+import chapters from '../data/chapitres-obj.json'
 
 
 
