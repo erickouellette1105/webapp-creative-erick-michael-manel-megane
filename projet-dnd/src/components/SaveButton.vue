@@ -36,6 +36,7 @@ export default {
 
     .saveBtn:hover{
         transform: scale(1.1);
+        transition: .3s;
         cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
     }
     @media (max-width: 300px) {
