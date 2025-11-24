@@ -19,7 +19,7 @@
                     <p class="text-titre">Inventaire</p>
                 </div>
                 <ul>
-                    <li v-for="item in items" :key="item.id">
+                    <li v-for="item in items" :key="item.id" class="items">
                         {{ item.name }}
                     </li>
                 </ul>
@@ -46,8 +46,8 @@ export default {
             isOpen: false,
             items: [
                 { id: 1, name: "placeholder", img: "" },
-                { id: 1, name: "placeholder", img: "" },
-                { id: 1, name: "placeholder", img: "" },
+                { id: 2, name: "placeholder", img: "" },
+                { id: 3, name: "placeholder", img: "" },
             ]
         }
     },
@@ -111,10 +111,9 @@ export default {
 .inventory-content {
     color: black;
     height: 100%;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-
 }
 
 .image-container {
@@ -138,7 +137,7 @@ export default {
 
 .image-container-title {
     position: fixed;
-    top: 200px;
+    top: 120px;
     left: -7px;
 }
 
@@ -171,6 +170,19 @@ export default {
 
 ul {
     list-style-type: none;
-    gap: 15px;
+    
+}
+
+.items {
+  margin: 1.5vw -2.5vw;
+  background-color: #333138;
+  border: 5px solid #EB5E28;
+  color: white;
+  width: 50vw;
+  height: 6vh;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

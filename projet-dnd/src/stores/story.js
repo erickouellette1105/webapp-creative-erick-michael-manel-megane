@@ -1,7 +1,11 @@
-import { defineStore } from 'pinia';
+import { defineStore } from 'pinia'
+import chapters from '../data/chapitres-obj.json'
 
-export const useChapterStore = defineStore('chapters', {
+
+
+export const useStoryStore = defineStore('story', {
   state: () => ({
+    storyData: chapters,
     currentChapter: 1,       
     totalChapters: 10,       
     unlockedChapters: [1],   
