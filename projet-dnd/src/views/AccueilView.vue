@@ -4,6 +4,7 @@ import AppHeaderLobby from '@/components/AppHeaderLobby.vue'
 import StartButton from '@/components/StartButton.vue';
 import SaveButton from '@/components/SaveButton.vue';
 import AppCredit from '@/components/AppCredit.vue';
+import ClickCursor from '@/assets/cur/Click.cur'
 
 </script>
 
@@ -61,6 +62,8 @@ export default {
 <style scoped>
 
 
+
+
 .title {
   font-size: 8vw;
   color: white;
@@ -88,6 +91,7 @@ button:hover {
   cursor: pointer;
   transition: .3s;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  
 }
 
 .light {
