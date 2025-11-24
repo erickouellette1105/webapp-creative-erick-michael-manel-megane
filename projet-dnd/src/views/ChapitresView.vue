@@ -258,7 +258,7 @@ body {
     border-radius: 8px;
     margin-bottom: 2rem;
     line-height: 1.6;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color: black;
     box-shadow: 0 0 20px rgb(255, 255, 255);
 }
@@ -269,7 +269,9 @@ body {
 
 .choices h3 {
     color: white;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    margin-top: 4rem;
 }
 
 .choice-button {
@@ -281,7 +283,7 @@ body {
     margin-bottom: 0.75rem;
     border: none;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.3s;
     text-align: left;
@@ -302,6 +304,7 @@ body {
 
 .back-button {
     background-color: #960002;
+    font-size: 1.5rem;
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
