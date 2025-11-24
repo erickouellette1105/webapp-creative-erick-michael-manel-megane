@@ -8,9 +8,9 @@
     <div v-if="isOpen" class="credit-modal">
 
         <div class="credit-content">
-            <h2>Crédits</h2>
+            <h2>Équipe</h2>
 
-            <ul>
+            <ul class="credit">
                 <li v-for="cred in cred" :key="cred.id">
                     {{ cred.name }}
                 </li>
@@ -52,12 +52,17 @@ export default {
     top: 20px;
 }
 
+.credit{
+    display: grid;
+    gap: 20px;
+    text-align: center;
+}
+
 .credit-img {
     width: 60px;
     transition: transform 0.2s;
     margin-top: 10px;
     margin-right: -10px;
-
 }
 
 /* Écran médium */
@@ -86,16 +91,16 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #6b0f1a;
     z-index: 999;
 }
 
 .credit-content {
-    color: black;
+    color: white;
     display: grid;
     justify-content: center;
     align-items: center;
- 
+    margin-top: 15vw;
 }
 
 ul {
