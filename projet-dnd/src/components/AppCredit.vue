@@ -100,7 +100,8 @@ export default {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-top: 15vw;
+    margin-top: 7vw;
+    gap: 50px;
 }
 
 ul {

@@ -64,7 +64,7 @@ export default {
 .title {
   font-size: 8vw;
   color: white;
-  margin-top: 300px;
+  margin-top: 200px;
   text-align: center;
 }
 
