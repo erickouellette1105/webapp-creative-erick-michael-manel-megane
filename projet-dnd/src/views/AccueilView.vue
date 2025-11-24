@@ -4,6 +4,7 @@ import AppHeaderLobby from '@/components/AppHeaderLobby.vue'
 import StartButton from '@/components/StartButton.vue';
 import SaveButton from '@/components/SaveButton.vue';
 import AppCredit from '@/components/AppCredit.vue';
+import MoveCur from '@/assets/cur/NormalSelect.cur'
 </script>
 
 <template>
@@ -39,9 +40,13 @@ export default {
 };</script>
 
 <style scoped>
+
+
+
 .container {
   background-color: #6b0f1a;
   height: 100vh;
+  cursor: url('../assets/cur/NormalSelect.cur'), auto;
 }
 
 
@@ -53,12 +58,12 @@ export default {
 }
 
 .title {
-  font-size: 8vw;
+  font-size: 100px;
+  font-family: "Cinzel Decorative", serif;
   color: white;
   margin-top: 300px;
 }
 
-/* Écran médium */
 @media (max-width: 1000px) {
   .title {
   font-size: 50px;
@@ -69,3 +74,4 @@ margin-top: 300px;
 
 
 </style>
+
