@@ -25,8 +25,8 @@ export default {
 
 <style scoped>
     .saveButton {
-        /* Flexible instead of fixed width/height */
-    font-size: 2rem;             /* Normal text size */
+    padding: 0.8rem 1.5rem;     
+    font-size: 2rem;            
     color: white;
     background-color: #960002;
     border: 5px solid #FF4649;
@@ -34,7 +34,7 @@ export default {
     cursor: pointer;
 }
 
-/* Medium screens */
+/* Écran médium */
 @media (max-width: 768px) {
     .saveButton {
         font-size: 0.9rem;
@@ -43,7 +43,7 @@ export default {
     }
 }
 
-/* Small mobile */
+/* Écran petit */
 @media (max-width: 480px) {
     .saveButton {
         font-size: 0.8rem;
@@ -56,6 +56,7 @@ export default {
 
     .saveButton:hover{
         transform: scale(1.1);
+        cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
     }
 </style>
 

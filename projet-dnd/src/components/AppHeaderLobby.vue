@@ -40,6 +40,7 @@ export default {
 
 .audio:hover {
     transform: scale(1.1);
+    cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
 }
 
 </style>

@@ -82,6 +82,7 @@ export default {
 
 .credit-img:hover {
     transform: scale(1.1);
+    cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
 }
 
 
@@ -100,7 +101,8 @@ export default {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-top: 15vw;
+    margin-top: 7vw;
+    gap: 50px;
 }
 
 ul {
