@@ -4,8 +4,9 @@ import AppHeaderLobby from '@/components/AppHeaderLobby.vue'
 import StartButton from '@/components/StartButton.vue';
 import SaveButton from '@/components/SaveButton.vue';
 import AppCredit from '@/components/AppCredit.vue';
+/*
 import ClickCursor from '@/assets/cur/Click.cur'
-
+*/
 </script>
 
 <template>
