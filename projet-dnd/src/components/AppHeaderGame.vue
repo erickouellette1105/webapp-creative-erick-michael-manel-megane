@@ -51,17 +51,15 @@ export default {
     data() {
         return {
             isOpen: false,
-            items: [
-                { id: 1, name: "placeholder", img: "" },
-                { id: 2, name: "placeholder", img: "" },
-                { id: 3, name: "placeholder", img: "" },
-            ]
         }
     },
     computed: {
         ...mapStores(useStoryStore),
         ...mapStores(usePlayerStore),
 
+          items() {
+        return this.playerStore.inventory
+        }
     },
     methods: {
         /* Méthode pour ouvrir l'inventaire */

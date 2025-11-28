@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import chapters from '../data/chapitres-obj.json'
-
+import { usePlayerStore } from './player'
 
 
 export const useStoryStore = defineStore('story', {
@@ -26,6 +26,30 @@ export const useStoryStore = defineStore('story', {
   },
 
   actions: {
+
+        // 🔥 NEW — choose option in a chapter
+    choose(choice) {
+      const player = usePlayerStore()
+
+      // Add item to inventory if the choice gives one
+      if (choice.inventory) {
+        player.addItem({
+          name: choice.inventory,
+          id: Date.now()
+        })
+      }
+
+      // Go to the chapter specified in JSON
+      this.currentChapter = Number(choice.nextChapter)
+
+      // Unlock chapter if needed
+      if (!this.unlockedChapters.includes(this.currentChapter)) {
+        this.unlockedChapters.push(this.currentChapter)
+      }
+    },
+
+
+
     goToChapter(chapter) {
       if (this.unlockedChapters.includes(chapter)) {
         this.currentChapter = chapter;
@@ -56,6 +80,9 @@ export const useStoryStore = defineStore('story', {
     resetChapters() {
       this.currentChapter = 1;
       this.unlockedChapters = [1];
+
+      const player = usePlayerStore();
+      player.clearInventory();
     }
   }
 });

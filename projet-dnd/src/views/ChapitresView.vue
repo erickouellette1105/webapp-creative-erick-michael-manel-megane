@@ -27,7 +27,7 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
             <h3>Que fais-tu ?</h3>
             <div class="choices-content">
                 <button v-for="choice in currentChapter.choices" :key="choice.id"
-                    @click="makeChoice(choice.nextChapter)" class="choice-button">
+                    @click="makeChoice(choice)" class="choice-button">
                     {{ choice.text }}
                 </button>
             </div>
@@ -84,19 +84,24 @@ export default {
     },
 
     methods: {
-        makeChoice(nextChapterId) {
+        makeChoice(choice) {
        
             // Ici envoyer au store Pinia player l'historique du choix et l'item d'inventaire du choix (si applicable)
            
            //  Naviguer vers le prochain chapitre
-            this.$router.push({
-                name: 'chapter',
-                params: { id: nextChapterId }
-            });
+        if (choice.nextChapter === '1') {
+            this.storyStore.resetChapters()
+        } else {
+            this.storyStore.choose(choice)
+        }
+            this.$router.push({ 
+                name: 'chapter', 
+                params: { id: String(choice.nextChapter) } });
 
 
             // TODO: Mettre à jour l'ID local du chapitre
-            this.chapterId = nextChapterId;
+            this.chapterId = String(choice.nextChapter)
+
 
         },
 
