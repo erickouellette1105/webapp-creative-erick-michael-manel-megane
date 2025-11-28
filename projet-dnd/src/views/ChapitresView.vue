@@ -33,9 +33,15 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
             </div>
         </div>
 
+        <div class="back-stats">
         <button @click="goBack" class="back-button">
             ← Retour à l'accueil
         </button>
+
+        <button @click="stats" class="stats-button">
+             Statistiques →
+        </button>
+    </div>
     </div>
 
     <div class="stickman">
@@ -102,6 +108,9 @@ export default {
 
         goBack() {
             this.$router.push({ name: 'accueil' });
+        },
+        stats() {
+            this.$router.push({ name: 'statistiques' });
         }
     }
 };
@@ -227,4 +236,31 @@ body {
     transform: scale(1.05);
     cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
 }
+
+.stats-button {
+    background-color: #960002;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.stats-button:hover {
+    background: white;
+    border: 3px solid #960002;
+    color: black;
+    transition: all 0.3s;
+    transform: scale(1.05);
+    cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
+}
+
+.back-stats {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 150px;
+}
+
 </style>

@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia';
+import chapters from '../data/chapitres-obj.json'
 
 export const usePlayerStore = defineStore('player', {
   state: () => ({
@@ -28,6 +29,13 @@ export const usePlayerStore = defineStore('player', {
 
     clearInventory() {
       this.inventory = [];
-    }
+    },
+
+        recordChoice(chapterId, text ) {
+        this.choiceHistory.push({
+          chapterId,
+          text
+        });
+      }
   }
 });
