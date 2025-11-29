@@ -27,22 +27,21 @@ export const useStoryStore = defineStore('story', {
 
   actions: {
 
-        // 🔥 NEW — choose option in a chapter
     choose(choice) {
       const player = usePlayerStore()
 
-      // Add item to inventory if the choice gives one
+      // ajout d'item dans l'inventaire
       if (choice.inventory) {
         player.addItem({
           name: choice.inventory,
+          description: choice.description,
           id: Date.now()
         })
       }
 
-      // Go to the chapter specified in JSON
       this.currentChapter = Number(choice.nextChapter)
 
-      // Unlock chapter if needed
+      //debloque de chapitre
       if (!this.unlockedChapters.includes(this.currentChapter)) {
         this.unlockedChapters.push(this.currentChapter)
       }

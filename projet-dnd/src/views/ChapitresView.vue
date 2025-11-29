@@ -73,13 +73,37 @@ export default {
         ...mapStores(useStoryStore),
         ...mapStores(usePlayerStore),
 
-        currentChapter() {
-            // Retourne le chapitre actuel ou un chapitre par défaut
-            return this.storyStore.storyData[this.chapterId] || {
-                title: 'Chapitre introuvable',
-                text: 'Ce chapitre n\'existe pas encore.',
-                choices: []
-            };
+    currentChapter() {
+    const chapitre = this.storyStore.storyData[this.chapterId]
+
+    if (!chapitre) {
+        return {
+            title: 'Chapitre introuvable',
+            text: 'Ce chapitre n’existe pas encore.',
+            choices: []
+        }
+    }
+
+    // list des items
+    const inventory = this.playerStore.inventory.map(i => i.name)
+
+    // seul montre le choix qui a le requis
+    const filteredChoices = chapitre.choices.filter(choice => {
+        if (!choice.requires) return true 
+        return inventory.includes(choice.requires)
+    })
+    
+    /*
+    return this.storyStore.storyData[this.chapterId] || {
+        title: 'Chapitre introuvable',
+        text: 'Ce chapitre n\'existe pas encore.',
+        choices: []
+    */
+
+    return {
+        ...chapitre,
+        choices: filteredChoices
+    }
         }
     },
 

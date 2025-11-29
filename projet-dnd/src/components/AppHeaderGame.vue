@@ -19,19 +19,15 @@
                     <p class="text-titre">Inventaire</p>
                 </div>
                 <ul>
-                    <li v-for="item in items" :key="item.id" class="items">
+                    <li v-for="item in items" :key="item.id"   @click="selectItem(item)" class="items">
                         {{ item.name }}
                     </li>
                 </ul>
 
                 <div class="image-container-text">
                     <img src="../assets/img/text-banner-inventory.png" alt="texte-banniere" class="texte-banner">
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id luctus odio.
-                        Curabitur vitae facilisis augue, ut convallis metus. Mauris convallis eros et lacus viverra
-                        facilisis. Nam sit amet turpis ex. Pellentesque habitant morbi tristique senectus et netus et
-                        malesuada fames ac turpis egestas. Ut leo urna, dapibus a pharetra sed, tempor id dui. Nullam
-                        pharetra velit id mi lacinia, nec congue nisl vestibulum. Suspendisse magna sapien, eleifend in
-                        facilisis id, sagittis eget massa. Aliquam erat volutpat. </p>
+                    <p class="text" v-if="selectedItem"> {{ selectedItem.description }} </p>
+                    <p class="text" v-else> Cliquez sur un objet pour voir sa description.</p>
                 </div>
 
                 <img src="../assets/img/stickman.png" alt="stickman" class="stickman">
@@ -51,6 +47,7 @@ export default {
     data() {
         return {
             isOpen: false,
+            selectedItem: null,
         }
     },
     computed: {
@@ -65,6 +62,11 @@ export default {
         /* Méthode pour ouvrir l'inventaire */
         toggleInventory() {
             this.isOpen = !this.isOpen;
+        },
+
+        /* selection de l'item dans l'inventaire */
+        selectItem(item) {
+            this.selectedItem = item;
         }
     }
 }

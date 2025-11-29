@@ -49,9 +49,9 @@
     "title": "Chapitre 4c",
     "text": "Vous trouvez une bibliothèque secrète contenant trois grimoires d’attributs légendaires. Vous pouvez choisir un des trois pour recevoir un pouvoir spécial.",
     "choices": [
-      { "id": 1, "text": "grimoire de feu", "nextChapter": "11", "inventory": "grimoire de feu" },
-      { "id": 2, "text": "magie des ombres", "nextChapter": "11", "inventory": "magie des ombres" },
-      { "id": 3, "text": "sort du ???", "nextChapter": "11" ,"inventory": "???" }
+      { "id": 1, "text": "grimoire de feu", "nextChapter": "11", "inventory": "grimoire de feu", "description": "Un ancien livre chargé de magie enflammée." },
+      { "id": 2, "text": "magie des ombres", "nextChapter": "11", "inventory": "magie des ombres", "description": "Une magie qui vous engouffre dans les ombres" },
+      { "id": 3, "text": "sort du ???", "nextChapter": "11" ,"inventory": "???", "description": "Aucune information" }
 
     ]
   },
@@ -80,9 +80,10 @@
     "title": "Chapitre 5c",
     "text": "L’heure est venue de vaincre le maléfique Velkram. Utilisez vos armes ou vos sortilèges pour prévenir la résurrection du démon antique.",
     "choices": [
-      { "id": 1, "text": "Choix 1", "nextChapter": "14" },
-      { "id": 2, "text": "Choix 2", "nextChapter": "14" },
-      { "id": 3, "text": "Choix 3", "nextChapter": "13" }
+      { "id": 1, "text": "Attaque de feu", "nextChapter": "14", "requires": "grimoire de feu"  },
+      { "id": 2, "text": "Attaque des ombres", "nextChapter": "14", "requires": "magie des ombres"  },
+      { "id": 3, "text": "utiliser le sort mystérieux", "nextChapter": "14", "requires": "???"  },
+      { "id": 4, "text": "attaque avec votre bras de stickman", "nextChapter": "13" }
     ]
   },
   "12": {
