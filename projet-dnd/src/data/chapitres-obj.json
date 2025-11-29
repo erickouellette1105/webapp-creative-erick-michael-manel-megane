@@ -19,7 +19,7 @@
     "text": "Vous arrivez dans un repaire de goblins. Cependant ils ont tous endormis. Que faites-vous?",
     "choices": [
       { "id": 1, "text": "Battre les goblins avec votre force non subtile", "nextChapter": "5" },
-      { "id": 2, "text": "Voler les armes des goblins pour vous enforcer", "nextChapter": "6" },
+      { "id": 2, "text": "Voler les armes des goblins pour vous enforcer", "nextChapter": "6", "inventory": "l’épée suprême du maître goblin", "description": "Une épée lourde qui appartient au maitre goblin." },
       { "id": 3, "text": "Passer discrètement les goblins", "nextChapter": "7" }
     ]
   },
@@ -57,16 +57,18 @@
   },
   "8": {
     "title": "Chapitre 4d",
-    "text": "Vous ouvrez le coffre et surprise : le coffre vous mort le bras. Défendez-vous!",
+    "text": "Vous ouvrez le coffre et surprise : le coffre vous mort le bras.",
     "choices": [
-      { "id": 1, "text": "Continuer", "nextChapter": "11" }
+      { "id": 1, "text": "Continuer", "nextChapter": "12" }
     ]
   },
   "9": {
     "title": "Chapitre 5a",
-    "text": "Grâce à la pitié du sorcier goblin, vous êtes transporté à la salle d’armes des chef militaires de Velkram. Choisit une armure et une arme pour vous préparer au combat.",
+    "text": "Grâce à la pitié du sorcier goblin, vous êtes transporté à la salle d’armes des chef militaires de Velkram. Choisit une arme pour vous préparer au combat.",
     "choices": [
-      { "id": 1, "text": "Continuer", "nextChapter": "11" }
+      { "id": 1, "text": "prendre l'épée crayon", "nextChapter": "11", "inventory": "épée crayon", "description": "Une arme légère mais étonnamment pointue."},
+      { "id": 1, "text": "prendre des dynamites", "nextChapter": "11", "inventory": "dynamite", "description": "Boom!"},
+      { "id": 1, "text": "ouvrire un coffre mystérieux", "nextChapter": "8"}
     ]
   },
   "10": {
@@ -83,7 +85,10 @@
       { "id": 1, "text": "Attaque de feu", "nextChapter": "14", "requires": "grimoire de feu"  },
       { "id": 2, "text": "Attaque des ombres", "nextChapter": "14", "requires": "magie des ombres"  },
       { "id": 3, "text": "utiliser le sort mystérieux", "nextChapter": "14", "requires": "???"  },
-      { "id": 4, "text": "attaque avec votre bras de stickman", "nextChapter": "13" }
+      { "id": 4, "text": "utiliser l'épée du maitre goblin", "nextChapter": "14", "requires": "l’épée suprême du maître goblin"},
+      { "id": 5, "text": "utiliser l'épée crayon", "nextChapter": "14", "requires": "épée crayon"},
+      { "id": 6, "text": "utiliser les dynamites", "nextChapter": "15", "requires": "dynamite"},
+      { "id": 7, "text": "attaque avec votre bras de stickman", "nextChapter": "13" }
     ]
   },
   "12": {
@@ -103,6 +108,13 @@
   "14": {
     "title": "Bonne fin",
     "text": "Vous avez vaincu le sorcier ultime et vous êtes maintenant une légende digne de votre nom.",
+    "choices": [
+      { "id": 1, "text": "Recommencer", "nextChapter": "1" }
+    ]
+  },
+    "15": {
+    "title": "fin Boom",
+    "text": "BOOM!",
     "choices": [
       { "id": 1, "text": "Recommencer", "nextChapter": "1" }
     ]
