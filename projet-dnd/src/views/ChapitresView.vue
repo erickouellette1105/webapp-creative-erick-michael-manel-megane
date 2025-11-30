@@ -7,46 +7,46 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
 
 
 <template>
-<div class="title">
-    <div class="game-manager">
-        <app-header-game></app-header-game>
-    </div>
-    <div class="chapter-header">
-            <h2>{{ currentChapter.title }}</h2>
-        
+    <div class="title">
+        <div class="game-manager">
+            <app-header-game></app-header-game>
         </div>
-</div>
+        <div class="chapter-header">
+            <h2>{{ currentChapter.title }}</h2>
+
+        </div>
+    </div>
 
     <div class="chapter">
         <div class="chapter-content">
             <p>{{ currentChapter.text }}</p>
         </div>
-        
+
 
         <div class="choices">
             <h3>Que fais-tu ?</h3>
             <div class="choices-content">
-                <button v-for="choice in currentChapter.choices" :key="choice.id"
-                    @click="makeChoice(choice)" class="choice-button">
+                <button v-for="choice in currentChapter.choices" :key="choice.id" @click="makeChoice(choice)"
+                    class="choice-button">
                     {{ choice.text }}
                 </button>
             </div>
         </div>
 
         <div class="back-stats">
-        <button @click="goBack" class="back-button">
-            ← Retour à l'accueil
-        </button>
+            <button @click="goBack" class="back-button">
+                ← Retour à l'accueil
+            </button>
 
-        <button @click="stats" class="stats-button">
-             Statistiques →
-        </button>
-    </div>
+            <button @click="stats" class="stats-button">
+                Statistiques →
+            </button>
+        </div>
     </div>
 
     <div class="stickman">
-            <img src="../assets/img/stickman.png"></img>
-        </div>
+        <img src="../assets/img/stickman.png"></img>
+    </div>
 
 </template>
 
@@ -64,8 +64,8 @@ export default {
         return {
             chapterId: null,
 
-          
-           
+
+
         };
     },
 
@@ -73,37 +73,37 @@ export default {
         ...mapStores(useStoryStore),
         ...mapStores(usePlayerStore),
 
-    currentChapter() {
-    const chapitre = this.storyStore.storyData[this.chapterId]
+        currentChapter() {
+            const chapitre = this.storyStore.storyData[this.chapterId]
 
-    if (!chapitre) {
-        return {
-            title: 'Chapitre introuvable',
-            text: 'Ce chapitre n’existe pas encore.',
-            choices: []
-        }
-    }
+            if (!chapitre) {
+                return {
+                    title: 'Chapitre introuvable',
+                    text: 'Ce chapitre n’existe pas encore.',
+                    choices: []
+                }
+            }
 
-    // list des items
-    const inventory = this.playerStore.inventory.map(i => i.name)
+            // list des items
+            const inventory = this.playerStore.inventory.map(i => i.name)
 
-    // seul montre le choix qui a le requis
-    const filteredChoices = chapitre.choices.filter(choice => {
-        if (!choice.requires) return true 
-        return inventory.includes(choice.requires)
-    })
-    
-    /*
-    return this.storyStore.storyData[this.chapterId] || {
-        title: 'Chapitre introuvable',
-        text: 'Ce chapitre n\'existe pas encore.',
-        choices: []
-    */
+            // seul montre le choix qui a le requis
+            const filteredChoices = chapitre.choices.filter(choice => {
+                if (!choice.requires) return true
+                return inventory.includes(choice.requires)
+            })
 
-    return {
-        ...chapitre,
-        choices: filteredChoices
-    }
+            /*
+            return this.storyStore.storyData[this.chapterId] || {
+                title: 'Chapitre introuvable',
+                text: 'Ce chapitre n\'existe pas encore.',
+                choices: []
+            */
+
+            return {
+                ...chapitre,
+                choices: filteredChoices
+            }
         }
     },
 
@@ -115,18 +115,23 @@ export default {
 
     methods: {
         makeChoice(choice) {
-       
+
             // Ici envoyer au store Pinia player l'historique du choix et l'item d'inventaire du choix (si applicable)
-           
-           //  Naviguer vers le prochain chapitre
-        if (choice.nextChapter === '1') {
-            this.storyStore.resetChapters()
-        } else {
-            this.storyStore.choose(choice)
-        }
-            this.$router.push({ 
-                name: 'chapter', 
-                params: { id: String(choice.nextChapter) } });
+            this.playerStore.recordChoice(
+                this.chapterId,   // id du chapitre courant
+                choice.text,       // texte du choix
+                choice.inventory
+            )
+            //  Naviguer vers le prochain chapitre
+            if (choice.nextChapter === '1') {
+                this.storyStore.resetChapters()
+            } else {
+                this.storyStore.choose(choice)
+            }
+            this.$router.push({
+                name: 'chapter',
+                params: { id: String(choice.nextChapter) }
+            });
 
 
             // TODO: Mettre à jour l'ID local du chapitre
@@ -152,7 +157,6 @@ body {
 </style>
 
 <style scoped>
-
 .title {
     background-image: url('../assets/img/chapterTitles.svg');
     width: 100%;
@@ -291,5 +295,4 @@ body {
     grid-template-columns: auto auto;
     gap: 150px;
 }
-
 </style>

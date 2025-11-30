@@ -14,8 +14,9 @@ const PlayerStore = usePlayerStore();
 
         <ul v-else>
             <li v-for="(choice, index) in PlayerStore.choiceHistory" :key="index">
-                <p>Chapitre :</p> {{ choice.chapterId }} <br>
-                <p>Choix :</p> {{ choice.text }} <br>
+                <p>Chapitre : {{ choice.chapterId }} </p><br>
+                <p>Choix : {{ choice.text }} </p><br>
+                <p>Inventaire : {{ choice.inventory }} </p><br>
             </li>
         </ul>
 
@@ -79,6 +80,9 @@ h2 {
     cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
 }
 
+ul {
+    list-style-type: none
+}
 
 @media (max-width: 768px) {
   

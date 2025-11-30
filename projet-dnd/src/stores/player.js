@@ -31,10 +31,12 @@ export const usePlayerStore = defineStore('player', {
       this.inventory = [];
     },
 
-        recordChoice(chapterId, text ) {
+        recordChoice(chapterId, text, inventory ) {
         this.choiceHistory.push({
           chapterId,
-          text
+          text,
+          inventory
+          
         });
       }
   }
