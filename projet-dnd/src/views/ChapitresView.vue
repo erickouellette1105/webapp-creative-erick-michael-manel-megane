@@ -175,6 +175,7 @@ body {
     width: 300px;
     bottom: 0;
     transition: width 0.4s ease; /*pour que l'image se rétressit fluidement*/
+    z-index: 0;
 }
 
 .chapter {
@@ -253,6 +254,8 @@ body {
     background: white;
     padding: 3%;
     border-radius: 8px;
+    z-index: 1;
+    position: relative;
 }
 
 .back-button {
