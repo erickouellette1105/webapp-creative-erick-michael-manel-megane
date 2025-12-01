@@ -7,13 +7,8 @@ import AppHeaderLobby from './components/AppHeaderLobby.vue';
 
 <template>
   <main>
-
-  
-    
+     
     <Inventory></Inventory>
-
-
-
 
     <router-link to="/"></router-link>    
     <router-link to="/chapitres/:id"></router-link>

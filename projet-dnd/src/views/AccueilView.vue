@@ -19,7 +19,7 @@ import ClickCursor from '@/assets/cur/Click.cur'
   </div>
   <div class="container">
     <header class="header-area">
-
+      
       <AppHeaderLobby />
       <AppCredit />
 
