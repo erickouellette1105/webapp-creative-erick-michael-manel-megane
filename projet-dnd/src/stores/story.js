@@ -86,6 +86,7 @@ export const useStoryStore = defineStore('story', {
 
       const player = usePlayerStore();
       player.clearInventory();
+      player.clearRecord();
     }
   }
 });

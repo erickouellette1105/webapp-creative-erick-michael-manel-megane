@@ -38,7 +38,7 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
                 ← Retour à l'accueil
             </button>
 
-            <button @click="stats" class="stats-button">
+            <button v-if="['13', '14', '15'].includes(chapterId)" @click="stats" class="stats-button">
                 Statistiques →
             </button>
         </div>
@@ -169,11 +169,12 @@ body {
     overflow-y: hidden;
 }
 
-.stickman {
+.stickman img {
     position: absolute;
     right: 0;
-    width: auto;
+    width: 300px;
     bottom: 0;
+    transition: width 0.4s ease; /*pour que l'image se rétressit fluidement*/
 }
 
 .chapter {
@@ -189,11 +190,13 @@ body {
     padding-bottom: 1rem;
     rotate: 8deg;
     font-size: 60px;
+
 }
 
 .chapter-header h2 {
     color: black;
     margin-bottom: 0.5rem;
+    transition: font-size 0.4s ease;
 }
 
 .chapter-number {
@@ -297,4 +300,49 @@ body {
     grid-template-columns: auto auto;
     gap: 150px;
 }
+
+
+/* Version médium */
+@media (max-width: 1000px) {
+  .chapter-header h2 {
+    font-size: 50px;
+  }
+
+  .stickman img {
+    width: 150px;
+  }
+}
+
+/*Version mobile*/
+@media (max-width: 768px) {
+    .stickman img {
+        width: 150px;
+        top: 91.5%;
+    }
+
+    .chapter-header h2 {
+        font-size: 40px;
+    }
+
+
+    .chapter-content {
+        font-size: 1.1rem;
+        margin-bottom: 50%;
+    }
+
+    .back-button {
+        font-size: 1.1rem;
+        width: 30vw;
+    }
+
+    .stats-button {
+        font-size: 1.1rem;
+    }
+
+    .back-stats {
+        gap: 100px;
+    }
+
+}
+
 </style>

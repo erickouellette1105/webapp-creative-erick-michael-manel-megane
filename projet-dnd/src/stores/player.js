@@ -39,6 +39,10 @@ export const usePlayerStore = defineStore('player', {
           inventory
           
         });
+      },
+
+      clearRecord() {
+        this.choiceHistory = [];
       }
   }
 });

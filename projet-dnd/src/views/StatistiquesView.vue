@@ -84,7 +84,10 @@ h2 {
 }
 
 ul {
-    list-style-type: none
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: white;
 }
 
 @media (max-width: 768px) {

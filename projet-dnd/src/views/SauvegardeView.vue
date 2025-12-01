@@ -62,7 +62,7 @@ export default {
     left: 50%;
     transform: translateX(-50%); 
     color: black;
-    font-size: clamp(32px, 9vw, 100px);
+    
 
 
 }
