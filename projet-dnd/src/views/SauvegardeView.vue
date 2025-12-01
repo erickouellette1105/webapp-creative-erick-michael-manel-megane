@@ -48,6 +48,7 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     overflow-x: hidden;
+    
 }
 
 
@@ -62,7 +63,7 @@ export default {
     left: 50%;
     transform: translateX(-50%); 
     color: black;
-    
+    font-size: clamp(32px, 9vw, 100px);
 
 
 }
