@@ -90,7 +90,7 @@ export default {
 }
 
 .btn-toggle {
-    position: absolute;
+    position: fixed;
     right: 50px;
     background: none;
     border: none;
