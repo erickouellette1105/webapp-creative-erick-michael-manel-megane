@@ -39,17 +39,18 @@ export default {
         transition: .3s;
         cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
     }
-    @media (max-width: 300px) {
+    @media (max-width: 768px) {
         .saveBtn {
-        width: 25vw;
-        height: 7vh;
-        font-size: 2vw;
+        width: 50vw;
+        height: 8vh;
+        font-size: 5vw;
         color: white;
         background-color: #960002;
         border: 5px solid #FF4649;
         border-radius: 20px;
     }
 }
+
 
 
 
