@@ -31,6 +31,7 @@ export const usePlayerStore = defineStore('player', {
       this.inventory = [];
     },
 
+    //  Méthode d'enregistrement des choix et données vers la page statistiques
         recordChoice(chapterId, text, inventory ) {
         this.choiceHistory.push({
           chapterId,

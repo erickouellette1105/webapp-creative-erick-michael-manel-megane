@@ -8,12 +8,13 @@ const PlayerStore = usePlayerStore();
     <div class="historique">
         <h2>Historique de vos choix</h2>
 
+        <!-- Message quand aucun choix-->
         <div v-if="PlayerStore.choiceHistory.length === 0">
             Aucun choix enregistré
         </div>
-
+        <!-- Messages des données -->
         <ul v-else>
-            <li v-for="(choice, index) in PlayerStore.choiceHistory" :key="index">
+            <li v-for="(choice, index) in PlayerStore.choiceHistory" :key="index"> 
                 <p>Chapitre : {{ choice.chapterId }} </p><br>
                 <p>Choix : {{ choice.text }} </p><br>
                 <p>Inventaire : {{ choice.inventory }} </p><br>
