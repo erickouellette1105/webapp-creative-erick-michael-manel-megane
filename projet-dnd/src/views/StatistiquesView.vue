@@ -14,10 +14,12 @@ const PlayerStore = usePlayerStore();
         </div>
         <!-- Messages des données -->
         <ul v-else>
-            <li v-for="(choice, index) in PlayerStore.choiceHistory" :key="index"> 
+            <li v-for="(choice, index) in PlayerStore.choiceHistory" :key="index">
+
                 <p>Chapitre : {{ choice.chapterId }} </p><br>
                 <p>Choix : {{ choice.text }} </p><br>
                 <p>Inventaire : {{ choice.inventory }} </p><br>
+
             </li>
         </ul>
 
@@ -35,7 +37,7 @@ export default {
         }
     },
     methods: {
-         goBack() {
+        goBack() {
             this.$router.push({ name: 'accueil' });
         },
     }
@@ -43,12 +45,11 @@ export default {
 </script>
 
 <style scoped>
-
-
 .historique {
     background-color: #6b0f1a;
     height: 100vh;
     text-align: center;
+    
 
 }
 
@@ -57,6 +58,7 @@ h2 {
     color: white;
     font-size: 7rem;
     padding-top: 50px;
+    font-size: clamp(32px, 9vw, 100px);
 }
 
 
@@ -70,6 +72,7 @@ h2 {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
+    margin-top: 2rem;
 }
 
 .back-button:hover {
@@ -82,22 +85,26 @@ h2 {
 }
 
 ul {
-    list-style-type: none
+    list-style-type: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto auto auto ;
+    gap: 2vw;
+    
+
 }
 
-@media (max-width: 768px) {
-  
+li {
+    color: white;
+    border-radius: 10px;
+    width: 10vw;
+    background-color: #960002;
+    border: 5px solid #FF4649;
+    padding: 10px;
 }
 
-
-@media (max-width: 480px) {
- 
-}
+@media (max-width: 768px) {}
 
 
-
-
-
-
-
+@media (max-width: 480px) {}
 </style>
