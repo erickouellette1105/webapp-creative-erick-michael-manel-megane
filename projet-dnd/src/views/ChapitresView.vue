@@ -38,7 +38,7 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
                 ← Retour à l'accueil
             </button>
 
-            <button v-if="['13', '14', '15'].includes(chapterId)" @click="stats" class="stats-button">
+            <button v-if="['12', '13', '14', '15'].includes(chapterId)" @click="stats" class="stats-button">
                 Statistiques →
             </button>
         </div>

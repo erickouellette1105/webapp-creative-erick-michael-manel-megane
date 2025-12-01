@@ -18,7 +18,7 @@ const PlayerStore = usePlayerStore();
 
                 <p>Chapitre : {{ choice.chapterId }} </p><br>
                 <p>Choix : {{ choice.text }} </p><br>
-                <p>Inventaire : {{ choice.inventory }} </p><br>
+                <p v-if="choice.inventory">Inventaire : {{ choice.inventory }} </p><br>
 
             </li>
         </ul>
@@ -57,7 +57,7 @@ h2 {
     text-align: center;
     color: white;
     font-size: 7rem;
-    padding-top: 50px;
+    padding-top: 10px;
     font-size: clamp(32px, 9vw, 100px);
 }
 
@@ -72,7 +72,7 @@ h2 {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .back-button:hover {
@@ -89,7 +89,7 @@ ul {
     display: grid;
     justify-content: center;
     grid-template-columns: auto auto auto auto auto auto auto ;
-    gap: 2vw;
+    gap: 1vw;
     
 
 }
@@ -97,10 +97,11 @@ ul {
 li {
     color: white;
     border-radius: 10px;
-    width: 10vw;
+    width: 8vw;
+    height: 21vh;
     background-color: #960002;
     border: 5px solid #FF4649;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 @media (max-width: 768px) {}

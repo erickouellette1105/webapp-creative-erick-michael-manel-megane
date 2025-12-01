@@ -73,6 +73,8 @@ export default {
 </script>
 
 <style scoped>
+
+
 .audio {
     position: absolute;
     top: 50px;
@@ -88,7 +90,7 @@ export default {
 }
 
 .btn-toggle {
-    position: fixed;
+    position: absolute;
     right: 50px;
     background: none;
     border: none;
