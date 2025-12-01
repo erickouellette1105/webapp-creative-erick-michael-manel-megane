@@ -320,7 +320,7 @@ body {
 @media (max-width: 768px) {
     .stickman img {
         width: 150px;
-        top: 91.5%;
+        top: 83%;
     }
 
     .chapter-header h2 {
@@ -329,7 +329,7 @@ body {
 
 
     .chapter-content {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 50%;
     }
 
@@ -340,6 +340,7 @@ body {
 
     .stats-button {
         font-size: 1.1rem;
+        z-index: 2;
     }
 
     .back-stats {
