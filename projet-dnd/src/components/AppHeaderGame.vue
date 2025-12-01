@@ -74,15 +74,17 @@ export default {
 
 <style scoped>
 .audio {
-    width: 3vw;
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 30px;
     transition: transform 0.2s;
+    width: clamp(30px, 10vw, 80px);
 }
+
 
 .audio:hover {
     transform: scale(1.1);
+    cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
 }
 
 .btn-toggle {
@@ -99,12 +101,15 @@ export default {
 }
 
 .coffre-img {
+    
     width: 60px;
     transition: transform 0.2s;
+    width: clamp(30px, 10vw, 80px);
 }
 
 .coffre-img:hover {
     transform: scale(1.1);
+    cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
 }
 
 
@@ -126,34 +131,38 @@ export default {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: clamp(32px, 9vw, 100px);
 }
 
 .image-container {
     position: relative;
     display: inline-block;
+    
 }
 
 .titre-banner {
     width: 50vw;
     min-width: 400px;
+    
 }
 
 .texte-banner {
     width: 50vw;
     min-width: 500px;
+    
 }
 
 .text {
     position: absolute;
-    top: 20;
+    top: 20px;
     left: 30px;
-    font-size: 1vw;
-    
+    font-size: clamp(12px, 3vw, 20px);
 }
+
 
 .image-container-title {
     position: fixed;
-    top: 120px;
+    top: 150px;
     left: -7px;
 }
 
@@ -181,7 +190,7 @@ export default {
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: clamp(24px, 6vw, 50px);
 }
 
 ul {
@@ -209,4 +218,5 @@ ul {
     right: 20vw;
     bottom: 0;
 }
+
 </style>

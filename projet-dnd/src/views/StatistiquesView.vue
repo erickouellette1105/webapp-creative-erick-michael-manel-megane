@@ -49,6 +49,7 @@ export default {
     background-color: #6b0f1a;
     height: 100vh;
     text-align: center;
+    
 
 }
 
@@ -57,6 +58,7 @@ h2 {
     color: white;
     font-size: 7rem;
     padding-top: 50px;
+    font-size: clamp(32px, 9vw, 100px);
 }
 
 
