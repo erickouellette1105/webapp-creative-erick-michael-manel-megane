@@ -55,6 +55,7 @@ export const useStoryStore = defineStore('story', {
       }
     },
 
+    //changer de chapter
     nextChapter() {
       if (this.canGoNext) {
         this.currentChapter++;
@@ -64,18 +65,21 @@ export const useStoryStore = defineStore('story', {
       }
     },
 
+    //revenir chapter précédent
     previousChapter() {
       if (this.canGoBack) {
         this.currentChapter--;
       }
     },
 
+    //déboqué un chapter
     unlockChapter(chapter) {
       if (!this.unlockedChapters.includes(chapter)) {
         this.unlockedChapters.push(chapter);
       }
     },
 
+    // recommencer le chapter et clear l'inventaire
     resetChapters() {
       this.currentChapter = 1;
       this.unlockedChapters = [1];
