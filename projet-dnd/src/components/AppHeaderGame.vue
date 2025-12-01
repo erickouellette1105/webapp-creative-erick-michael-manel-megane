@@ -212,6 +212,7 @@ ul {
   justify-content: center;
   align-items: center;
   min-width: 300px;
+  font-size: 18px;
 }
 
 .stickman {
