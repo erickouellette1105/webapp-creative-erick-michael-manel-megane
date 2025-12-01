@@ -8,10 +8,11 @@
   },
   "2": {
     "title": "Chapitre 2",
-    "text": "John arrive à l'entré du dongeon de Velkram. Il entre le domaine maléfique et est immédiatement confronté à deux couloirs opposés menaçants.",
+    "text": "John arrive à l'entré du dongeon de Velkram. Il entre dans le domaine maléfique et est immédiatement confronté à deux couloirs opposés menaçants.",
     "choices": [
       { "id": 1, "text": "Couloir droit", "nextChapter": "3" },
-      { "id": 2, "text": "Couloir gauche", "nextChapter": "4" }
+      { "id": 2, "text": "Couloir gauche", "nextChapter": "4" },
+      { "id": 3, "text": "réutiliser le sort mystérieux", "nextChapter": "20", "requires": "???" }
     ]
   },
   "3": {
@@ -19,7 +20,7 @@
     "text": "Vous arrivez dans un repaire de goblins. Cependant ils ont tous endormis. Que faites-vous?",
     "choices": [
       { "id": 1, "text": "Battre les goblins avec votre force non subtile", "nextChapter": "5" },
-      { "id": 2, "text": "Voler les armes des goblins pour vous enforcer", "nextChapter": "6", "inventory": "l’épée suprême du maître goblin", "description": "Une épée lourde qui appartient au maitre goblin." },
+      { "id": 2, "text": "Voler les armes des goblins pour vous enforcer", "nextChapter": "6", "inventory": "l’épée suprême du maître goblin", "description": "Une épée lourde qui appartient au maitre goblin. Débloqué l'abilité Tournade Maléfique" },
       { "id": 3, "text": "Passer discrètement les goblins", "nextChapter": "7" }
     ]
   },
@@ -28,7 +29,7 @@
     "text": "Vous arrivez à une salle de coffres. Ceci est la chance parfaite d’acquérir de l’équipement de survie mais quelque chose semble ne tourner pas rond. Que faites-vous?",
     "choices": [
       { "id": 1, "text": "Ouvrir un coffre", "nextChapter": "8" },
-      { "id": 2, "text": "Éviter les coffres et aller à la salle prochaine", "nextChapter": "7" }
+      { "id": 2, "text": "Éviter les coffres et aller à la salle prochaine", "nextChapter": "9" }
     ]
   },
   "5": {
@@ -64,29 +65,31 @@
   },
   "9": {
     "title": "Chapitre 5a",
-    "text": "Grâce à la pitié du sorcier goblin, vous êtes transporté à la salle d’armes des chef militaires de Velkram. Choisit une arme pour vous préparer au combat.",
+    "text": "vous vous retrouvé dans la salle d’armes des chef militaires de Velkram. Choisit une arme pour vous préparer au combat.",
     "choices": [
       { "id": 1, "text": "prendre l'épée crayon", "nextChapter": "11", "inventory": "épée crayon", "description": "Une arme légère mais étonnamment pointue."},
-      { "id": 1, "text": "prendre des dynamites", "nextChapter": "11", "inventory": "dynamite", "description": "Boom!"},
+      { "id": 1, "text": "prendre des dynamites", "nextChapter": "10", "inventory": "dynamite", "description": "Boom!"},
       { "id": 1, "text": "ouvrire un coffre mystérieux", "nextChapter": "8"}
     ]
   },
   "10": {
     "title": "Chapitre 5b",
-    "text": "Puisque vous êtes faible, vous prenez énormément de temps pour battre les goblins. Après avoir fini, vous arrivez dans l’antre de Velkram, mais votre frère n’est plus. Velkram l’utlisait pour ramener un ancien démon à la vie.",
+    "text": "Puisque vous êtes faible, vous prenez énormément de temps pour battre les goblins. Deux portes se trouve devant vous l'une des portes est barré",
     "choices": [
-      { "id": 1, "text": "Continuer", "nextChapter": "11" }
+      { "id": 1, "text": "Ouvrir la porte avec l'abilité Tournade Maléfique", "nextChapter": "7", "requires": "l’épée suprême du maître goblin" },
+      { "id": 1, "text": "ne vous casez pas la tête et prendre la porte débloqué", "nextChapter": "11" },
+      { "id": 1, "text": "Ouvrir la porte avec une dynamite", "nextChapter": "7", "requires": "dynamite" }
     ]
   },
   "11": {
     "title": "Chapitre 5c",
     "text": "L’heure est venue de vaincre le maléfique Velkram. Utilisez vos armes ou vos sortilèges pour prévenir la résurrection du démon antique.",
     "choices": [
-      { "id": 1, "text": "Attaque de feu", "nextChapter": "14", "requires": "grimoire de feu"  },
-      { "id": 2, "text": "Attaque des ombres", "nextChapter": "14", "requires": "magie des ombres"  },
-      { "id": 3, "text": "utiliser le sort mystérieux", "nextChapter": "14", "requires": "???"  },
+      { "id": 1, "text": "Attaque de feu", "nextChapter": "17", "requires": "grimoire de feu"  },
+      { "id": 2, "text": "Attaque des ombres", "nextChapter": "16", "requires": "magie des ombres"  },
+      { "id": 3, "text": "utiliser le sort mystérieux", "nextChapter": "19", "requires": "???"  },
       { "id": 4, "text": "utiliser l'épée du maitre goblin", "nextChapter": "14", "requires": "l’épée suprême du maître goblin"},
-      { "id": 5, "text": "utiliser l'épée crayon", "nextChapter": "14", "requires": "épée crayon"},
+      { "id": 5, "text": "utiliser l'épée crayon", "nextChapter": "18", "requires": "épée crayon"},
       { "id": 6, "text": "utiliser les dynamites", "nextChapter": "15", "requires": "dynamite"},
       { "id": 7, "text": "attaque avec votre bras de stickman", "nextChapter": "13" }
     ]
@@ -100,7 +103,7 @@
   },
   "13": {
     "title": "Mauvaise fin",
-    "text": "Malgré vos meilleurs efforts, le plan du nécromancien a marché et vous devez affronter le démon.",
+    "text": "Malgré vos meilleurs efforts, le plan du nécromancien a marché",
     "choices": [
       { "id": 1, "text": "Recommencer", "nextChapter": "1" }
     ]
@@ -118,5 +121,40 @@
     "choices": [
       { "id": 1, "text": "Recommencer", "nextChapter": "1" }
     ]
+  },
+    "16": {
+    "title": "fin mage des ombres",
+    "text": "Vous utiliser une magie qui vous engouffre dans les ombres et Velcram vous perd de vue, vous le contourné pour allé sauvé votre frère dans un silence total",
+    "choices": [
+      { "id": 1, "text": "Recommencer", "nextChapter": "1" }
+    ]
+  },
+  "17": {
+  "title": "fin plume du phoenix",
+  "text": "le grimoire se consume en une flame brillant d'un bleu majestique Velcram à son tour Évoque un Golem, après un combat féroce entre les deux évocations vous gagné contre Velcram mais il était trop tard pour sauvé votre frère.",
+  "choices": [
+    { "id": 1, "text": "Recommencer", "nextChapter": "1" }
+  ]
+  },
+  "18": {
+  "title": "fin du bouffon",
+  "text": "Velcram vous lance une petite flamèche et vous prenez feu comme une allumette *vraiment vous prenez une armur en papier et un crayon pour vous battre???",
+  "choices": [
+    { "id": 1, "text": "Recommencer", "nextChapter": "1" }
+  ]
+  },
+  "19": {
+  "title": "retour dans le passer",
+  "text": "Tout commence a tournée et tout d'un coup vous sentez une sensation de déja vue",
+  "choices": [
+    { "id": 1, "text": "continuer", "nextChapter": "2" }
+  ]
+  },
+  "20": {
+  "title": "Fin du visionneur passifique",
+  "text": "une fois de plus tout commence a tournée... vous tombé sans fin dans un vide d'où on vous montre une fin différent de votre histoire. Vous êtes comdamné a visionner d'infini possibilié de fin",
+  "choices": [
+    { "id": 1, "text": "Recommencer", "nextChapter": "1"}
+  ]
   }
 }
