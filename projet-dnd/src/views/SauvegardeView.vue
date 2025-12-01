@@ -62,12 +62,14 @@ export default {
     left: 50%;
     transform: translateX(-50%); 
     color: black;
+    transition: font-size 0.4s ease;
 }
+
 
 
 @media (max-width: 768px) {
     .save-header {
-        font-size: 70px;
+        font-size: 50px;
         margin-top: 10rem;
     }
 }

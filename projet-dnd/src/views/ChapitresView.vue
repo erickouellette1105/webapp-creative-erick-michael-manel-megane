@@ -172,7 +172,7 @@ body {
     right: 0;
     width: 300px;
     bottom: 0;
-    transition: width 0.4s ease;
+    transition: width 0.4s ease; /*pour que l'image se rétressit fluidement*/
 }
 
 .chapter {
