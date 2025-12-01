@@ -99,7 +99,7 @@ export default {
 }
 
 .btn-toggle {
-    position: absolute;
+    position: fixed;
     right: 50px;
     background: none;
     border: none;
@@ -221,6 +221,7 @@ ul {
   justify-content: center;
   align-items: center;
   min-width: 300px;
+  font-size: 18px;
 }
 
 .stickman {

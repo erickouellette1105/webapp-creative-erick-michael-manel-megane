@@ -16,9 +16,9 @@ const PlayerStore = usePlayerStore();
         <ul v-else>
             <li v-for="(choice, index) in PlayerStore.choiceHistory" :key="index">
 
-                <p>Chapitre : {{ choice.chapterId }} </p><br>
-                <p>Choix : {{ choice.text }} </p><br>
-                <p v-if="choice.inventory">Inventaire : {{ choice.inventory }} </p><br>
+                <p>Chapitre : {{ choice.chapterId }} </p>
+                <p>Choix : {{ choice.text }} </p>
+                <p v-if="choice.inventory">Inventaire : {{ choice.inventory }} </p>
 
             </li>
         </ul>
@@ -97,14 +97,34 @@ ul {
 li {
     color: white;
     border-radius: 10px;
-    width: 8vw;
-    height: 21vh;
+    width: 10vw;
+    height: 18vh;
+    background-color: #960002;
+    border: 5px solid #FF4649;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    ul {
+    list-style-type: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto ;
+    gap: 2vw;
+    
+
+}
+
+li {
+    color: white;
+    border-radius: 10px;
+   
     background-color: #960002;
     border: 5px solid #FF4649;
     padding-top: 10px;
 }
-
-@media (max-width: 768px) {}
+}
 
 
 @media (max-width: 480px) {}
