@@ -153,6 +153,8 @@ export default {
 <style>
 body {
     background-color: #960002;
+  cursor: url('/src/assets/cur/NormalSelect.cur'), auto;
+
 }
 </style>
 

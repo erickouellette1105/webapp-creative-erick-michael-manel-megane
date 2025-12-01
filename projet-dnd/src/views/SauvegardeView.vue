@@ -48,6 +48,7 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     overflow-x: hidden;
+    
 }
 
 
@@ -62,25 +63,12 @@ export default {
     left: 50%;
     transform: translateX(-50%); 
     color: black;
-    transition: font-size 0.4s ease;
+    font-size: clamp(32px, 9vw, 100px);
+
+
 }
 
 
-
-@media (max-width: 768px) {
-    .save-header {
-        font-size: 50px;
-        margin-top: 10rem;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .save-header {
-        font-size: 30px;
-        margin-top: 10rem;
-    }
-}
 
 
 
