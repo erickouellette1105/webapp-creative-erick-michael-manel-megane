@@ -5,28 +5,33 @@ const PlayerStore = usePlayerStore();
 </script>
 
 <template>
-    <div class="historique">
-        <h2>Historique de vos choix</h2>
 
-        <!-- Message quand aucun choix-->
-        <div v-if="PlayerStore.choiceHistory.length === 0">
-            Aucun choix enregistré
+
+
+
+        <div class="historique">
+            <h2>Historique de vos choix</h2>
+
+            <!-- Message quand aucun choix-->
+            <div v-if="PlayerStore.choiceHistory.length === 0">
+                Aucun choix enregistré
+            </div>
+            <!-- Messages des données -->
+            <ul v-else>
+                <li v-for="(choice, index) in PlayerStore.choiceHistory" :key="index">
+
+                    <p>Chapitre : {{ choice.chapterId }} </p>
+                    <p>Choix : {{ choice.text }} </p>
+                    <p v-if="choice.inventory">Inventaire : {{ choice.inventory }} </p>
+
+                </li>
+            </ul>
+
+            <button @click="goBack" class="back-button">
+                ← Retour à l'accueil
+            </button>
         </div>
-        <!-- Messages des données -->
-        <ul v-else>
-            <li v-for="(choice, index) in PlayerStore.choiceHistory" :key="index">
 
-                <p>Chapitre : {{ choice.chapterId }} </p>
-                <p>Choix : {{ choice.text }} </p>
-                <p v-if="choice.inventory">Inventaire : {{ choice.inventory }} </p>
-
-            </li>
-        </ul>
-
-        <button @click="goBack" class="back-button">
-            ← Retour à l'accueil
-        </button>
-    </div>
 </template>
 
 <script>
@@ -47,9 +52,9 @@ export default {
 <style scoped>
 .historique {
     background-color: #6b0f1a;
-    height: 100vh;
+    min-height: 150vh;
     text-align: center;
-    
+
 
 }
 
@@ -88,9 +93,9 @@ ul {
     list-style-type: none;
     display: grid;
     justify-content: center;
-    grid-template-columns: auto auto auto auto auto auto auto ;
+    grid-template-columns: auto auto auto auto auto auto auto;
     gap: 1vw;
-    
+
 
 }
 
@@ -102,30 +107,61 @@ li {
     background-color: #960002;
     border: 5px solid #FF4649;
     padding-top: 10px;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 @media (max-width: 768px) {
     ul {
+        list-style-type: none;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto auto;
+        gap: 2vw;
+
+
+    }
+
+    li {
+        color: white;
+        border-radius: 10px;
+        width: 20vw;
+        height: 13vh;
+        background-color: #960002;
+        border: 5px solid #FF4649;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+  ul {
     list-style-type: none;
     display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto;
     gap: 2vw;
-    
 
+    justify-content: center;  
+    align-content: center;    
+
+    padding: 0;
+    margin: 0 auto;           
 }
 
 li {
     color: white;
     border-radius: 10px;
-   
+    width: 40vw;
+    height: 15vh;
     background-color: #960002;
     border: 5px solid #FF4649;
-    padding-top: 10px;
-}
+
+    /* ✅ centrage du contenu */
+    
+    align-items: center;     /* horizontal */
+    text-align: center;
+
+    padding: 10px;
 }
 
-
-@media (max-width: 480px) {}
+}
 </style>
