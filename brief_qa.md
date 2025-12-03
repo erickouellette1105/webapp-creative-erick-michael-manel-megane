@@ -160,7 +160,7 @@ on devrait pouvoir voir l'historique des choix fait avec les chapitre, les choix
 
 **Arbre narratif simplifié :**
 
-![brainstorm](image.png)
+![brainstorm](./img/brainstorm.png)
 
 **Liste des fins accessibles :**
 
