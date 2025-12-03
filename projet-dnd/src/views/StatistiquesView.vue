@@ -6,9 +6,6 @@ const PlayerStore = usePlayerStore();
 
 <template>
 
-
-
-
         <div class="historique">
             <h2>Historique de vos choix</h2>
 
@@ -103,7 +100,7 @@ li {
     color: white;
     border-radius: 10px;
     width: 10vw;
-    height: 18vh;
+    height: auto;
     background-color: #960002;
     border: 5px solid #FF4649;
     padding-top: 10px;
@@ -151,13 +148,10 @@ li {
     color: white;
     border-radius: 10px;
     width: 40vw;
-    height: 15vh;
+    height: auto;
     background-color: #960002;
     border: 5px solid #FF4649;
-
-    /* ✅ centrage du contenu */
-    
-    align-items: center;     /* horizontal */
+    align-items: center;     
     text-align: center;
 
     padding: 10px;
