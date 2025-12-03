@@ -100,7 +100,7 @@ li {
     color: white;
     border-radius: 10px;
     width: 10vw;
-    height: 18vh;
+    height: auto;
     background-color: #960002;
     border: 5px solid #FF4649;
     padding-top: 10px;
@@ -148,7 +148,7 @@ li {
     color: white;
     border-radius: 10px;
     width: 40vw;
-    height: 15vh;
+    height: auto;
     background-color: #960002;
     border: 5px solid #FF4649;
     align-items: center;     
