@@ -99,7 +99,7 @@ export default {
 }
 
 .btn-toggle {
-    position: fixed;
+    position: absolute;
     right: 50px;
     background: none;
     border: none;
@@ -112,7 +112,6 @@ export default {
 }
 
 .coffre-img {
-    
     width: 60px;
     transition: transform 0.2s;
     width: clamp(30px, 10vw, 80px);
