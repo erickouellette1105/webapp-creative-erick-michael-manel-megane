@@ -144,7 +144,7 @@
   ]
   },
   "19": {
-  "title": "retour dans le passer",
+  "title": "retour dans le passé",
   "text": "Tout commence a tournée et tout d'un coup vous sentez une sensation de déja vue",
   "choices": [
     { "id": 1, "text": "continuer", "nextChapter": "2" }

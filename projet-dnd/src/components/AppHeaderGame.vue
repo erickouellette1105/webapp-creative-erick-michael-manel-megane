@@ -1,9 +1,5 @@
 <template>
     <header>
-        <img @click="toggleAudio" class="audio" src="../assets/img/audio_icon.png" alt="audio"></img>
-        <audio pause loop>
-            <source class="audio" src="../assets/sons/fantasy-music.mp3" type="audio/mpeg">
-        </audio>
 
         <!-- Bouton toggle de l'inventaire-->
         <button @click="toggleInventory" class="btn-toggle">
@@ -51,7 +47,6 @@ export default {
         return {
             isOpen: false,
             selectedItem: null,
-            play: true,
         }
     },
     computed: {
@@ -71,10 +66,6 @@ export default {
         /* selection de l'item dans l'inventaire */
         selectItem(item) {
             this.selectedItem = item;
-        },
-
-        toggleAudio() {
-            this.true = !this.true;
         },
     }
 }
