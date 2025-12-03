@@ -1,7 +1,7 @@
 <template>
     <header>
         <img @click="toggleAudio" class="audio" src="../assets/img/audio_icon.png" alt="audio"></img>
-        <audio controls autoplay loop>
+        <audio pause loop>
             <source class="audio" src="../assets/sons/fantasy-music.mp3" type="audio/mpeg">
         </audio>
 
