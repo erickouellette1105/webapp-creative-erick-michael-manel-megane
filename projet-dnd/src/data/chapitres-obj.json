@@ -17,6 +17,7 @@
   },
   "3": {
     "title": "Le Repaire des Gobelins",
+    "image": "/src/assets/img/goblins.webp",
     "text": "Vous arrivez dans un repaire de goblins. Cependant ils ont tous endormis. Que faites-vous?",
     "choices": [
       { "id": 1, "text": "Battre les goblins avec votre force non subtile", "nextChapter": "5" },

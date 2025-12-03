@@ -15,13 +15,13 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
             <h2>{{ currentChapter.title }}</h2>
 
         </div>
+       
     </div>
 
     <div class="chapter">
         <div class="chapter-content">
             <p>{{ currentChapter.text }}</p>
         </div>
-
 
         <div class="choices">
             <h3>Que fais-tu ?</h3>
@@ -33,6 +33,11 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
             </div>
         </div>
 
+         <!-- AJOUT DE L'IMAGE DU CHAPITRE -->
+         <div class="chapter-image" v-if="currentChapter.image">
+    <img :src="currentChapter.image" alt="image du chapitre">
+</div>
+
         <div class="back-stats">
             <button @click="goBack" class="back-button">
                 ← Retour à l'accueil
@@ -43,10 +48,12 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
             </button>
         </div>
     </div>
+    
 
     <div class="stickman">
         <img src="../assets/img/stickman.png"></img>
     </div>
+    
 
 </template>
 
@@ -150,7 +157,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 body {
     background-color: #960002;
   cursor: url('/src/assets/cur/NormalSelect.cur'), auto;
@@ -182,6 +189,7 @@ body {
     max-width: 1000px;
     margin: 0.1rem auto;
     padding: 2rem;
+    z-index: 0;
 }
 
 .chapter-header {
@@ -214,6 +222,7 @@ body {
     font-size: 1.4rem;
     color: black;
     box-shadow: 0 0 20px rgb(255, 255, 255);
+    
 }
 
 .choices {
@@ -304,6 +313,19 @@ body {
     gap: 150px;
 }
 
+.chapter-image {
+    position: absolute;
+    left: 180px;           /* image à gauche */
+    top: 70%;          /* verticale au milieu du chapitre */
+    transform: translateY(-50%);
+    z-index: 10;       /* visible devant */
+    pointer-events: none; /* pour pas gêner les clics */
+}
+
+.chapter-image img {
+    width: 500px;
+    height: auto;
+}
 
 /* Version médium */
 @media (max-width: 1000px) {
