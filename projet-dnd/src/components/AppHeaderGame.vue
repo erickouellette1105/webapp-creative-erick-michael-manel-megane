@@ -1,9 +1,7 @@
 <template>
     <header>
-        <button @click="toggleAudio" >
-            <img class="audio" src="../assets/img/audio_icon.png" alt="audio"></img>
-        </button>
-        <audio  autoplay>
+        <img @click="toggleAudio" class="audio" src="../assets/img/audio_icon.png" alt="audio"></img>
+        <audio controls autoplay loop>
             <source class="audio" src="../assets/sons/fantasy-music.mp3" type="audio/mpeg">
         </audio>
 
@@ -53,6 +51,7 @@ export default {
         return {
             isOpen: false,
             selectedItem: null,
+            play: true,
         }
     },
     computed: {
@@ -75,7 +74,7 @@ export default {
         },
 
         toggleAudio() {
-            
+            this.true = !this.true;
         },
     }
 }
