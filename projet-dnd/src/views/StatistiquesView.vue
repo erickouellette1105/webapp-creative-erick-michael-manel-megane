@@ -6,28 +6,28 @@ const PlayerStore = usePlayerStore();
 
 <template>
 
-        <div class="historique">
-            <h2>Historique de vos choix</h2>
+    <div class="historique">
+        <h2>Historique de vos choix</h2>
 
-            <!-- Message quand aucun choix-->
-            <div v-if="PlayerStore.choiceHistory.length === 0">
-                Aucun choix enregistré
-            </div>
-            <!-- Messages des données -->
-            <ul v-else>
-                <li v-for="(choice, index) in PlayerStore.choiceHistory" :key="index">
-
-                    <p>Chapitre : {{ choice.chapterId }} </p>
-                    <p>Choix : {{ choice.text }} </p>
-                    <p v-if="choice.inventory">Inventaire : {{ choice.inventory }} </p>
-
-                </li>
-            </ul>
-
-            <button @click="goBack" class="back-button">
-                ← Retour à l'accueil
-            </button>
+        <!-- Message quand aucun choix-->
+        <div v-if="PlayerStore.choiceHistory.length === 0">
+            Aucun choix enregistré
         </div>
+        <!-- Messages des données -->
+        <ul v-else>
+            <li v-for="(choice, index) in PlayerStore.choiceHistory" :key="index">
+
+                <p>Chapitre : {{ choice.chapterId }} </p>
+                <p>Choix : {{ choice.text }} </p>
+                <p v-if="choice.inventory">Inventaire : {{ choice.inventory }} </p>
+
+            </li>
+        </ul>
+
+        <button @click="goBack" class="back-button">
+            ← Retour à l'accueil
+        </button>
+    </div>
 
 </template>
 
@@ -49,7 +49,7 @@ export default {
 <style scoped>
 .historique {
     background-color: #6b0f1a;
-    min-height: 150vh;
+    height: 100vh;
     text-align: center;
 
 
@@ -74,7 +74,7 @@ h2 {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
-    margin-top: 1.5rem;
+    margin: 1.5rem 1.5rem;
 }
 
 .back-button:hover {
@@ -107,7 +107,13 @@ li {
     font-size: 25px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1920px) {
+    .historique {
+        background-color: #6b0f1a;
+        height: auto;
+        text-align: center;
+    }
+
     ul {
         list-style-type: none;
         display: grid;
@@ -121,41 +127,78 @@ li {
     li {
         color: white;
         border-radius: 10px;
-        width: 20vw;
-        height: 13vh;
+        width: 17vw;
+        height: auto;
         background-color: #960002;
         border: 5px solid #FF4649;
         padding: 10px;
     }
 }
 
+@media screen and (max-width: 768px) {
 
-@media (max-width: 480px) {
-  ul {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 2vw;
+    .historique {
+        background-color: #6b0f1a;
+        height: 120vh;
+        text-align: center;
+    }
 
-    justify-content: center;  
-    align-content: center;    
+    ul {
+        list-style-type: none;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+    }
 
-    padding: 0;
-    margin: 0 auto;           
+    li {
+        color: white;
+        border-radius: 10px;
+        width: 27vw;
+        height: auto;
+        background-color: #960002;
+        border: 5px solid #FF4649;
+    }
 }
 
-li {
-    color: white;
-    border-radius: 10px;
-    width: 40vw;
-    height: auto;
-    background-color: #960002;
-    border: 5px solid #FF4649;
-    align-items: center;     
+
+@media screen and (max-width: 375px) {
+
+    .historique {
+        background-color: #6b0f1a;
+        height: 150vh;
+        text-align: center;
+    }
+
+    h2 {
     text-align: center;
-
-    padding: 10px;
+    color: white;
+    font-size: 3rem;
+    padding-top: 10px;
+    
 }
+
+    ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 3vw;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    li {
+        color: white;
+        border-radius: 10px;
+        width: 80vw;
+        height: auto;
+        background-color: #960002;
+        border: 5px solid #FF4649;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
 
 }
 </style>
