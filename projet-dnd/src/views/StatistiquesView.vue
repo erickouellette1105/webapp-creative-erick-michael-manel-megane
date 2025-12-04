@@ -139,7 +139,7 @@ li {
 
     .historique {
         background-color: #6b0f1a;
-        height: 120vh;
+        min-height: 120vh;
         text-align: center;
     }
 
@@ -165,7 +165,7 @@ li {
 
     .historique {
         background-color: #6b0f1a;
-        height: 150vh;
+        min-height: 150vh;
         text-align: center;
     }
 

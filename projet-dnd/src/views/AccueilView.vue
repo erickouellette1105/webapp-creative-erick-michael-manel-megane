@@ -19,7 +19,7 @@ import ClickCursor from '@/assets/cur/Click.cur'
   </div>
   <div class="container">
     <header class="header-area">
-      
+
       <AppHeaderLobby />
       <AppCredit />
 
@@ -61,10 +61,6 @@ export default {
 
 
 <style scoped>
-
-
-
-
 .title {
   font-size: 8vw;
   color: white;
@@ -92,7 +88,7 @@ button:hover {
   cursor: pointer;
   transition: .3s;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  
+
 }
 
 .light {
@@ -569,7 +565,7 @@ button:focus {
   }
 }
 
-
+@media screen and (max-width: 1920px) {}
 
 /* Écran médium */
 @media (max-width: 1000px) {
@@ -578,4 +574,10 @@ button:focus {
     margin-top: 300px;
   }
 }
+
+
+@media screen and (max-width: 768px) {}
+
+
+@media screen and (max-width: 375px) {}
 </style>
