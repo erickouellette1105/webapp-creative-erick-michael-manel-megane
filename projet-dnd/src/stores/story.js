@@ -30,15 +30,6 @@ export const useStoryStore = defineStore('story', {
     choose(choice) {
       const player = usePlayerStore()
 
-      // ajout d'item dans l'inventaire
-      if (choice.inventory) {
-        player.addItem({
-          name: choice.inventory,
-          description: choice.description,
-          id: Date.now()
-        })
-      }
-
       this.currentChapter = Number(choice.nextChapter)
 
       //debloque de chapitre

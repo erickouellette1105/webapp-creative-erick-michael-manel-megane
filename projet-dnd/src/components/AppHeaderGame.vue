@@ -17,9 +17,15 @@
                     <p class="text-titre">Inventaire</p>
                 </div>
                 <ul>
-                    <li v-for="item in items" :key="item.id"   @click="selectItem(item)" class="items">
-                        {{ item.name }}
-                    </li>
+                    <li v-for="item in items" :key="item.id" @click="selectItem(item)" class="items">
+    <img 
+      v-if="item.image" 
+      :src="item.image" 
+      :alt="item.name" 
+      class="inventory-item-img"
+    />
+    {{ item.name }}
+  </li>
                 </ul>
 
                 <div class="image-container-text">
@@ -32,6 +38,7 @@
 
             </div>
         </div>
+        
     </header>
 </template>
 
@@ -71,6 +78,15 @@ export default {
 </script>
 
 <style scoped>
+
+.inventory-item-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-left: 20px;
+    border-radius: 4px;
+}
+
 
 
 .audio {

@@ -121,32 +121,40 @@ export default {
     },
 
     methods: {
-        makeChoice(choice) {
+     makeChoice(choice) {
 
-            // Ici envoyer au store Pinia player l'historique du choix et l'item d'inventaire du choix (si applicable)
-            this.playerStore.recordChoice(
-                this.chapterId,   // id du chapitre courant
-                choice.text,       // texte du choix
-                choice.inventory
-            )
-            //  Naviguer vers le prochain chapitre
-            if (choice.nextChapter === '1') {
-                this.storyStore.resetChapters()
-            } else {
-                this.storyStore.choose(choice)
-            }
-            this.$router.push({
-                name: 'chapter',
-                params: { id: String(choice.nextChapter) }
-            });
+    // 1️⃣ Record the choice in the history
+    this.playerStore.recordChoice(
+        this.chapterId,   // id du chapitre courant
+        choice.text,      // texte du choix
+        choice.inventory
+    )
 
+    // 2️⃣ Add the item to inventory if the choice grants one
+    if (choice.inventory) {
+        this.playerStore.addItem({
+            id: Date.now(), // unique id for this item
+            name: choice.inventory,
+            description: choice.description,
+            image: choice.image
+        });
+    }
 
-            // TODO: Mettre à jour l'ID local du chapitre
-            this.chapterId = String(choice.nextChapter)
+    // 3️⃣ Navigate to the next chapter
+    if (choice.nextChapter === '1') {
+        this.storyStore.resetChapters()
+    } else {
+        this.storyStore.choose(choice)
+    }
 
+    this.$router.push({
+        name: 'chapter',
+        params: { id: String(choice.nextChapter) }
+    });
 
-        },
-
+    // Update local chapterId
+    this.chapterId = String(choice.nextChapter)
+},
         goBack() {
             this.$router.push({ name: 'accueil' });
         },
@@ -313,19 +321,28 @@ body {
     gap: 150px;
 }
 
+/* Keep your image visible on large screens */
 .chapter-image {
     position: absolute;
-    left: 180px;           /* image à gauche */
-    top: 70%;          /* verticale au milieu du chapitre */
+    left: clamp(20px, 1%, 180px);
+    top: 70%;
     transform: translateY(-50%);
-    z-index: 10;       /* visible devant */
-    pointer-events: none; /* pour pas gêner les clics */
+    z-index: 10;
+    pointer-events: none;
 }
 
 .chapter-image img {
-    width: 500px;
+    width: clamp(200px, 15vw, 500px);
     height: auto;
 }
+
+/* Hide the image on medium and small screens */
+@media (max-width: 1300px) {
+    .chapter-image {
+        display: none;
+    }
+}
+
 
 /* Version médium */
 @media (max-width: 1000px) {
