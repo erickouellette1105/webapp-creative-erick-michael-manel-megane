@@ -15,7 +15,7 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
             <h2>{{ currentChapter.title }}</h2>
 
         </div>
-       
+
     </div>
 
     <div class="chapter">
@@ -33,27 +33,28 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
             </div>
         </div>
 
-         <!-- AJOUT DE L'IMAGE DU CHAPITRE -->
-         <div class="chapter-image" v-if="currentChapter.image">
-    <img :src="currentChapter.image" alt="image du chapitre">
-</div>
+        <!-- AJOUT DE L'IMAGE DU CHAPITRE -->
+        <div class="chapter-image" v-if="currentChapter.image">
+            <img :src="currentChapter.image" alt="image du chapitre">
+        </div>
 
         <div class="back-stats">
             <button @click="goBack" class="back-button">
                 ← Retour à l'accueil
             </button>
 
-            <button v-if="['12', '13', '14', '15', '16', '17', '18', '19', '20'].includes(chapterId)" @click="stats" class="stats-button">
+            <button v-if="['12', '13', '14', '15', '16', '17', '18', '19', '20'].includes(chapterId)" @click="stats"
+                class="stats-button">
                 Statistiques →
             </button>
         </div>
     </div>
-    
+
 
     <div class="stickman">
         <img src="../assets/img/stickman.png"></img>
     </div>
-    
+
 
 </template>
 
@@ -121,40 +122,40 @@ export default {
     },
 
     methods: {
-     makeChoice(choice) {
+        makeChoice(choice) {
 
-    // 1️⃣ Record the choice in the history
-    this.playerStore.recordChoice(
-        this.chapterId,   // id du chapitre courant
-        choice.text,      // texte du choix
-        choice.inventory
-    )
+            // 1️⃣ Record the choice in the history
+            this.playerStore.recordChoice(
+                this.chapterId,   // id du chapitre courant
+                choice.text,      // texte du choix
+                choice.inventory
+            )
 
-    // 2️⃣ Add the item to inventory if the choice grants one
-    if (choice.inventory) {
-        this.playerStore.addItem({
-            id: Date.now(), // unique id for this item
-            name: choice.inventory,
-            description: choice.description,
-            image: choice.image
-        });
-    }
+            // 2️⃣ Add the item to inventory if the choice grants one
+            if (choice.inventory) {
+                this.playerStore.addItem({
+                    id: Date.now(), // unique id for this item
+                    name: choice.inventory,
+                    description: choice.description,
+                    image: choice.image
+                });
+            }
 
-    // 3️⃣ Navigate to the next chapter
-    if (choice.nextChapter === '1') {
-        this.storyStore.resetChapters()
-    } else {
-        this.storyStore.choose(choice)
-    }
+            // 3️⃣ Navigate to the next chapter
+            if (choice.nextChapter === '1') {
+                this.storyStore.resetChapters()
+            } else {
+                this.storyStore.choose(choice)
+            }
 
-    this.$router.push({
-        name: 'chapter',
-        params: { id: String(choice.nextChapter) }
-    });
+            this.$router.push({
+                name: 'chapter',
+                params: { id: String(choice.nextChapter) }
+            });
 
-    // Update local chapterId
-    this.chapterId = String(choice.nextChapter)
-},
+            // Update local chapterId
+            this.chapterId = String(choice.nextChapter)
+        },
         goBack() {
             this.$router.push({ name: 'accueil' });
         },
@@ -168,7 +169,7 @@ export default {
 <style scoped>
 body {
     background-color: #960002;
-  cursor: url('/src/assets/cur/NormalSelect.cur'), auto;
+    cursor: url('/src/assets/cur/NormalSelect.cur'), auto;
 
 }
 </style>
@@ -189,7 +190,8 @@ body {
     right: 0;
     width: 300px;
     bottom: 0;
-    transition: width 0.4s ease; /*pour que l'image se rétressit fluidement*/
+    transition: width 0.4s ease;
+    /*pour que l'image se rétressit fluidement*/
     z-index: 0;
 }
 
@@ -230,7 +232,7 @@ body {
     font-size: 1.4rem;
     color: black;
     box-shadow: 0 0 20px rgb(255, 255, 255);
-    
+
 }
 
 .choices {
@@ -346,13 +348,13 @@ body {
 
 /* Version médium */
 @media (max-width: 1000px) {
-  .chapter-header h2 {
-    font-size: 50px;
-  }
+    .chapter-header h2 {
+        font-size: 50px;
+    }
 
-  .stickman img {
-    width: 150px;
-  }
+    .stickman img {
+        width: 150px;
+    }
 }
 
 /*Version mobile*/
@@ -388,10 +390,10 @@ body {
 
 }
 
+@media screen and (max-width: 1920px) {}
 
 @media screen and (max-width: 768px) {}
 
 
 @media screen and (max-width: 375px) {}
-
 </style>
