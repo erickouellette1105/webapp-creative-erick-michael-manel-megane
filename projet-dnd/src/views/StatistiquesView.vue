@@ -110,7 +110,7 @@ li {
 @media screen and (max-width: 1920px) {
     .historique {
         background-color: #6b0f1a;
-        height: auto;
+        min-height: 120vh;
         text-align: center;
     }
 

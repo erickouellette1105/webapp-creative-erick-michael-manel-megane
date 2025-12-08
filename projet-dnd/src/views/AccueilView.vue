@@ -565,19 +565,55 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 1920px) {}
-
-/* Écran médium */
-@media (max-width: 1000px) {
+@media screen and (max-width: 1920px) {
   .title {
-    font-size: 50px;
-    margin-top: 300px;
-  }
+  font-size: 10vw;
+  color: white;
+  margin-top: 200px;
+  text-align: center;
+}
+
+button {
+  position: absolute;
+  color: white;
+  width: 270px;
+  height: 70px;
+  font-size: 2rem;
+  border-radius: 5px;
+  top: 60vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  transition: .3s;
+}
 }
 
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .title {
+  font-size: 10vw;
+  color: white;
+  margin-top: 200px;
+  text-align: center;
+}
+}
 
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+  button {
+  position: absolute;
+  color: white;
+  width: 270px;
+  height: 70px;
+  font-size: 2rem;
+  border-radius: 5px;
+  top: 40vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  transition: .3s;
+}
+}
 </style>
