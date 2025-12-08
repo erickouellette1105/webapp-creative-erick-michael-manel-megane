@@ -522,7 +522,7 @@ RAS = Rien À Signaler
 
 ### Confiance pour la remise finale 🎯
 
-**Sur une échelle de 1 à 10, notre confiance est : [X]/10**
+**Sur une échelle de 1 à 10, notre confiance est : [8]/10**
 
 **Justification :**
 [2-3 phrases expliquant pourquoi vous êtes confiant ou quelles sont vos inquiétudes restantes]
@@ -545,12 +545,12 @@ RAS = Rien À Signaler
 
 ### Annexe D : Lien vers Trello
 
-**Board Trello avec tous les bugs :** [URL]
+**Board Trello avec tous les bugs :** [https://trello.com/b/wmsTghPo/projet-web-tracer-votre-chemin]
 
 **Organisation du board :**
 
-- Colonne "Bogues trouvés" : [X] cartes
-- Colonne "En correction" : [X] cartes
+- Colonne "Bogues trouvés" : [2] cartes
+- Colonne "En correction" : [1] cartes
 - Colonne "À valider" : [X] cartes
 - Colonne "Corrigé" : [X] cartes
 
@@ -568,7 +568,7 @@ RAS = Rien À Signaler
 
 **Ce rapport a été rédigé et validé par :**
 
-- [Nom 1] - [Rôle] - Date : [Date]
+- [Érick Ouellette] - [Testeur externe] - Date : [08/12/2025]
 - [Nom 2] - [Rôle] - Date : [Date]
 - [Nom 3] - [Rôle] - Date : [Date]
 
