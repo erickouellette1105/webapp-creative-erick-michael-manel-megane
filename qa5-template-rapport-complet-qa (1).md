@@ -424,16 +424,17 @@ RAS = Rien À Signaler
 | Page | Performance | Accessibility | Best Practices | Notes |
 |------|-------------|---------------|----------------|-------|
 | Accueil | [75]/100 | [89]/100 | [100]/100 | [Commentaires] |
-| [Page principale] | [X]/100 | [X]/100 | [X]/100 | [Commentaires] |
+| [Page principale] | [100]/100 | [58]/100 | [93]/100 | [Le refresh de la page cause un 404 ce qui affect le test lighouse] |
 
 #### Résultats Mobile
 
 | Page | Performance | Accessibility | Best Practices | Notes |
 |------|-------------|---------------|----------------|-------|
-| Accueil | [57]/100 | [89]/100 | [100]/100 | [Commentaires] |
-| [Page principale] | [X]/100 | [X]/100 | [X]/100 | [Commentaires] |
+| Accueil | [74]/100 | [89]/100 | [100]/100 | [Commentaires] |
+| [Page principale] | [98]/100 | [58]/100 | [86]/100 | [Le refresh de la page cause un 404 ce qui affect le test lighouse] |
 
 **Screenshots Lighthouse :** Voir annexes
+[]()
 
 ### Optimisations effectuées
 
