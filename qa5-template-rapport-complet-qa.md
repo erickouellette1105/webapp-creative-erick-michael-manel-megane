@@ -26,7 +26,7 @@
 
 | Membre | Rôle dans les tests | Heures consacrées |
 |--------|---------------------|-------------------|
-| [Michael, Érick] | Tests externes + internes | [X] heures |
+| [Michael, Érick] | Tests externes  | [6] heures |
 | [Manel] | Tests internes + corrections | [X] heures |
 | [Manel] | Tests accessibilité + performance | [X] heures |
 
@@ -45,20 +45,21 @@
 
 ### Ce que NOUS avons trouvé dans le projet de l'autre équipe
 
-**Projet testé :** [Nom du projet]  
-**Équipe testée :** [Nom de l'équipe]  
-**Type :** [Mémoires interactives / Trace ton chemin]
+**Projet testé :** [Ox-bezoar temporel]  
+**Équipe testée :** [Studio John]  
+**Type :** [Trace ton chemin]
 
 ### Résumé des tests effectués
 
 **Environnements testés :**
 
-- ✅ Chrome 120 (Desktop)
-- ✅ Firefox 121 (Desktop)
-- ✅ Edge (Desktop)
-- ✅ Mobile 375px (DevTools)
-- ✅ Tablette 768px (DevTools)
-- ⚠️ Safari (non testé - pas d'accès)
+- ✅ Chrome 120 (Desktop/Devtools)
+- ✅ Firefox 121 (Desktop/Devtools)
+- ✅ Edge (Desktop/Devtools)
+- ✅ Mobile 375px (Desktop/DevTools)
+- ✅ Tablette 768px (Desktop/DevTools)
+- ⚠️ Safari (Devtools)
+- ✅ Brave (Devtools)
 
 **Tests complétés :**
 
@@ -73,58 +74,91 @@
 | Priorité | Nombre | % |
 |----------|--------|---|
 | 🔴 Critiques | [X] | [X]% |
-| 🟠 Majeurs | [X] | [X]% |
-| 🟡 Mineurs | [X] | [X]% |
-| **TOTAL** | **[X]** | **100%** |
+| 🟠 Majeurs | [4] | [57,14]% |
+| 🟡 Mineurs | [3] | [42,86]% |
+| **TOTAL** | **[7]** | **100%** |
 
 ### Liste des bugs trouvés (résumé)
 
-**Tous les détails sont dans notre board Trello :** [Lien]
+**Tous les détails sont dans notre board Trello :** [[https://trello.com/b/9Pcw7dFa/projet-app-web-creative]]
 
 #### 🔴 Bogues Critiques
 
-1. **Bogue #1 : [Titre]**
 
-   - **Description :** [Brève description]
-   - **Impact :** [Pourquoi c'est critique]
-   - **Statut chez eux :** [À faire / En cours / Corrigé]
-   - **Carte Trello :** [Lien]
-
-2. **Bogue #2 : [Titre]**
-
-   - [Même format]
 
 #### 🟠 Bogues Majeurs
 
-3. **Bogue #3 : [Titre]**
+1. **Bogue #1 : [F5 brise la page]**]
 
-   - [Même format]
+   - **Description :** [La touche f5 fait un erreur 404]
+   - **Impact :** [Cela est critique car la page peut être perdu et il faut réécrire l'url du site pour y accéder après]
+   - **Statut chez eux :** [À faire]
+   - **Carte Trello :** [https://trello.com/c/7ai5FmEl]
 
-4. **Bogue #4 : [Titre]**
+2. **Bogue #2 : [Le chapitre 16**]
 
-   - [Même format]
+   - **Description :** [Le chapitre 16 est placé avant chaque fin]
+   - **Impact :** [Son placement mène à la confusion, à ce point il faudrait juste aller à la fin]
+   - **Statut chez eux :** [À faire]
+   - **Carte Trello :** [https://trello.com/c/fnCYuDr4]
+     
+3. **Bogue #3 : [La condition d'accès pour la bonne fin]
 
+   - **Description :** [Condition d'accès pour la bonne fin]
+   - **Impact :** [L'histoire peux te donner une fin différente même si les mêmes choix sont fait ce qui est bizarre]
+   - **Statut chez eux :** [À faire]
+   - **Carte Trello :** [https://trello.com/c/tR7igQX8]
+
+4. **Bogue #4 : [La touche Enter/space ne marche pas]
+
+   - **Description :** [Enter/space ne marche pas au retour à l'accueil]
+   - **Impact :** [Ce bug rend la navigation au menu impossible pour les utilisateurs non-voyants]
+   - **Statut chez eux :** [À faire]
+   - **Carte Trello :** [https://trello.com/c/jK4Yd02N]
+     
 #### 🟡 Bogues Mineurs
 
 5-12. [Liste brève, détails complets dans Trello]
+
+5. **Bogue #5 : [Bouton save dans mobile est non accessible]
+
+   - **Description :** [Bouton save est caché par l'interface et on ne peut pas scroller pour interagir avec.]
+   - **Impact :** [Le bouton save n'est pas accessible]
+   - **Statut chez eux :** [À faire]
+   - **Carte Trello :** [https://trello.com/c/yRQ9x2OI]
+
+6. **Bogue #6 : [Les images load lentement]
+
+   - **Description :** [Les images prennent beaucoup de temps sur certain navigateurs à charger]
+   - **Impact :** [Ralentit le rhytme du projet]
+   - **Statut chez eux :** [À faire]
+   - **Carte Trello :** [https://trello.com/c/LAY0MQdv]
+
+7. **Bogue #7 : [Pauvre ortographe au chapitre 15]
+
+   - **Description :** [Répétition et manque de mots]
+   - **Impact :** [Texte semble moins professionnel]
+   - **Statut chez eux :** [À faire]
+   - **Carte Trello :** [https://trello.com/c/BV4d3DEZ]
 
 ### Impression générale du projet testé
 
 **Points forts observés :**
 
-1. [Ex: Interface utilisateur très intuitive]
-2. [Ex: Design cohérent et professionnel]
-3. [Ex: Performance excellente]
+1. [Style visuel charmant]
+2. [Histoire unique et diverse]
+3. [Bonne performance malgré quelques problèmes]
 
 **Axes d'amélioration identifiés :**
 
-1. [Ex: Accessibilité au clavier à améliorer]
-2. [Ex: Responsive mobile nécessite ajustements]
+1. [Ortographe et logique de l'histoire pourrait être meilleur]
+2. [Inventaire devrait être intégré]
+3. [Responsive à améliorer]
 
 **Évaluation globale (1-5 étoiles) :**
 
 - Facilité d'utilisation : ⭐⭐⭐⭐☆
-- Stabilité : ⭐⭐⭐☆☆
+- Stabilité : ⭐⭐⭐⭐☆
 - Design : ⭐⭐⭐⭐⭐
 - Performance : ⭐⭐⭐⭐☆
 
@@ -173,9 +207,9 @@ RAS = Rien À Signaler
 
 | Bogue # | Titre | Priorité | Statut | Assigné à |
 |-------|-------|----------|--------|-----------|
-| [1] | [l'icon du tresor] | 🟠 | À faire ⏸️ | [Manel] |
-| [2] | [Stickman] | 🔴 | En cours 🔄 | [Megane] |
-| [3] | [Titre] | 🟡 | À faire ⏸️ | [Nom] |
+| [1] | [l'icon] | 🔴 | Corrigé ✅ | [Nom] |
+| [X] | [Titre] | 🟠 | En cours 🔄 | [Nom] |
+| [X] | [Titre] | 🟡 | À faire ⏸️ | [Nom] |
 
 **Total bugs trouvés en interne :** [X]
 
@@ -201,31 +235,31 @@ RAS = Rien À Signaler
 
 #### 🔴 Bogues Critiques reçus
 
-**Bogue #1 : [Titre]**
-
-- **Description :** [Ce que l'autre équipe a trouvé]
-- **Étapes pour reproduire :** [Leurs étapes]
-- **Notre analyse :** [Confirmons-nous ? Est-ce vraiment critique ?]
-- **Statut actuel (8 décembre) :** ✅ Corrigé / 🔄 En cours / ⏸️ Pas encore fait
-- **Plan de correction :** [Si pas corrigé : quand et comment on va le faire]
-- **Assigné à :** [Nom]
-- **Date de correction :** [Date si corrigé]
-
-**Bogue #2 : [Titre]**
-
-- [Même format pour chaque bug critique]
 
 #### 🟠 Bogues Majeurs reçus
 
-**Bogue #3 : [Titre]**
+**Bogue #1 : [404 au refresh de la page]**
 
-- [Format simplifié OK pour majeurs si beaucoup]
+- **Description :** [Quand le jeu est commencé (page chapitre) et que le joueur refresh il trouve une page d’erreur]
+- **Étapes pour reproduire :** [Aller à une page chapitre. Refresh la page]
+- **Notre analyse :** [Nous devons fixer ce problème au cas où l'utilisateur auarit ce bug]
+- **Statut actuel (8 décembre) :** ✅ Corrigé / 🔄 En cours / ⏸️ Pas encore fait
+- **Plan de correction :** [Le 8 décembre, nous allons chercher en ligne pour savoir comment régler ce bug.]
+- **Assigné à :** [L'équipe entière]
+- **Date de correction :** [Date si corrigé]
 
 #### 🟡 Bogues Mineurs reçus
 
 **Bogues #4-12 :** [Liste brève]
+**Bogue #2 : [Fin ne fonctionne pas]**
 
-- Voir Trello pour détails complets : [Lien]
+- **Description :** [Une fin n’apparait pas même quand le joueur prend le choix “utiliser le sort mystérieux“ à chapitre 5C]
+- **Étapes pour reproduire :** [Aller à chapitre 5C. Prendre le choix “utiliser le sort mystérieux“ 2 fois. Une fin ne s’exécute pas]
+- **Notre analyse :** [Ceci était intentionel car le sort mystérieux]
+- **Statut actuel (8 décembre) :** ✅ Corrigé / 🔄 En cours / ⏸️ Pas encore fait
+- **Plan de correction :** [Le 8 décembre, nous allons chercher en ligne pour savoir comment régler ce bug.]
+- **Assigné à :** [L'équipe entière]
+- **Date de correction :** [Date si corrigé]
 
 ### Notre réaction aux bugs reçus
 
@@ -541,5 +575,3 @@ RAS = Rien À Signaler
 **Nous confirmons que ce rapport reflète fidèlement l'état de notre projet et de notre processus QA.**
 
 ---
-
-**Date de dernière mise à jour :** 8 décembre 2024  
