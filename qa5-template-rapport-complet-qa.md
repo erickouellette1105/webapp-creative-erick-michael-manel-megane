@@ -3,7 +3,7 @@
 **Nom de l'équipe :** [ Michael, Érick, Manel, Mégane]  
 **Nom du projet :** [L'avanture de Stickmant]  
 **Type de projet :** [Trace ton chemin]  
-**Date :** 8 décembre 2024
+**Date :** 8 décembre 2025
 
 
 ## 📋 Table des matières
