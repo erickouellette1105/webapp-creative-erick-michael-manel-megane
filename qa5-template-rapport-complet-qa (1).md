@@ -552,6 +552,8 @@ RAS = Rien À Signaler
 
 [Captures d'écran des bugs majeurs/critiques]
 
+![404](./img/bug-majeur-404.png)
+
 ### Annexe D : Lien vers Trello
 
 **Board Trello avec tous les bugs :** [https://trello.com/b/wmsTghPo/projet-web-tracer-votre-chemin]
@@ -559,17 +561,17 @@ RAS = Rien À Signaler
 **Organisation du board :**
 
 - Colonne "Bogues trouvés" : [2] cartes
-- Colonne "En correction" : [1] cartes
-- Colonne "À valider" : [X] cartes
-- Colonne "Corrigé" : [X] cartes
+- Colonne "En correction" : [0] cartes
+- Colonne "À valider" : [1] cartes
+- Colonne "Corrigé" : [0] cartes
 
 ### Annexe E : Métriques additionnelles
 
 **Commits Git durant la phase QA :**
 
-- [Date] : [X] commits (corrections bugs)
-- [Date] : [X] commits
-- Total : [X] commits de corrections
+- [Date] : [0] commits (corrections bugs)
+- [7 et 8 décembre 2024] : [11] commits
+- Total : [11] commits de corrections
 
 ---
 
