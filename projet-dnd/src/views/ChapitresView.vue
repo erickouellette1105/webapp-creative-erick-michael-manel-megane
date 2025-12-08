@@ -52,7 +52,7 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
 
 
     <div class="stickman">
-        <img src="/images/stickman.png" alt="stickman"></img>
+        <img src="/images/stickman.png" alt="stickman" loading="lazy"></img>
     </div>
 
 
@@ -124,24 +124,21 @@ export default {
     methods: {
         makeChoice(choice) {
 
-            // 1️⃣ Record the choice in the history
             this.playerStore.recordChoice(
                 this.chapterId,   // id du chapitre courant
                 choice.text,      // texte du choix
                 choice.inventory
             )
 
-            // 2️⃣ Add the item to inventory if the choice grants one
             if (choice.inventory) {
                 this.playerStore.addItem({
-                    id: Date.now(), // unique id for this item
+                    id: Date.now(),
                     name: choice.inventory,
                     description: choice.description,
                     image: choice.image
                 });
             }
 
-            // 3️⃣ Navigate to the next chapter
             if (choice.nextChapter === '1') {
                 this.storyStore.resetChapters()
             } else {
@@ -158,6 +155,9 @@ export default {
         },
         goBack() {
             this.$router.push({ name: 'accueil' });
+            const player = usePlayerStore();
+            player.clearInventory();
+            player.clearRecord();
         },
         stats() {
             this.$router.push({ name: 'statistiques' });

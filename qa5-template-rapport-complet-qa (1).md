@@ -29,7 +29,7 @@
 | [Manel]          | Tests internes + corrections      | [5] heures        |
 | [Mégane]          | Tests accessibilité + performance | [2] heures        |
 
-**Total d'heures de QA :** [X] heures
+**Total d'heures de QA :** [13] heures
 
 ### Liens importants
 
@@ -441,10 +441,9 @@ RAS = Rien À Signaler
 
 #### Autres optimisations
 
-- ✅ Ajout de `loading="lazy"` sur [X] images
+- ✅ Ajout de `loading="lazy"` sur [2] images
 - ✅ Minification du code (build production)
 - ✅ Suppression de console.log()
-- ⏸️ À faire : [Si applicable]
 
 ### Temps de chargement
 

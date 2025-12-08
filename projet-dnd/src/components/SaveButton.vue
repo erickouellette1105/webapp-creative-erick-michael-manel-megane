@@ -32,6 +32,7 @@ export default {
         background-color: #960002;
         border: 5px solid #FF4649;
         border-radius: 20px;
+        pointer-events: stroke;
     }
 
     .saveBtn:hover{
