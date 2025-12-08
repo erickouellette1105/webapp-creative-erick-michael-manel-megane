@@ -174,12 +174,12 @@
 - [✅] Ajout de mémoire / Lecture des chapitres
 - [✅] Édition de mémoire / Système de choix
 - [✅] Suppression de mémoire / Branches narratives
-- [✅] Upload d'images / Tracking des conséquences
-- [✅] Tags et filtres / Toutes les fins
-- [✅] Recherche / Historique des décisions
+- [✅] Tracking des conséquences
+- [✅] Toutes les fins
+- [✅] Historique des décisions
 - [✅] Responsive (mobile, tablette, desktop)
 - [✅] Multi-navigateurs (Chrome, Firefox)
-- [☐] Navigation au clavier
+- [✅] Navigation au clavier
 - [✅] Contraste des couleurs
 - [✅] Alt text sur images
 - [✅] Cas limites (formulaires vides, texte long, etc.)
@@ -208,8 +208,9 @@ RAS = Rien À Signaler
 | [1] | [Responsive] | 🔴 | En cours 🔄 | [Manel Yaya/Mégane Rangé] |
 | [2] | [refresh des donnée au retour à l'acceuil] | 🟡 | À faire ⏸️ | [Michael Un Dupré/Érick Ouellette] |
 | [3] | [corrigé des faute de français] | 🟡 | À faire ⏸️ | [tout l'équipe] |
+| [3] | [Alt ne marche pas sur le bouton commencer à l'accueil] | 🟡 | À faire ⏸️ | [tout l'équipe] |
 
-**Total bugs trouvés en interne :** [3]
+**Total bugs trouvés en interne :** [4]
 
 ---
 
@@ -305,53 +306,55 @@ RAS = Rien À Signaler
 #### 🔄 En cours (sera fait d'ici le 10)
 
 **Bogues critiques en cours :**
-
-1. **Bogue #X : [Titre]**
-   - Assigné à : [Nom]
-   - Temps estimé : [X] heures
-   - Sera fait : [9 décembre]
-   - Statut actuel : [50% fait / bloqué sur X / presque fini]
+1. **Bogue #1 : [Responsive des pages]**
+   - Assigné à : [L'équipe entière]
+   - Temps estimé : Maximum 3 heures
+   - Sera fait : [8-9 décembre]
+   - Statut actuel : [La page historique est faite, il ne reste qu'à ajuster les autres pages]
 
 **Bogues majeurs en cours :**
 
-2. **Bogue #Y : [Titre]**
-   - [Même format]
-
+2. **Bogue #2 : [404 refresh]**
+   - Assigné à : [L'équipe entière]
+   - Temps estimé : [Maximum 2] heures
+   - Sera fait : [8-9 décembre]
+   - Statut actuel : [Pas encore commencé]
 #### ⏸️ Reportés (ferons si temps après les critiques/majeurs)
 
 **Bogues mineurs à faire si temps :**
 
-1. Bogue #Z : [Titre] - Temps estimé : [X]h
+1. Bogue #Z : [Alt ne marche pas sur le bouton à l'accueil] - Temps estimé : [1]h
 2. Bogue #W : [Titre] - Temps estimé : [X]h
 
 #### ❌ Non corrigés (avec justification)
 
-**Bogue #Q : [Titre]**
+**Bogue #2 : [Fin du sort mystérieux]**
 
-- **Pourquoi pas corrigé :** [Raison valable]
-  - Exemple : "Nécessiterait une refonte majeure de l'architecture (20h de travail)"
-  - Exemple : "Après discussion, ce n'est pas un bug mais une limitation de la techno utilisée"
-- **Impact :** [Faible / Utilisateur peut contourner le problème en...]
+- **Pourquoi pas corrigé :** [Ce n'est pas un bug car la fin est prévu après avoir emonté le temps au chapitre 1]
+- **Impact :** [ce n'est pas un problème]
 
 ### Plan de travail (8-10 décembre)
 
+
 **Lundi 8 (soir) :**
 
-- [ ] Finir Bogue #1 (Carl - 2h)
-- [ ] Commencer Bogue #5 (Alex - 3h)
+- [ ] Finir Bogue #1 (Équipe entière - 3h)
+- [ ] Commencer Bogue #2 (Équipe entière - 2h)
 
 **Mardi 9 :**
 
-- [ ] Finir Bogue #5 (Alex - 2h)
-- [ ] Corriger Bogue #7 (Jordan - 4h)
+- [ ] Finir Bogue #1 (Équipe entière - 2h)
+- [ ] Finir Bogue #2 (Équipe entière - 3h)
+- [ ] Finir Bogue #Z (Équipe entière - 2h)
 - [ ] Tests sur bugs corrigés (Équipe - 1h)
+- [ ] Mise à jour documentation
 
 **Mercredi 10 (matin avant remise) :**
 
-- [ ] Finir Bogue #7 si pas fini
+- [ ] Finir Bogue #1 et 2 si pas fini
 - [ ] Corrections mineures urgentes
 - [ ] Tests finaux
-- [ ] Mise à jour documentation
+
 
 ---
 
@@ -366,7 +369,7 @@ RAS = Rien À Signaler
 | Tab fonctionne sur tous les éléments | ⚠️ | ajouté des alt au objet |
 | Focus visible | ✅  |
 | Enter/Space activent les boutons | ✅ |
-| Skip links présents (optionnel) | ❌  |
+
 
 **Problèmes trouvés :** [1]  
 **Corrigés :** [2]  
@@ -380,9 +383,9 @@ RAS = Rien À Signaler
 
 | Élément | Couleurs | Ratio | Conforme WCAG AA | Action |
 |---------|----------|-------|------------------|--------|
-| Texte principal | #FFF sur #000 | 12.6:1 | ✅ Excellent | RAS |
-| Boutons | #FFF sur #960002 | 4.5:1 | ✅ Conforme | RAS |
-| Texte secondaire | #FFF sur #2c3e50 | 3.5:1 | ✅ Conforme | RAS |
+| Texte principal | #000 sur #FFF | 21:1 | ✅ Conforme | RAS |
+| Boutons | #FFF sur #960002 | 9.13:1 | ✅ Conforme | RAS |
+| Texte secondaire | #FFF sur #333138 | 12.82:1 | ✅ Conforme | RAS |
 
 **Problèmes de contraste :** [0]  
 **Plan de correction :** [aucun]
@@ -391,19 +394,19 @@ RAS = Rien À Signaler
 
 | Test | Résultat | Notes |
 |------|----------|-------|
-| Toutes les images ont un alt | ⚠️ | [X] images sans alt à corriger |
-| Alt descriptifs (pas "image1.jpg") | ⚠️ | [Détails si problèmes] |
-| Images décoratives avec alt="" | ⚠️ | [à verifier] |
+| Toutes les images ont un alt |  ✅ |  |
+| Alt descriptifs (pas "image1.jpg") |  ✅ |  |
+| Images décoratives avec alt="" |  ✅ | |
 
 ### Score global d'accessibilité
 
 **Résumé :**
 
-- Navigation clavier : [X] tests passés
+- Navigation clavier : [2] tests passés
 - Contraste : [X] éléments conformes
-- Images : [ ] avec alt approprié
+- Images : [X] avec alt approprié
 
-**Score estimé : [70]/100**
+**Score estimé : [85]/100**
 
 ---
 
@@ -420,14 +423,14 @@ RAS = Rien À Signaler
 
 | Page | Performance | Accessibility | Best Practices | Notes |
 |------|-------------|---------------|----------------|-------|
-| Accueil | [X]/100 | [X]/100 | [X]/100 | [Commentaires] |
+| Accueil | [75]/100 | [89]/100 | [100]/100 | [Commentaires] |
 | [Page principale] | [X]/100 | [X]/100 | [X]/100 | [Commentaires] |
 
 #### Résultats Mobile
 
 | Page | Performance | Accessibility | Best Practices | Notes |
 |------|-------------|---------------|----------------|-------|
-| Accueil | [X]/100 | [X]/100 | [X]/100 | [Commentaires] |
+| Accueil | [57]/100 | [89]/100 | [100]/100 | [Commentaires] |
 | [Page principale] | [X]/100 | [X]/100 | [X]/100 | [Commentaires] |
 
 **Screenshots Lighthouse :** Voir annexes
