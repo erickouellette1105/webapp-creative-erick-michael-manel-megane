@@ -339,11 +339,14 @@ body {
 }
 
 
-@media screen and (max-width: 1920px) {}
 
+/*Version tablette */
 @media screen and (max-width: 768px) {
     .chapter-header h2 {
         font-size: 50px;
+        text-align: center;
+        margin-top: 9rem;
+  
     }
 
     .stickman img {
@@ -351,7 +354,7 @@ body {
     }
 }
 
-
+/*Version mobile */
 @media screen and (max-width: 375px) {
     .stickman img {
         width: 150px;
@@ -360,27 +363,34 @@ body {
 
     .chapter-header h2 {
         font-size: 30px;
-    
+        margin-top: 6rem;
 
-    }
+    } 
 
     .chapter-content {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-bottom: 50%;
     }
 
     .back-button {
-        font-size: 1.1rem;
-        width: 30vw;
+        font-size: 1rem;
+        width: 35vw;
     }
 
     .stats-button {
-        font-size: 1.1rem;
+        font-size: 1rem;
         z-index: 2;
     }
 
     .back-stats {
-        gap: 100px;
+        gap: 50px;
     }
+
+    .choice-button {
+   
+  
+    font-size: 1.1rem;
+
+}
 }
 </style>
