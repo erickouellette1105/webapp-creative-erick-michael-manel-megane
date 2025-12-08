@@ -364,7 +364,7 @@ RAS = Rien À Signaler
 |------|----------|--------|
 | Tab fonctionne sur tous les éléments | ⚠️ | ajouté des alt au objet |
 | Focus visible | ✅  |
-| Enter/Space activent les boutons | ✅ |
+| Enter/Space activent les boutons | ⚠️ | Marche partout sauf le bouton commencer à l'accueil
 
 
 **Problèmes trouvés :** [1]  
@@ -457,9 +457,9 @@ RAS = Rien À Signaler
 
 **Tests manuels (connexion normale) :**
 
-- Page d'accueil : [moin de 1] secondes
-- Page principale : [moin de 1] secondes
-- Page la plus lourde : [page acceuil] secondes
+- Page d'accueil : [1] secondes
+- Page principale : [1] secondes
+- Page la plus lourde : [1] secondes
 
 **Objectif :** < 3 secondes  
 **Atteint :** ✅ Oui
@@ -548,6 +548,8 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 
 ![Bug](./img/404.png)
 
+![404](./img/bug-majeur-404.png)
+
 ### Annexe D : Lien vers Trello
 
 **Board Trello avec tous les bugs :** [https://trello.com/b/wmsTghPo/projet-web-tracer-votre-chemin]
@@ -563,9 +565,9 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 
 **Commits Git durant la phase QA :**
 
-- [7/12/2025] : [2] commits (corrections bugs)
-- [7/12/2025] : [7] commits
-- Total : [9] commits de corrections
+- [7/12/2025] : [1] commits (corrections bugs)
+- [7/12/2025] : [11] commits
+- Total : [12] commits de corrections
 
 ---
 
