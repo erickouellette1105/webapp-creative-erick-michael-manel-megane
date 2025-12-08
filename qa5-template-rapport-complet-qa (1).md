@@ -73,7 +73,7 @@
 
 | Priorité | Nombre | % |
 |----------|--------|---|
-| 🔴 Critiques | [X] | [X]% |
+| 🔴 Critiques | [0] | [0]% |
 | 🟠 Majeurs | [4] | [57,14]% |
 | 🟡 Mineurs | [3] | [42,86]% |
 | **TOTAL** | **[7]** | **100%** |
@@ -225,10 +225,10 @@ RAS = Rien À Signaler
 
 | Priorité | Bogues reçus | Corrigés | En cours | Pas encore faits |
 |----------|------------|----------|----------|------------------|
-| 🔴 Critiques | [X] | [X] ✅ | [X] 🔄 | [X] ⏸️ |
-| 🟠 Majeurs | [X] | [X] ✅ | [X] 🔄 | [X] ⏸️ |
-| 🟡 Mineurs | [X] | [X] ✅ | [X] 🔄 | [X] ⏸️ |
-| **TOTAL** | **[X]** | **[X]** | **[X]** | **[X]** |
+| 🔴 Critiques | [0] | [0] ✅ | [0] 🔄 | [0] ⏸️ |
+| 🟠 Majeurs | [1] | [0] ✅ | [1] 🔄 | [0] ⏸️ |
+| 🟡 Mineurs | [2] | [1] ✅ | [0] 🔄 | [1] ⏸️ |
+| **TOTAL** | **[3]** | **[1]** | **[1]** | **[1]** |
 
 ### Liste détaillée des bugs reçus
 
@@ -286,10 +286,10 @@ RAS = Rien À Signaler
 
 | Statut | Nombre | % du total |
 |--------|--------|------------|
-| ✅ Corrigés et validés | [X] | [X]% |
-| 🔄 En cours (sera fait d'ici le 10) | [X] | [X]% |
-| ⏸️ Reportés (si temps) | [X] | [X]% |
-| ❌ Non corrigés (justifiés) | [X] | [X]% |
+| ✅ Corrigés et validés | [0] | [0]% |
+| 🔄 En cours (sera fait d'ici le 10) | [1] | [33]% |
+| ⏸️ Reportés (si temps) | [1] | [33]% |
+| ❌ Non corrigés (justifiés) | [1] | [33]% |
 
 ### Priorités de correction (8→10 décembre)
 
@@ -297,11 +297,7 @@ RAS = Rien À Signaler
 
 **Bogues critiques corrigés :**
 
-1. **Bogue #1 : [Titre]**
-   - Corrigé par : [Nom]
-   - Date : [Date]
-   - Solution : [Brève description de comment c'était corrigé]
-   - Re-testé : ✅ Confirmé OK
+1. aucun
 
 #### 🔄 En cours (sera fait d'ici le 10)
 
@@ -461,12 +457,12 @@ RAS = Rien À Signaler
 
 **Tests manuels (connexion normale) :**
 
-- Page d'accueil : [X] secondes
-- Page principale : [X] secondes
-- Page la plus lourde : [X] secondes
+- Page d'accueil : [moin de 1] secondes
+- Page principale : [moin de 1] secondes
+- Page la plus lourde : [page acceuil] secondes
 
 **Objectif :** < 3 secondes  
-**Atteint :** ✅ Oui / ⚠️ Partiellement / ❌ Non
+**Atteint :** ✅ Oui
 
 ---
 
@@ -481,37 +477,37 @@ RAS = Rien À Signaler
 
 | Aspect | État | Commentaire |
 |--------|------|-------------|
-| **Fonctionnalités principales** | ✅ / ⚠️ / ❌ | [Commentaire] |
-| **Bogues critiques** | ✅ Tous corrigés / ⚠️ En cours / ❌ Restants | [Détails] |
-| **Bogues majeurs** | ✅ / ⚠️ / ❌ | [X]/[Y] corrigés |
-| **Accessibilité** | ✅ / ⚠️ / ❌ | Score : [X]/100 |
-| **Performance** | ✅ / ⚠️ / ❌ | Lighthouse : [X]/100 |
-| **Responsive** | ✅ / ⚠️ / ❌ | [Commentaire] |
+| **Fonctionnalités principales** | ✅ | [le jeux marche comme on le souhaite] |
+| **Bogues critiques** | ✅  / [à a pas de bug critique à corrigé] |
+| **Bogues majeurs** | ⚠️ | [2]/[2] à corrigés |
+| **Accessibilité** | ⚠️ | Score : [54]/100 |
+| **Performance** | ✅ | Lighthouse : [100]/100 |
+| **Responsive** | ⚠️ | [on doit retravailler un peu sur le responisive du mobile] |
 
 ### Bilan des tests
 
 **Statistiques globales :**
 
 - **Bogues trouvés (tous) :** [3] (internes + reçus)
-- **Bogues corrigés :** [X] ([X]%)
-- **Bogues en cours :** [X] (seront corrigés d'ici le 10)
-- **Bogues mineurs reportés :** [X]
+- **Bogues corrigés :** [1] ([33]%)
+- **Bogues en cours :** [2] (seront corrigés d'ici le 10)
+- **Bogues mineurs reportés :** [1]
 
 **Temps total consacré au QA :** [8] heures
 
 ### Ce qui fonctionne bien ✅
 
-1. [Ex: Toutes les fonctionnalités principales sont stables]
-2. [Ex: Design responsive sur tous les appareils]
-3. [Ex: Performance excellente après optimisation]
+1. [les fonctionnalités principales sont stables]
+2. [l'inventaire marche comme prévue]
+3. [la performance du site marche bien]
 
 ### Défis rencontrés et solutions 🔧
 
-1. **Défi :** [Ex: Bogues difficiles à reproduire]
-   - **Solution :** [Ex: Tests systématiques avec documentation précise]
+1. **Défi :** [Bogues difficiles à corrigé]
+   - **Solution :** [il y à certain bug qu'on ne comprend pas comment corrigé par example la page 404 lors d'un refresh]
 
-2. **Défi :** [Ex: Manque de temps pour tout corriger]
-   - **Solution :** [Ex: Priorisation rigoureuse : critiques d'abord]
+2. **Défi :** [Manque de temps pour tout corriger]
+   - **Solution :** [il y a certain bug qui peuvent prendre plus de temps a corrigé]
 
 ### Apprentissages 📚
 
@@ -550,7 +546,7 @@ RAS = Rien À Signaler
 
 ### Annexe C : Screenshots de bugs
 
-[Captures d'écran des bugs majeurs/critiques]
+![Bug](./img/404.png)
 
 ### Annexe D : Lien vers Trello
 
@@ -560,16 +556,16 @@ RAS = Rien À Signaler
 
 - Colonne "Bogues trouvés" : [2] cartes
 - Colonne "En correction" : [1] cartes
-- Colonne "À valider" : [X] cartes
-- Colonne "Corrigé" : [X] cartes
+- Colonne "À valider" : [0] cartes
+- Colonne "Corrigé" : [1] cartes
 
 ### Annexe E : Métriques additionnelles
 
 **Commits Git durant la phase QA :**
 
-- [Date] : [X] commits (corrections bugs)
-- [Date] : [X] commits
-- Total : [X] commits de corrections
+- [11/8/2025] : [2] commits (corrections bugs)
+- [11/8/2025] : [7] commits
+- Total : [9] commits de corrections
 
 ---
 
@@ -577,8 +573,8 @@ RAS = Rien À Signaler
 
 **Ce rapport a été rédigé et validé par :**
 
-- [Érick Ouellette] - [Testeur externe] - Date : [08/12/2025]
-- [Nom 2] - [Rôle] - Date : [Date]
+- [Érick Ouellette] - [Testeur externe/interne] - Date : [08/12/2025]
+- [Michael Un Dupré] - [Testeur externe/interne] - Date : [08/12/2025]
 - [Nom 3] - [Rôle] - Date : [Date]
 
 **Nous confirmons que ce rapport reflète fidèlement l'état de notre projet et de notre processus QA.**
