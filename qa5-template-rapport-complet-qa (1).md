@@ -185,7 +185,7 @@ RAS = Rien À Signaler
 
 ### Ce que l'AUTRE équipe a trouvé dans NOTRE projet
 
-**Équipe qui nous a testés :** [Nom de l'équipe]  
+**Équipe qui nous a testés :** Studio John
 **Date de réception :** 6 décembre 2024
 
 ### Statistiques
@@ -201,46 +201,46 @@ RAS = Rien À Signaler
 
 #### 🔴 Bogues Critiques reçus
 
-**Bogue #1 : [Titre]**
-
-- **Description :** [Ce que l'autre équipe a trouvé]
-- **Étapes pour reproduire :** [Leurs étapes]
-- **Notre analyse :** [Confirmons-nous ? Est-ce vraiment critique ?]
-- **Statut actuel (8 décembre) :** ✅ Corrigé / 🔄 En cours / ⏸️ Pas encore fait
-- **Plan de correction :** [Si pas corrigé : quand et comment on va le faire]
-- **Assigné à :** [Nom]
-- **Date de correction :** [Date si corrigé]
-
-**Bogue #2 : [Titre]**
-
-- [Même format pour chaque bug critique]
 
 #### 🟠 Bogues Majeurs reçus
 
-**Bogue #3 : [Titre]**
+**Bogue #1 : [404 au refresh de la page]**
 
-- [Format simplifié OK pour majeurs si beaucoup]
+- **Description :** [Quand le jeu est commencé (page chapitre) et que le joueur refresh il trouve une page d’erreur]
+- **Étapes pour reproduire :** [Aller à une page chapitre. Refresh la page]
+- **Notre analyse :** [Nous devons fixer ce problème au cas où l'utilisateur auarit ce bug]
+- **Statut actuel (8 décembre) :** 🔄 En cours
+- **Plan de correction :** [Le 8 décembre, nous allons chercher en ligne pour savoir comment régler ce bug.]
+- **Assigné à :** [L'équipe entière]
+- **Date de correction :** []
 
 #### 🟡 Bogues Mineurs reçus
 
 **Bogues #4-12 :** [Liste brève]
+**Bogue #2 : [Fin ne fonctionne pas]**
 
-- Voir Trello pour détails complets : [Lien]
+- **Description :** [Une fin n’apparait pas même quand le joueur prend le choix “utiliser le sort mystérieux“ à chapitre 5C]
+- **Étapes pour reproduire :** [Aller à chapitre 5C. Prendre le choix “utiliser le sort mystérieux“ 2 fois. Une fin ne s’exécute pas]
+- **Notre analyse :** [Ceci était intentionel car le sort mystérieux]
+- **Statut actuel (8 décembre) :** ✅ Corrigé
+- **Plan de correction :** [Aucune correction nécessaire]
+- **Assigné à :** []
+- **Date de correction :** []
 
 ### Notre réaction aux bugs reçus
 
 **Bogues que nous confirmons :**
 
-- X bugs confirmés comme vrais bugs
+- #1 bugs confirmés comme vrais bugs
 
 **Bogues que nous contestons (avec justification) :**
 
-- [Bogue #X] : Nous pensons que ce n'est pas un bug parce que [raison]
+- [Bogue #2] : Nous pensons que ce n'est pas un bug parce que [cela était prévu comme une fin qui se passe quand on remonte le temps au chapitre 1 et apr`s avoir utilisé le sort encore, la fin se déclenche]
 - [A été discuté avec l'enseignant : décision finale = ...]
 
 **Nouveaux bugs découverts grâce à leurs tests :**
 
-- X bugs qu'on n'aurait jamais trouvés nous-mêmes
+- 0 bugs qu'on n'aurait jamais trouvés nous-mêmes
 - Merci à l'équipe testeuse pour leur regard externe !
 
 ---
