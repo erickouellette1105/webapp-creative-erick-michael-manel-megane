@@ -26,8 +26,8 @@
 | Membre           | Rôle dans les tests               | Heures consacrées |
 | ---------------- | --------------------------------- | ----------------- |
 | [Michael, Érick] | Tests externes                    | [6] heures        |
-| [Manel]          | Tests internes + corrections      | [X] heures        |
-| [Manel]          | Tests accessibilité + performance | [X] heures        |
+| [Manel]          | Tests internes + corrections      | [5] heures        |
+| [Mégane]          | Tests accessibilité + performance | [2] heures        |
 
 **Total d'heures de QA :** [X] heures
 
@@ -572,6 +572,7 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 - [Érick Ouellette] - [Testeur externe/interne] - Date : [08/12/2025]
 - [Michael Un Dupré] - [Testeur externe/interne] - Date : [08/12/2025]
 - [Mégane Ranger] - [Testeur externe/interne] - Date : [08/12/2025]
+- [Manel Yaya] - [Testeur externe/interne] - Date : [08/12/2025]
 
 **Nous confirmons que ce rapport reflète fidèlement l'état de notre projet et de notre processus QA.**
 
