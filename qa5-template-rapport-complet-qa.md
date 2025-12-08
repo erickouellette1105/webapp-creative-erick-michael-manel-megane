@@ -1,12 +1,9 @@
 # Rapport de Contrôle Qualité
 
-**Nom de l'équipe :** [Votre équipe]  
-**Nom du projet :** [Nom de votre projet]  
-**Type de projet :** [Mémoires interactives / Trace ton chemin]  
+**Nom de l'équipe :** [ Michael, Érick, Manel, Mégane]  
+**Nom du projet :** [L'avanture de Stickmant]  
+**Type de projet :** [Trace ton chemin]  
 **Date :** 8 décembre 2024
-
-<a href="https://tim-montmorency.com/compendium/582-511-web5/projets/appweb-creative/qa5-template-rapport-complet-qa.md" class="md-button">📥 Télécharger template de départ en markdown</a>
-
 
 
 ## 📋 Table des matières
@@ -29,16 +26,16 @@
 
 | Membre | Rôle dans les tests | Heures consacrées |
 |--------|---------------------|-------------------|
-| [Nom 1] | Tests externes + internes | [X] heures |
-| [Nom 2] | Tests internes + corrections | [X] heures |
-| [Nom 3] | Tests accessibilité + performance | [X] heures |
+| [Michael, Érick] | Tests externes + internes | [X] heures |
+| [Manel] | Tests internes + corrections | [X] heures |
+| [Manel] | Tests accessibilité + performance | [X] heures |
 
 **Total d'heures de QA :** [X] heures
 
 ### Liens importants
 
 - **Projet en ligne :** [https://votre-projet.netlify.app]
-- **GitHub :** [https://github.com/votre-equipe/projet]
+- **GitHub :** [https://erickouellette1105.github.io/webapp-creative-erick-michael-manel-megane/]
 - **Trello (bugs) :** [https://trello.com/b/...]
 - **Projet testé (externe) :** [https://autre-projet.netlify.app]
 
@@ -141,19 +138,19 @@
 
 **Checklist complète (à ajuster en fonction de votre projet) :**
 
-- [✅ / ☐] Navigation entre toutes les salles/chapitres
-- [✅ / ☐] Ajout de mémoire / Lecture des chapitres
-- [✅ / ☐] Édition de mémoire / Système de choix
-- [✅ / ☐] Suppression de mémoire / Branches narratives
-- [✅ / ☐] Upload d'images / Tracking des conséquences
-- [✅ / ☐] Tags et filtres / Toutes les fins
-- [✅ / ☐] Recherche / Historique des décisions
-- [✅ / ☐] Responsive (mobile, tablette, desktop)
-- [✅ / ☐] Multi-navigateurs (Chrome, Firefox)
-- [✅ / ☐] Navigation au clavier
-- [✅ / ☐] Contraste des couleurs
-- [✅ / ☐] Alt text sur images
-- [✅ / ☐] Cas limites (formulaires vides, texte long, etc.)
+- [✅] Navigation entre toutes les salles/chapitres
+- [✅] Ajout de mémoire / Lecture des chapitres
+- [✅] Édition de mémoire / Système de choix
+- [✅] Suppression de mémoire / Branches narratives
+- [✅] Upload d'images / Tracking des conséquences
+- [✅] Tags et filtres / Toutes les fins
+- [✅] Recherche / Historique des décisions
+- [✅] Responsive (mobile, tablette, desktop)
+- [✅] Multi-navigateurs (Chrome, Firefox)
+- [☐] Navigation au clavier
+- [✅] Contraste des couleurs
+- [✅] Alt text sur images
+- [✅] Cas limites (formulaires vides, texte long, etc.)
 
 **Taux de réussite :** [X]/[Y] tests passés = [X]%
 
