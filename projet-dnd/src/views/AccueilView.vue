@@ -62,8 +62,7 @@ export default {
 
 <style scoped>
 .title {
-  font-size: 100px;
-  font-family: "Cinzel Decorative", serif;
+  font-size: 8vw;
   color: white;
   margin-top: 200px;
   text-align: center;
@@ -617,9 +616,4 @@ button {
   transition: .3s;
 }
 }
-
-
-
-
 </style>
-
