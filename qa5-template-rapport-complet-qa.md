@@ -1,7 +1,7 @@
 # Rapport de Contrôle Qualité
 
 **Nom de l'équipe :** [ Michael, Érick, Manel, Mégane]  
-**Nom du projet :** [L'avanture de Stickmant]  
+**Nom du projet :** [L'aventure de Stickman]  
 **Type de projet :** [Trace ton chemin]  
 **Date :** 8 décembre 2025
 
