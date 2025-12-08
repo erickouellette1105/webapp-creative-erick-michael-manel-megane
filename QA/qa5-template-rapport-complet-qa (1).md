@@ -539,7 +539,7 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 
 ### Annexe C : Screenshots de bugs
 
-![Bug](../img/404.png)
+
 
 ![404](../img/bug-majeur-404.png)
 
