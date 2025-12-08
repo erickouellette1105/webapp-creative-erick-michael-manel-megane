@@ -368,7 +368,7 @@ RAS = Rien À Signaler
 |------|----------|--------|
 | Tab fonctionne sur tous les éléments | ⚠️ | ajouté des alt au objet |
 | Focus visible | ✅  |
-| Enter/Space activent les boutons | ✅ |
+| Enter/Space activent les boutons | ⚠️ | Marche partout sauf le bouton commencer à l'accueil
 
 
 **Problèmes trouvés :** [1]  
@@ -461,12 +461,12 @@ RAS = Rien À Signaler
 
 **Tests manuels (connexion normale) :**
 
-- Page d'accueil : [X] secondes
-- Page principale : [X] secondes
-- Page la plus lourde : [X] secondes
+- Page d'accueil : [1] secondes
+- Page principale : [1] secondes
+- Page la plus lourde : [1] secondes
 
 **Objectif :** < 3 secondes  
-**Atteint :** ✅ Oui / ⚠️ Partiellement / ❌ Non
+**Atteint :** ✅ Oui
 
 ---
 
