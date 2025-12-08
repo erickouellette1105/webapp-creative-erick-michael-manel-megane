@@ -523,7 +523,7 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 
 ### Annexe A : Checklist complète des tests
 
-**Grille QA**[../QA/qa3-grille-test-externe.xlsx]
+![Grille QA](../QA/qa3-grille-test-externe.xlsx)
 
 ### Annexe B : Screenshots Lighthouse
 
