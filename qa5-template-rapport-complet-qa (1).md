@@ -513,16 +513,16 @@ RAS = Rien À Signaler
 
 **Ce que nous avons appris durant le processus QA :**
 
-1. [Ex: L'importance de tester sur vrais appareils, pas juste DevTools]
-2. [Ex: Un regard externe trouve des bugs qu'on ne voit plus]
-3. [Ex: Documenter clairement les bugs fait gagner du temps]
+1. [on doit tester sur plusieur platform]
+2. [c'est utilse d'avoir une autre équipe qui aide a chercher des bug]
+3. [il est important de bien documenter les bugs]
 
 ### Confiance pour la remise finale 🎯
 
 **Sur une échelle de 1 à 10, notre confiance est : [8]/10**
 
 **Justification :**
-[2-3 phrases expliquant pourquoi vous êtes confiant ou quelles sont vos inquiétudes restantes]
+on est confiant(e) car on à fait nos teste necessaire et notre site est fonctionnel de là façon dont on le souhaitait, les seuls inquiétudes qui reste son la responsive et la page 404
 
 ---
 
@@ -563,8 +563,8 @@ RAS = Rien À Signaler
 
 **Commits Git durant la phase QA :**
 
-- [11/8/2025] : [2] commits (corrections bugs)
-- [11/8/2025] : [7] commits
+- [7/12/2025] : [2] commits (corrections bugs)
+- [7/12/2025] : [7] commits
 - Total : [9] commits de corrections
 
 ---
@@ -575,7 +575,8 @@ RAS = Rien À Signaler
 
 - [Érick Ouellette] - [Testeur externe/interne] - Date : [08/12/2025]
 - [Michael Un Dupré] - [Testeur externe/interne] - Date : [08/12/2025]
-- [Nom 3] - [Rôle] - Date : [Date]
+- [Manel Yaya] - [Testeur Interne] - Date : [08/12/2025]
+- [Mégane Rangé] - [Vérificateur Interne] - Date : [08/12/2025]
 
 **Nous confirmons que ce rapport reflète fidèlement l'état de notre projet et de notre processus QA.**
 
