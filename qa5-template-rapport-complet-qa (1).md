@@ -577,8 +577,6 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 
 - [Érick Ouellette] - [Testeur externe/interne] - Date : [08/12/2025]
 - [Michael Un Dupré] - [Testeur externe/interne] - Date : [08/12/2025]
-- [Manel Yaya] - [Testeur Interne] - Date : [08/12/2025]
-- [Mégane Rangé] - [Vérificateur Interne] - Date : [08/12/2025]
 
 **Nous confirmons que ce rapport reflète fidèlement l'état de notre projet et de notre processus QA.**
 
