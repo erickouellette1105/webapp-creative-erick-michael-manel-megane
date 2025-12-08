@@ -5,7 +5,6 @@
 **Type de projet :** [Trace ton chemin]  
 **Date :** 8 décembre 2025
 
-
 ## 📋 Table des matières
 
 1. [Informations générales](#1-informations-générales)
@@ -24,11 +23,11 @@
 
 ### Équipe
 
-| Membre | Rôle dans les tests | Heures consacrées |
-|--------|---------------------|-------------------|
-| [Michael, Érick] | Tests externes  | [6] heures |
-| [Manel] | Tests internes + corrections | [X] heures |
-| [Manel] | Tests accessibilité + performance | [X] heures |
+| Membre           | Rôle dans les tests               | Heures consacrées |
+| ---------------- | --------------------------------- | ----------------- |
+| [Michael, Érick] | Tests externes                    | [6] heures        |
+| [Manel]          | Tests internes + corrections      | [X] heures        |
+| [Manel]          | Tests accessibilité + performance | [X] heures        |
 
 **Total d'heures de QA :** [X] heures
 
@@ -71,20 +70,18 @@
 
 ### Statistiques des bugs trouvés
 
-| Priorité | Nombre | % |
-|----------|--------|---|
-| 🔴 Critiques | [0] | [0]% |
-| 🟠 Majeurs | [4] | [57,14]% |
-| 🟡 Mineurs | [3] | [42,86]% |
-| **TOTAL** | **[7]** | **100%** |
+| Priorité     | Nombre  | %        |
+| ------------ | ------- | -------- |
+| 🔴 Critiques | [0]     | [0]%     |
+| 🟠 Majeurs   | [4]     | [57,14]% |
+| 🟡 Mineurs   | [3]     | [42,86]% |
+| **TOTAL**    | **[7]** | **100%** |
 
 ### Liste des bugs trouvés (résumé)
 
 **Tous les détails sont dans notre board Trello :** [[https://trello.com/b/9Pcw7dFa/projet-app-web-creative]]
 
 #### 🔴 Bogues Critiques
-
-
 
 #### 🟠 Bogues Majeurs
 
@@ -101,40 +98,40 @@
    - **Impact :** [Son placement mène à la confusion, à ce point il faudrait juste aller à la fin]
    - **Statut chez eux :** [À faire]
    - **Carte Trello :** [https://trello.com/c/fnCYuDr4]
-     
-3. **Bogue #3 : [La condition d'accès pour la bonne fin]
+
+3. \*\*Bogue #3 : [La condition d'accès pour la bonne fin]
 
    - **Description :** [Condition d'accès pour la bonne fin]
    - **Impact :** [L'histoire peux te donner une fin différente même si les mêmes choix sont fait ce qui est bizarre]
    - **Statut chez eux :** [À faire]
    - **Carte Trello :** [https://trello.com/c/tR7igQX8]
 
-4. **Bogue #4 : [La touche Enter/space ne marche pas]
+4. \*\*Bogue #4 : [La touche Enter/space ne marche pas]
 
    - **Description :** [Enter/space ne marche pas au retour à l'accueil]
    - **Impact :** [Ce bug rend la navigation au menu impossible pour les utilisateurs non-voyants]
    - **Statut chez eux :** [À faire]
    - **Carte Trello :** [https://trello.com/c/jK4Yd02N]
-     
+
 #### 🟡 Bogues Mineurs
 
 5-12. [Liste brève, détails complets dans Trello]
 
-5. **Bogue #5 : [Bouton save dans mobile est non accessible]
+5. \*\*Bogue #5 : [Bouton save dans mobile est non accessible]
 
    - **Description :** [Bouton save est caché par l'interface et on ne peut pas scroller pour interagir avec.]
    - **Impact :** [Le bouton save n'est pas accessible]
    - **Statut chez eux :** [À faire]
    - **Carte Trello :** [https://trello.com/c/yRQ9x2OI]
 
-6. **Bogue #6 : [Les images load lentement]
+6. \*\*Bogue #6 : [Les images load lentement]
 
    - **Description :** [Les images prennent beaucoup de temps sur certain navigateurs à charger]
    - **Impact :** [Ralentit le rhytme du projet]
    - **Statut chez eux :** [À faire]
    - **Carte Trello :** [https://trello.com/c/LAY0MQdv]
 
-7. **Bogue #7 : [Pauvre ortographe au chapitre 15]
+7. \*\*Bogue #7 : [Pauvre ortographe au chapitre 15]
 
    - **Description :** [Répétition et manque de mots]
    - **Impact :** [Texte semble moins professionnel]
@@ -190,25 +187,25 @@
 
 RAS = Rien À Signaler
 
-| Environnement | Testé | Résultat | Notes |
-|---------------|-------|----------|-------|
-| Chrome Desktop | ✅ | ✅ Fonctionne | Quelques bugs mineurs |
-| Firefox Desktop | ✅ | ✅ Fonctionne | RAS |
-| Edge Desktop | ✅ | ✅ | RAS|
-| Mobile 375px | ✅ | ⚠️ Bogues trouvés | [les images se mettent sur le text] |
-| Tablette 768px | ✅ | ⚠️ Bogues trouvés | [les images se mettent sur le text] |
-| Desktop 1920px | ✅ | ⚠️ Bogues trouvés | [les images se mettent sur le text] |
+| Environnement   | Testé | Résultat          | Notes                               |
+| --------------- | ----- | ----------------- | ----------------------------------- |
+| Chrome Desktop  | ✅    | ✅ Fonctionne     | Quelques bugs mineurs               |
+| Firefox Desktop | ✅    | ✅ Fonctionne     | RAS                                 |
+| Edge Desktop    | ✅    | ✅                | RAS                                 |
+| Mobile 375px    | ✅    | ⚠️ Bogues trouvés | [les images se mettent sur le text] |
+| Tablette 768px  | ✅    | ⚠️ Bogues trouvés | [les images se mettent sur le text] |
+| Desktop 1920px  | ✅    | ⚠️ Bogues trouvés | [les images se mettent sur le text] |
 
 ### Bogues trouvés dans notre propre projet
 
 **En plus des bugs reçus de l'autre équipe, nous avons trouvé :**
 
-| Bogue # | Titre | Priorité | Statut | Assigné à |
-|-------|-------|----------|--------|-----------|
-| [1] | [Responsive] | 🔴 | En cours 🔄 | [Manel Yaya/Mégane Rangé] |
-| [2] | [refresh des donnée au retour à l'acceuil] | 🟡 | À faire ⏸️ | [Michael Un Dupré/Érick Ouellette] |
-| [3] | [corrigé des faute de français] | 🟡 | À faire ⏸️ | [tout l'équipe] |
-| [3] | [Alt ne marche pas sur le bouton commencer à l'accueil] | 🟡 | À faire ⏸️ | [tout l'équipe] |
+| Bogue # | Titre                                                   | Priorité | Statut      | Assigné à                          |
+| ------- | ------------------------------------------------------- | -------- | ----------- | ---------------------------------- |
+| [1]     | [Responsive]                                            | 🔴       | En cours 🔄 | [Manel Yaya/Mégane Rangé]          |
+| [2]     | [refresh des donnée au retour à l'acceuil]              | 🟡       | À faire ⏸️  | [Michael Un Dupré/Érick Ouellette] |
+| [3]     | [corrigé des faute de français]                         | 🟡       | À faire ⏸️  | [tout l'équipe]                    |
+| [3]     | [Alt ne marche pas sur le bouton commencer à l'accueil] | 🟡       | À faire ⏸️  | [tout l'équipe]                    |
 
 **Total bugs trouvés en interne :** [4]
 
@@ -223,17 +220,16 @@ RAS = Rien À Signaler
 
 ### Statistiques
 
-| Priorité | Bogues reçus | Corrigés | En cours | Pas encore faits |
-|----------|------------|----------|----------|------------------|
-| 🔴 Critiques | [0] | [0] ✅ | [0] 🔄 | [0] ⏸️ |
-| 🟠 Majeurs | [1] | [0] ✅ | [1] 🔄 | [0] ⏸️ |
-| 🟡 Mineurs | [2] | [1] ✅ | [0] 🔄 | [1] ⏸️ |
-| **TOTAL** | **[3]** | **[1]** | **[1]** | **[1]** |
+| Priorité     | Bogues reçus | Corrigés | En cours | Pas encore faits |
+| ------------ | ------------ | -------- | -------- | ---------------- |
+| 🔴 Critiques | [0]          | [0] ✅   | [0] 🔄   | [0] ⏸️           |
+| 🟠 Majeurs   | [1]          | [0] ✅   | [1] 🔄   | [0] ⏸️           |
+| 🟡 Mineurs   | [2]          | [1] ✅   | [0] 🔄   | [1] ⏸️           |
+| **TOTAL**    | **[3]**      | **[1]**  | **[1]**  | **[1]**          |
 
 ### Liste détaillée des bugs reçus
 
 #### 🔴 Bogues Critiques reçus
-
 
 #### 🟠 Bogues Majeurs reçus
 
@@ -284,12 +280,12 @@ RAS = Rien À Signaler
 
 **Résumé de nos corrections :**
 
-| Statut | Nombre | % du total |
-|--------|--------|------------|
-| ✅ Corrigés et validés | [0] | [0]% |
-| 🔄 En cours (sera fait d'ici le 10) | [1] | [33]% |
-| ⏸️ Reportés (si temps) | [1] | [33]% |
-| ❌ Non corrigés (justifiés) | [1] | [33]% |
+| Statut                              | Nombre | % du total |
+| ----------------------------------- | ------ | ---------- |
+| ✅ Corrigés et validés              | [0]    | [0]%       |
+| 🔄 En cours (sera fait d'ici le 10) | [1]    | [33]%      |
+| ⏸️ Reportés (si temps)              | [1]    | [33]%      |
+| ❌ Non corrigés (justifiés)         | [1]    | [33]%      |
 
 ### Priorités de correction (8→10 décembre)
 
@@ -302,6 +298,7 @@ RAS = Rien À Signaler
 #### 🔄 En cours (sera fait d'ici le 10)
 
 **Bogues critiques en cours :**
+
 1. **Bogue #1 : [Responsive des pages]**
    - Assigné à : [L'équipe entière]
    - Temps estimé : Maximum 3 heures
@@ -315,6 +312,7 @@ RAS = Rien À Signaler
    - Temps estimé : [Maximum 2] heures
    - Sera fait : [8-9 décembre]
    - Statut actuel : [Pas encore commencé]
+
 #### ⏸️ Reportés (ferons si temps après les critiques/majeurs)
 
 **Bogues mineurs à faire si temps :**
@@ -330,7 +328,6 @@ RAS = Rien À Signaler
 - **Impact :** [ce n'est pas un problème]
 
 ### Plan de travail (8-10 décembre)
-
 
 **Lundi 8 (soir) :**
 
@@ -351,7 +348,6 @@ RAS = Rien À Signaler
 - [ ] Corrections mineures urgentes
 - [ ] Tests finaux
 
-
 ---
 
 ## 6. Accessibilité
@@ -360,12 +356,11 @@ RAS = Rien À Signaler
 
 #### Navigation au clavier
 
-| Test | Résultat | Action |
-|------|----------|--------|
-| Tab fonctionne sur tous les éléments | ⚠️ | ajouté des alt au objet |
-| Focus visible | ✅  |
-| Enter/Space activent les boutons | ⚠️ | Marche partout sauf le bouton commencer à l'accueil
-
+| Test                                 | Résultat | Action                                              |
+| ------------------------------------ | -------- | --------------------------------------------------- |
+| Tab fonctionne sur tous les éléments | ⚠️       | ajouté des alt au objet                             |
+| Focus visible                        | ✅       |
+| Enter/Space activent les boutons     | ⚠️       | Marche partout sauf le bouton commencer à l'accueil |
 
 **Problèmes trouvés :** [1]  
 **Corrigés :** [2]  
@@ -377,22 +372,22 @@ RAS = Rien À Signaler
 
 RAS = Rien À Signaler
 
-| Élément | Couleurs | Ratio | Conforme WCAG AA | Action |
-|---------|----------|-------|------------------|--------|
-| Texte principal | #000 sur #FFF | 21:1 | ✅ Conforme | RAS |
-| Boutons | #FFF sur #960002 | 9.13:1 | ✅ Conforme | RAS |
-| Texte secondaire | #FFF sur #333138 | 12.82:1 | ✅ Conforme | RAS |
+| Élément          | Couleurs         | Ratio   | Conforme WCAG AA | Action |
+| ---------------- | ---------------- | ------- | ---------------- | ------ |
+| Texte principal  | #000 sur #FFF    | 21:1    | ✅ Conforme      | RAS    |
+| Boutons          | #FFF sur #960002 | 9.13:1  | ✅ Conforme      | RAS    |
+| Texte secondaire | #FFF sur #333138 | 12.82:1 | ✅ Conforme      | RAS    |
 
 **Problèmes de contraste :** [0]  
 **Plan de correction :** [aucun]
 
 #### Images et médias
 
-| Test | Résultat | Notes |
-|------|----------|-------|
-| Toutes les images ont un alt |  ✅ |  |
-| Alt descriptifs (pas "image1.jpg") |  ✅ |  |
-| Images décoratives avec alt="" |  ✅ | |
+| Test                               | Résultat | Notes |
+| ---------------------------------- | -------- | ----- |
+| Toutes les images ont un alt       | ✅       |       |
+| Alt descriptifs (pas "image1.jpg") | ✅       |       |
+| Images décoratives avec alt=""     | ✅       |       |
 
 ### Score global d'accessibilité
 
@@ -417,29 +412,28 @@ RAS = Rien À Signaler
 
 #### Résultats Desktop
 
-| Page | Performance | Accessibility | Best Practices | Notes |
-|------|-------------|---------------|----------------|-------|
-| Accueil | [75]/100 | [89]/100 | [100]/100 | [Commentaires] |
-| [Page principale] | [100]/100 | [58]/100 | [93]/100 | [Le refresh de la page cause un 404 ce qui affect le test lighouse] |
+| Page              | Performance | Accessibility | Best Practices | Notes                                                               |
+| ----------------- | ----------- | ------------- | -------------- | ------------------------------------------------------------------- |
+| Accueil           | [75]/100    | [89]/100      | [100]/100      | [Commentaires]                                                      |
+| [Page principale] | [100]/100   | [58]/100      | [93]/100       | [Le refresh de la page cause un 404 ce qui affect le test lighouse] |
 
 #### Résultats Mobile
 
-| Page | Performance | Accessibility | Best Practices | Notes |
-|------|-------------|---------------|----------------|-------|
-| Accueil | [74]/100 | [89]/100 | [100]/100 | [Commentaires] |
-| [Page principale] | [98]/100 | [58]/100 | [86]/100 | [Le refresh de la page cause un 404 ce qui affect le test lighouse] |
+| Page              | Performance | Accessibility | Best Practices | Notes                                                               |
+| ----------------- | ----------- | ------------- | -------------- | ------------------------------------------------------------------- |
+| Accueil           | [74]/100    | [89]/100      | [100]/100      | [Commentaires]                                                      |
+| [Page principale] | [98]/100    | [58]/100      | [86]/100       | [Le refresh de la page cause un 404 ce qui affect le test lighouse] |
 
 **Screenshots Lighthouse :** Voir annexes
-
 
 ### Optimisations effectuées
 
 #### Compression des images
 
-| Avant | Après | Économie |
-|-------|-------|----------|
-| [X] MB total | [X] MB total | [X]% économisés |
-| [X] images | [X] images compressées | Outil : TinyPNG |
+| Avant        | Après                  | Économie        |
+| ------------ | ---------------------- | --------------- |
+| [X] MB total | [X] MB total           | [X]% économisés |
+| [X] images   | [X] images compressées | Outil : TinyPNG |
 
 **Exemples :**
 
@@ -471,18 +465,18 @@ RAS = Rien À Signaler
 ### État global du projet au 8 décembre
 
 **Le projet est-il prêt pour la remise finale ?**
- ⚠️ Presque, corrections en cours 
+⚠️ Presque, corrections en cours
 
 **Résumé de la qualité :**
 
-| Aspect | État | Commentaire |
-|--------|------|-------------|
-| **Fonctionnalités principales** | ✅ | [le jeux marche comme on le souhaite] |
-| **Bogues critiques** | ✅  / [à a pas de bug critique à corrigé] |
-| **Bogues majeurs** | ⚠️ | [2]/[2] à corrigés |
-| **Accessibilité** | ⚠️ | Score : [54]/100 |
-| **Performance** | ✅ | Lighthouse : [100]/100 |
-| **Responsive** | ⚠️ | [on doit retravailler un peu sur le responisive du mobile] |
+| Aspect                          | État                                     | Commentaire                                                |
+| ------------------------------- | ---------------------------------------- | ---------------------------------------------------------- |
+| **Fonctionnalités principales** | ✅                                       | [le jeux marche comme on le souhaite]                      |
+| **Bogues critiques**            | ✅ / [à a pas de bug critique à corrigé] |
+| **Bogues majeurs**              | ⚠️                                       | [2]/[2] à corrigés                                         |
+| **Accessibilité**               | ⚠️                                       | Score : [54]/100                                           |
+| **Performance**                 | ✅                                       | Lighthouse : [100]/100                                     |
+| **Responsive**                  | ⚠️                                       | [on doit retravailler un peu sur le responisive du mobile] |
 
 ### Bilan des tests
 
@@ -504,6 +498,7 @@ RAS = Rien À Signaler
 ### Défis rencontrés et solutions 🔧
 
 1. **Défi :** [Bogues difficiles à corrigé]
+
    - **Solution :** [il y à certain bug qu'on ne comprend pas comment corrigé par example la page 404 lors d'un refresh]
 
 2. **Défi :** [Manque de temps pour tout corriger]
@@ -577,9 +572,10 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 
 - [Érick Ouellette] - [Testeur externe/interne] - Date : [08/12/2025]
 - [Michael Un Dupré] - [Testeur externe/interne] - Date : [08/12/2025]
+- [Mégane Ranger] - [Testeur externe/interne] - Date : [08/12/2025]
 
 **Nous confirmons que ce rapport reflète fidèlement l'état de notre projet et de notre processus QA.**
 
 ---
 
-**Date de dernière mise à jour :** 8 décembre 2024  
+**Date de dernière mise à jour :** 8 décembre 2024
