@@ -36,8 +36,8 @@
 
 - **Projet en ligne :** [[https://erickouellette1105.github.io/webapp-creative-erick-michael-manel-megane/]]
 - **GitHub :** [https://erickouellette1105.github.io/webapp-creative-erick-michael-manel-megane/]
-- **Trello (bugs) :** [https://trello.com/b/...]
-- **Projet testé (externe) :** [https://autre-projet.netlify.app]
+- **Trello (bugs) :** [https://trello.com/b/wmsTghPo/projet-web-tracer-votre-chemin]
+- **Projet testé (externe) :** [[https://autre-projet.netlify.app](https://fenrir0wulf.github.io/webapp-creative-Benoit-Dana-TingYung-William/)]
 
 ---
 
@@ -173,9 +173,9 @@ RAS = Rien À Signaler
 
 | Bogue # | Titre | Priorité | Statut | Assigné à |
 |-------|-------|----------|--------|-----------|
-| [1] | [l'icon] | 🔴 | Corrigé ✅ | [Nom] |
-| [X] | [Titre] | 🟠 | En cours 🔄 | [Nom] |
-| [X] | [Titre] | 🟡 | À faire ⏸️ | [Nom] |
+| [1] | [l'icon du tresor] | 🟠 | À faire ⏸️ | [Manel] |
+| [2] | [Stickman] | 🔴 | En cours 🔄 | [Megane] |
+| [3] | [Titre] | 🟡 | À faire ⏸️ | [Nom] |
 
 **Total bugs trouvés en interne :** [X]
 
