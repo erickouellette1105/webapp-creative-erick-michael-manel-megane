@@ -204,12 +204,14 @@ RAS = Rien À Signaler
 ### Bogues trouvés dans notre propre projet
 
 **En plus des bugs reçus de l'autre équipe, nous avons trouvé :**
-
 | Bogue # | Titre | Priorité | Statut | Assigné à |
 |-------|-------|----------|--------|-----------|
 | [1] | [l'icon] | 🔴 | Corrigé ✅ | [Nom] |
 | [X] | [Titre] | 🟠 | En cours 🔄 | [Nom] |
 | [X] | [Titre] | 🟡 | À faire ⏸️ | [Nom] |
+| [1] | [l'icon du tresor] | 🟠 | À faire ⏸️ | [Manel] |
+| [2] | [Stickman] | 🔴 | En cours 🔄 | [Megane] |
+| [3] | [Titre] | 🟡 | À faire ⏸️ | [Nom] |
 
 **Total bugs trouvés en interne :** [X]
 
