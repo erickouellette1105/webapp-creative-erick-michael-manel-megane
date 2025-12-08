@@ -85,7 +85,7 @@
 
 #### 🟠 Bogues Majeurs
 
-1. **Bogue #1 : [F5 brise la page]**]
+1. **Bogue #1 : [F5 brise la page]**
 
    - **Description :** [La touche f5 fait un erreur 404]
    - **Impact :** [Cela est critique car la page peut être perdu et il faut réécrire l'url du site pour y accéder après]
@@ -131,7 +131,7 @@
    - **Statut chez eux :** [À faire]
    - **Carte Trello :** [https://trello.com/c/LAY0MQdv]
 
-7. \*\*Bogue #7 : [Pauvre ortographe au chapitre 15]
+7. \*\*Bogue #7 : [Pauvre othographe au chapitre 15]
 
    - **Description :** [Répétition et manque de mots]
    - **Impact :** [Texte semble moins professionnel]
@@ -203,11 +203,12 @@ RAS = Rien À Signaler
 | Bogue # | Titre                                                   | Priorité | Statut      | Assigné à                          |
 | ------- | ------------------------------------------------------- | -------- | ----------- | ---------------------------------- |
 | [1]     | [Responsive]                                            | 🔴       | En cours 🔄 | [Manel Yaya/Mégane Rangé]          |
-| [2]     | [refresh des donnée au retour à l'acceuil]              | 🟡       | À faire ⏸️  | [Michael Un Dupré/Érick Ouellette] |
+| [2]     | [refresh des donnée au retour à l'acceuil]              | ✅       | Terminé  | [Michael Un Dupré/Érick Ouellette] |
 | [3]     | [corrigé des faute de français]                         | 🟡       | À faire ⏸️  | [tout l'équipe]                    |
-| [3]     | [Alt ne marche pas sur le bouton commencer à l'accueil] | 🟡       | À faire ⏸️  | [tout l'équipe]                    |
+| [4]     | [Alt ne marche pas sur le bouton commencer à l'accueil] | 🟡       | À faire ⏸️  | [tout l'équipe]                    |
+| [5]     | [page 404 lors d'un refresh] | ✅        | Terminé  | [tout l'équipe]                    |
 
-**Total bugs trouvés en interne :** [4]
+**Total bugs trouvés en interne :** [5]
 
 ---
 
@@ -223,9 +224,9 @@ RAS = Rien À Signaler
 | Priorité     | Bogues reçus | Corrigés | En cours | Pas encore faits |
 | ------------ | ------------ | -------- | -------- | ---------------- |
 | 🔴 Critiques | [0]          | [0] ✅   | [0] 🔄   | [0] ⏸️           |
-| 🟠 Majeurs   | [1]          | [0] ✅   | [1] 🔄   | [0] ⏸️           |
+| 🟠 Majeurs   | [2]          | [2] ✅   | [0] 🔄   | [0] ⏸️           |
 | 🟡 Mineurs   | [2]          | [1] ✅   | [0] 🔄   | [1] ⏸️           |
-| **TOTAL**    | **[3]**      | **[1]**  | **[1]**  | **[1]**          |
+| **TOTAL**    | **[4]**      | **[3]**  | **[0]**  | **[1]**          |
 
 ### Liste détaillée des bugs reçus
 
@@ -282,14 +283,20 @@ RAS = Rien À Signaler
 
 | Statut                              | Nombre | % du total |
 | ----------------------------------- | ------ | ---------- |
-| ✅ Corrigés et validés              | [0]    | [0]%       |
-| 🔄 En cours (sera fait d'ici le 10) | [1]    | [33]%      |
-| ⏸️ Reportés (si temps)              | [1]    | [33]%      |
-| ❌ Non corrigés (justifiés)         | [1]    | [33]%      |
+| ✅ Corrigés et validés              | [3]    | [60]%       |
+| 🔄 En cours (sera fait d'ici le 10) | [0]    | [0]%      |
+| ⏸️ Reportés (si temps)              | [1]    | [20]%      |
+| ❌ Non corrigés (justifiés)         | [1]    | [20]%      |
 
 ### Priorités de correction (8→10 décembre)
 
 #### ✅ Déjà corrigés (avant le 8)
+
+1. **Bogue #1 : [refresh donner a l'acceuil]**
+   - Assigné à : [Michael Un Dupré]
+   - Temps estimé : Maximum 1 heures
+   - Sera fait : [8-9 décembre]
+   - Statut actuel : [Terminé]
 
 **Bogues critiques corrigés :**
 
@@ -311,7 +318,7 @@ RAS = Rien À Signaler
    - Assigné à : [L'équipe entière]
    - Temps estimé : [Maximum 2] heures
    - Sera fait : [8-9 décembre]
-   - Statut actuel : [Pas encore commencé]
+   - Statut actuel : [Terminé]
 
 #### ⏸️ Reportés (ferons si temps après les critiques/majeurs)
 
@@ -393,8 +400,8 @@ RAS = Rien À Signaler
 **Résumé :**
 
 - Navigation clavier : [2] tests passés
-- Contraste : [X] éléments conformes
-- Images : [X] avec alt approprié
+- Contraste : [3] éléments conformes
+- Images : [2] avec alt approprié
 
 **Score estimé : [85]/100**
 
@@ -431,8 +438,8 @@ RAS = Rien À Signaler
 
 | Avant        | Après                  | Économie        |
 | ------------ | ---------------------- | --------------- |
-| [X] MB total | [X] MB total           | [X]% économisés |
-| [X] images   | [X] images compressées | Outil : TinyPNG |
+| [0.383] MB total | [0.383] MB total           | [0]% économisés |
+| [16] images   | [0] images compressées |  |
 
 **Exemples :**
 
@@ -472,8 +479,8 @@ RAS = Rien À Signaler
 | **Fonctionnalités principales** | ✅                                       | [le jeux marche comme on le souhaite]                      |
 | **Bogues critiques**            | ✅ / [à a pas de bug critique à corrigé] |
 | **Bogues majeurs**              | ⚠️                                       | [2]/[2] à corrigés                                         |
-| **Accessibilité**               | ⚠️                                       | Score : [54]/100                                           |
-| **Performance**                 | ✅                                       | Lighthouse : [100]/100                                     |
+| **Accessibilité**               | ⚠️                                       | Score : [92]/100                                           |
+| **Performance**                 | ✅                                       | Lighthouse : [89]/100                                     |
 | **Responsive**                  | ⚠️                                       | [on doit retravailler un peu sur le responisive du mobile] |
 
 ### Bilan des tests
@@ -558,9 +565,9 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 
 **Commits Git durant la phase QA :**
 
-- [7/12/2025] : [1] commits (corrections bugs)
-- [7/12/2025] : [11] commits
-- Total : [12] commits de corrections
+- [7/12/2025] : [3] commits (corrections bugs)
+- [7/12/2025] : [12] commits
+- Total : [15] commits de corrections
 
 ---
 
