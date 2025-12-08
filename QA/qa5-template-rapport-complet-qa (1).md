@@ -441,10 +441,6 @@ RAS = Rien À Signaler
 | [0.383] MB total | [0.383] MB total           | [0]% économisés |
 | [16] images   | [0] images compressées |  |
 
-**Exemples :**
-
-- `image1.jpg` : 5.2 MB → 1.8 MB (65% économie)
-- `background.png` : 3.1 MB → 800 KB (74% économie)
 
 #### Autres optimisations
 
@@ -530,25 +526,25 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 
 ### Annexe A : Checklist complète des tests
 
-![Grille QA](../QA/qa3-grille-test-externe.xlsx)
+![Grille QA](./QA/qa3-grille-test-externe.xlsx)
 
 ### Annexe B : Screenshots Lighthouse
 
 [Captures d'écran des rapports Lighthouse pour pages principales]
 
-![Accueil-desktop](../img/accueil-desktop.png)
+![Accueil-desktop](./img/accueil-desktop.png)
 
-![Accueil-mobile](../img/accueil-mobile.png)
+![Accueil-mobile](./img/accueil-mobile.png)
 
-![page-principale-desktop](../img/page-principale-desktop.png)
+![page-principale-desktop](./img/page-principale-desktop.png)
 
-![page-principale-mobile](../img/page-principale-mobile.png)
+![page-principale-mobile](./img/page-principale-mobile.png)
 
 ### Annexe C : Screenshots de bugs
 
 
 
-![404](../img/bug-majeur-404.png)
+![404](./img/bug-majeur-404.png)
 
 ### Annexe D : Lien vers Trello
 
