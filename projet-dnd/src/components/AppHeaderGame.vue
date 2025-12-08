@@ -84,16 +84,6 @@ export default {
     border-radius: 4px;
 }
 
-
-
-
-
-
-.audio:hover {
-    transform: scale(1.1);
-    cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
-}
-
 .btn-toggle {
     position: fixed;
     right: 50px;
@@ -218,6 +208,7 @@ ul {
   align-items: center;
   min-width: 300px;
   font-size: 18px;
+  font-family: GoldenSwing;
 }
 
 .stickman {
