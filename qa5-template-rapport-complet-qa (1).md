@@ -320,7 +320,6 @@ RAS = Rien À Signaler
 **Bogues mineurs à faire si temps :**
 
 1. Bogue #Z : [Alt ne marche pas sur le bouton à l'accueil] - Temps estimé : [1]h
-2. Bogue #W : [Titre] - Temps estimé : [X]h
 
 #### ❌ Non corrigés (avec justification)
 
