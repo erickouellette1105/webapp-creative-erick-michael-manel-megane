@@ -66,6 +66,7 @@ export default {
   color: white;
   margin-top: 200px;
   text-align: center;
+
 }
 
 
