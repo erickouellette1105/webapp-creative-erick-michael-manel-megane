@@ -152,7 +152,7 @@
 - [✅] Alt text sur images
 - [✅] Cas limites (formulaires vides, texte long, etc.)
 
-**Taux de réussite :** [X]/[Y] tests passés = [X]%
+**Taux de réussite :** [12]/[13] tests passés = [92]%
 
 ### Environnements testés
 
@@ -163,9 +163,9 @@ RAS = Rien À Signaler
 | Chrome Desktop | ✅ | ✅ Fonctionne | Quelques bugs mineurs |
 | Firefox Desktop | ✅ | ✅ Fonctionne | RAS |
 | Edge Desktop | ✅ | ✅ | RAS|
-| Mobile 375px | ✅ | ⚠️ Bogues trouvés | [Détails] |
-| Tablette 768px | ✅ | ✅ Fonctionne | RAS |
-| Desktop 1920px | ✅ | ✅ Fonctionne | RAS |
+| Mobile 375px | ✅ | ⚠️ Bogues trouvés | [les images se mettent sur le text] |
+| Tablette 768px | ✅ | ⚠️ Bogues trouvés | [les images se mettent sur le text] |
+| Desktop 1920px | ✅ | ⚠️ Bogues trouvés | [les images se mettent sur le text] |
 
 ### Bogues trouvés dans notre propre projet
 
@@ -173,7 +173,7 @@ RAS = Rien À Signaler
 
 | Bogue # | Titre | Priorité | Statut | Assigné à |
 |-------|-------|----------|--------|-----------|
-| [X] | [Titre] | 🔴 | Corrigé ✅ | [Nom] |
+| [1] | [l'icon] | 🔴 | Corrigé ✅ | [Nom] |
 | [X] | [Titre] | 🟠 | En cours 🔄 | [Nom] |
 | [X] | [Titre] | 🟡 | À faire ⏸️ | [Nom] |
 
