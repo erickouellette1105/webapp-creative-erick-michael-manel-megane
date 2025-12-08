@@ -577,4 +577,4 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 
 ---
 
-**Date de dernière mise à jour :** 8 décembre 2024
+**Date de dernière mise à jour :** 8 décembre 2025
