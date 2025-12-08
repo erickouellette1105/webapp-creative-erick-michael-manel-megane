@@ -1,6 +1,6 @@
 <template>
 
-    <button @click="saveBtn" class="saveBtn">Nouvelle partie</button>
+    <button @click="saveBtn" class="saveBtn" alt="saveBtn">Nouvelle partie</button>
 
 </template>
 

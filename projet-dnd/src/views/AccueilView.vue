@@ -13,8 +13,8 @@ import ClickCursor from '@/assets/cur/Click.cur'
 
   <div class="home">
 
-    <h1 class="title"> L'Aventure de Stickman</h1>
-    <SaveButton />
+    <h1 class="title" alt="titre"> L'Aventure de Stickman</h1>
+    <SaveButton alt="savebutton"/>
 
   </div>
   <div class="container">

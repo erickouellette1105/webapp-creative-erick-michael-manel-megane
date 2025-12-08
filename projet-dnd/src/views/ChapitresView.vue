@@ -52,7 +52,7 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
 
 
     <div class="stickman">
-        <img src="../assets/img/stickman.png"></img>
+        <img src="../assets/img/stickman.png" alt="stickman"></img>
     </div>
 
 
