@@ -37,7 +37,7 @@
 - **Projet en ligne :** [[https://erickouellette1105.github.io/webapp-creative-erick-michael-manel-megane/]]
 - **GitHub :** [https://erickouellette1105.github.io/webapp-creative-erick-michael-manel-megane/]
 - **Trello (bugs) :** [https://trello.com/b/wmsTghPo/projet-web-tracer-votre-chemin]
-- **Projet testé (externe) :** [[https://autre-projet.netlify.app](https://fenrir0wulf.github.io/webapp-creative-Benoit-Dana-TingYung-William/)]
+- **Projet testé (externe) :** [https://fenrir0wulf.github.io/webapp-creative-Benoit-Dana-TingYung-William/]
 
 ---
 
