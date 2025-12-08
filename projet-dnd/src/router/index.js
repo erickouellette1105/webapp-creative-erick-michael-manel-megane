@@ -1,4 +1,4 @@
-import { createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import AccueilView from '../views/AccueilView.vue';
 import ChapitresView from '../views/ChapitresView.vue';
 import SauvegardeView from '../views/SauvegardeView.vue';
