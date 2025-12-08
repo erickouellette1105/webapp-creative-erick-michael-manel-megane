@@ -17,11 +17,11 @@
   },
   "3": {
     "title": "Le Repaire des Gobelins",
-    "image": "/src/assets/img/goblins.webp",
+    "image": "/images/goblins.webp",
     "text": "Vous arrivez dans un repaire de goblins. Cependant ils ont tous endormis. Que faites-vous?",
     "choices": [
       { "id": 1, "text": "Battre les goblins avec votre force non subtile", "nextChapter": "5" },
-      { "id": 2, "text": "Voler les armes des goblins pour vous enforcer", "nextChapter": "6", "inventory": "l’épée suprême du maître goblin", "description": "Une épée lourde qui appartient au maitre goblin. Débloqué l'abilité Tournade Maléfique", "image": "/src/assets/img/epee_supreme.png" },
+      { "id": 2, "text": "Voler les armes des goblins pour vous enforcer", "nextChapter": "6", "inventory": "l’épée suprême du maître goblin", "description": "Une épée lourde qui appartient au maitre goblin. Débloqué l'abilité Tournade Maléfique", "image": "/images/epee_supreme.png" },
       { "id": 3, "text": "Passer discrètement les goblins", "nextChapter": "7" }
     ]
   },
@@ -42,7 +42,7 @@
   },
   "6": {
     "title": "L’Épée Suprême",
-    "image": "/src/assets/img/epee_supreme.png",
+    "image": "/images/epee_supreme.png",
     "text": "Vous volez l’épée suprême du maître goblin mais ceci le réveille. Tout à coup, une horde de goblins apparait et vous encerclent. Avec votre nouvelle arme, utiliser l’attaque spéciale : Tornade maléfique.",
     "choices": [
       { "id": 1, "text": "Continuer", "nextChapter": "10" }
@@ -52,9 +52,9 @@
     "title": "Trois Livres, Trois Destins",
     "text": "Vous trouvez une bibliothèque secrète contenant trois grimoires d’attributs légendaires. Vous pouvez choisir un des trois pour recevoir un pouvoir spécial.",
     "choices": [
-      { "id": 1, "text": "grimoire de feu", "nextChapter": "11", "inventory": "grimoire de feu", "description": "Un ancien livre chargé de magie enflammée.","image": "/src/assets/img/grimoire_feu.png" },
-      { "id": 2, "text": "magie des ombres", "nextChapter": "11", "inventory": "magie des ombres", "description": "Une magie qui vous engouffre dans les ombres","image": "/src/assets/img/grimoire_magie_des_ombres.png" },
-      { "id": 3, "text": "sort du ???", "nextChapter": "11" ,"inventory": "???", "description": "Aucune information","image": "/src/assets/img/grimoire_mysterieux.png" }
+      { "id": 1, "text": "grimoire de feu", "nextChapter": "11", "inventory": "grimoire de feu", "description": "Un ancien livre chargé de magie enflammée.","image": "/images/grimoire_feu.png" },
+      { "id": 2, "text": "magie des ombres", "nextChapter": "11", "inventory": "magie des ombres", "description": "Une magie qui vous engouffre dans les ombres","image": "/images/grimoire_magie_des_ombres.png" },
+      { "id": 3, "text": "sort du ???", "nextChapter": "11" ,"inventory": "???", "description": "Aucune information","image": "/images/grimoire_mysterieux.png" }
 
     ]
   },
@@ -69,8 +69,8 @@
     "title": "L’Armurerie du Chef",
     "text": "Vous vous retrouvé dans la salle d’armes des chef militaires de Velkram. Choisit une arme pour vous préparer au combat.",
     "choices": [
-      { "id": 1, "text": "prendre l'épée crayon", "nextChapter": "11", "inventory": "épée crayon", "description": "Une arme légère mais étonnamment pointue.","image": "/src/assets/img/epee_crayon.png"},
-      { "id": 1, "text": "prendre des dynamites", "nextChapter": "10", "inventory": "dynamite", "description": "Boom!","image": "/src/assets/img/dynamite.png"},
+      { "id": 1, "text": "prendre l'épée crayon", "nextChapter": "11", "inventory": "épée crayon", "description": "Une arme légère mais étonnamment pointue.","image": "/images/epee_crayon.png"},
+      { "id": 1, "text": "prendre des dynamites", "nextChapter": "10", "inventory": "dynamite", "description": "Boom!","image": "/images/dynamite.png"},
       { "id": 1, "text": "ouvrire un coffre mystérieux", "nextChapter": "8"}
     ]
   },

@@ -52,7 +52,7 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
 
 
     <div class="stickman">
-        <img src="../assets/img/stickman.png" alt="stickman"></img>
+        <img src="/images/stickman.png" alt="stickman"></img>
     </div>
 
 
@@ -176,7 +176,7 @@ body {
 
 <style scoped>
 .title {
-    background-image: url('../assets/img/chapterTitles.svg');
+    background-image: url('/images/chapterTitles.svg');
     width: 100%;
     height: 50vh;
     background-size: cover;

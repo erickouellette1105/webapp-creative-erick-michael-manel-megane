@@ -1,7 +1,7 @@
 <template>
     <!-- Bouton toggle des crédit-->
     <button @click="toggleCredit" class="btn-toggle">
-        <img src="../assets/img/info.svg" alt="credit" class="credit-img" loading="lazy">
+        <img src="/images/info.svg" alt="credit" class="credit-img" loading="lazy">
     </button>
 
     <!-- Modale des crédits-->
