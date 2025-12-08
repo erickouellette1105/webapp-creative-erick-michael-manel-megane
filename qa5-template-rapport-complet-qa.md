@@ -34,7 +34,7 @@
 
 ### Liens importants
 
-- **Projet en ligne :** [https://votre-projet.netlify.app]
+- **Projet en ligne :** [[https://erickouellette1105.github.io/webapp-creative-erick-michael-manel-megane/]]
 - **GitHub :** [https://erickouellette1105.github.io/webapp-creative-erick-michael-manel-megane/]
 - **Trello (bugs) :** [https://trello.com/b/...]
 - **Projet testé (externe) :** [https://autre-projet.netlify.app]
