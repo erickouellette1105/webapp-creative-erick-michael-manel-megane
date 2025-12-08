@@ -434,7 +434,7 @@ RAS = Rien À Signaler
 | [Page principale] | [98]/100 | [58]/100 | [86]/100 | [Le refresh de la page cause un 404 ce qui affect le test lighouse] |
 
 **Screenshots Lighthouse :** Voir annexes
-[]()
+
 
 ### Optimisations effectuées
 
@@ -475,7 +475,7 @@ RAS = Rien À Signaler
 ### État global du projet au 8 décembre
 
 **Le projet est-il prêt pour la remise finale ?**
-✅ Oui, fonctionnel / ⚠️ Presque, corrections en cours / ❌ Non, bugs critiques restants
+ ⚠️ Presque, corrections en cours 
 
 **Résumé de la qualité :**
 
@@ -492,12 +492,12 @@ RAS = Rien À Signaler
 
 **Statistiques globales :**
 
-- **Bogues trouvés (tous) :** [X] (internes + reçus)
+- **Bogues trouvés (tous) :** [3] (internes + reçus)
 - **Bogues corrigés :** [X] ([X]%)
 - **Bogues en cours :** [X] (seront corrigés d'ici le 10)
 - **Bogues mineurs reportés :** [X]
 
-**Temps total consacré au QA :** [X] heures
+**Temps total consacré au QA :** [8] heures
 
 ### Ce qui fonctionne bien ✅
 
@@ -539,6 +539,14 @@ RAS = Rien À Signaler
 ### Annexe B : Screenshots Lighthouse
 
 [Captures d'écran des rapports Lighthouse pour pages principales]
+
+![Accueil-desktop](./img/accueil-desktop.png)
+
+![Accueil-mobile](./img/accueil-mobile.png)
+
+![page-principale-desktop](./img/page-principale-desktop.png)
+
+![page-principale-mobile](./img/page-principale-mobile.png)
 
 ### Annexe C : Screenshots de bugs
 
