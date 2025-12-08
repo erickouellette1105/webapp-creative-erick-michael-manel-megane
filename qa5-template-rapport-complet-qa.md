@@ -30,7 +30,7 @@
 | [Manel] | Tests internes + corrections | [X] heures |
 | [Manel] | Tests accessibilité + performance | [X] heures |
 
-**Total d'heures de QA :** [X] heures
+**Total d'heures de QA :** [3] heures
 
 ### Liens importants
 
@@ -206,14 +206,11 @@ RAS = Rien À Signaler
 **En plus des bugs reçus de l'autre équipe, nous avons trouvé :**
 | Bogue # | Titre | Priorité | Statut | Assigné à |
 |-------|-------|----------|--------|-----------|
-| [1] | [l'icon] | 🔴 | Corrigé ✅ | [Nom] |
-| [X] | [Titre] | 🟠 | En cours 🔄 | [Nom] |
-| [X] | [Titre] | 🟡 | À faire ⏸️ | [Nom] |
 | [1] | [l'icon du tresor] | 🟠 | À faire ⏸️ | [Manel] |
 | [2] | [Stickman] | 🔴 | En cours 🔄 | [Megane] |
-| [3] | [Titre] | 🟡 | À faire ⏸️ | [Nom] |
+| [3] | [enelever le boutton son qui ne sert a rien] | 🟡 |  En cours 🔄 | [Eric] |
 
-**Total bugs trouvés en interne :** [X]
+**Total bugs trouvés en interne :** [3]
 
 ---
 
