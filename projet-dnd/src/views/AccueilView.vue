@@ -92,6 +92,11 @@ button:hover {
 
 }
 
+button:focus {
+  outline: 2px solid #4A90E2;
+  outline-offset: 2px;
+}
+
 .light {
   position: absolute;
   width: 0px;
