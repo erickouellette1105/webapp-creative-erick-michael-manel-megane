@@ -546,7 +546,7 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 
 ### Annexe C : Screenshots de bugs
 
-![Bug](../img/404.png)
+
 
 ![404](../img/bug-majeur-404.png)
 
@@ -584,4 +584,4 @@ on est confiant(e) car on à fait nos teste necessaire et notre site est fonctio
 
 ---
 
-**Date de dernière mise à jour :** 8 décembre 2024
+**Date de dernière mise à jour :** 8 décembre 2025

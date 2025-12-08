@@ -109,7 +109,7 @@ export default {
 }
 
 ul {
-
+ 
     text-align: center;
 }
 

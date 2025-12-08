@@ -33,6 +33,9 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
             </div>
         </div>
 
+        <div class="stickman">
+        <img src="/images/stickman.png" alt="stickman" loading="lazy"></img>
+    </div>
         <!-- AJOUT DE L'IMAGE DU CHAPITRE -->
         <div class="chapter-image" v-if="currentChapter.image">
             <img :src="currentChapter.image" alt="image du chapitre" loading="lazy">
@@ -49,12 +52,6 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
             </button>
         </div>
     </div>
-
-
-    <div class="stickman">
-        <img src="/images/stickman.png" alt="stickman" loading="lazy"></img>
-    </div>
-
 
 </template>
 
@@ -166,7 +163,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 body {
     background-color: #960002;
     cursor: url('/src/assets/cur/NormalSelect.cur'), auto;
@@ -185,15 +182,20 @@ body {
     overflow-y: hidden;
 }
 
+.stickman {
+    position: relative;
+}
+
 .stickman img {
     position: absolute;
-    right: 0;
-    width: 300px;
-    bottom: 0;
-    transition: width 0.4s ease;
-    /*pour que l'image se rétressit fluidement*/
-    z-index: 0;
+    left: 95%;
+    transform: translateX(-50%);
+    top: -480px;     /* 👈 MOVE THE STICKMAN UP */
+    width: 200px;
+    pointer-events: none;
+    opacity: 0.5;
 }
+
 
 .chapter {
     max-width: 1000px;
@@ -270,11 +272,12 @@ body {
 }
 
 .choices-content {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 3%;
     border-radius: 8px;
     z-index: 1;
     position: relative;
+    
 }
 
 .back-button {
@@ -358,7 +361,8 @@ body {
 @media screen and (max-width: 375px) {
     .stickman img {
         width: 150px;
-        top: 83%;
+        left: 80%;
+        top: -350px; 
     }
 
     .chapter-header h2 {

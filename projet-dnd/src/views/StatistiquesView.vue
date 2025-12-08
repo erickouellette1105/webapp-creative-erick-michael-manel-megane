@@ -110,7 +110,7 @@ li {
 @media screen and (max-width: 1920px) {
     .historique {
         background-color: #6b0f1a;
-        min-height: 120vh;
+        min-height: 150vh;
         text-align: center;
     }
 
@@ -139,7 +139,7 @@ li {
 
     .historique {
         background-color: #6b0f1a;
-        min-height: 120vh;
+        min-height: 150vh;
         text-align: center;
     }
 
@@ -165,7 +165,7 @@ li {
 
     .historique {
         background-color: #6b0f1a;
-        min-height: 150vh;
+        min-height: 200vh;
         text-align: center;
     }
 
