@@ -21,7 +21,7 @@
     "text": "Vous arrivez dans un repaire de goblins. Cependant ils ont tous endormis. Que faites-vous?",
     "choices": [
       { "id": 1, "text": "Battre les goblins avec votre force non subtile", "nextChapter": "5" },
-      { "id": 2, "text": "Voler les armes des goblins pour vous enforcer", "nextChapter": "6", "inventory": "l’épée suprême du maître goblin", "description": "Une épée lourde qui appartient au maitre goblin. Débloqué l'abilité Tournade Maléfique" },
+      { "id": 2, "text": "Voler les armes des goblins pour vous enforcer", "nextChapter": "6", "inventory": "l’épée suprême du maître goblin", "description": "Une épée lourde qui appartient au maitre goblin. Débloqué l'abilité Tournade Maléfique", "image": "/src/assets/img/epee_supreme.png" },
       { "id": 3, "text": "Passer discrètement les goblins", "nextChapter": "7" }
     ]
   },
