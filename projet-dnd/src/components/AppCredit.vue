@@ -109,7 +109,7 @@ export default {
 }
 
 ul {
-    list-style-type: none;
+ 
     text-align: center;
 }
 
