@@ -2,13 +2,13 @@
     <header>
         <!-- Bouton toggle de l'inventaire-->
         <button @click="toggleInventory" class="btn-toggle">
-            <img src="../assets/img/coffre.png" alt="coffre" class="coffre-img">
+            <img src="../assets/img/coffre.png" alt="coffre" class="coffre-img" loading="lazy">
         </button>
 
         <!-- Modale de l'inventaire-->
         <div v-if="isOpen" class="inventory-modal">
 
-            <img class="audio audio-in-modal" src="../assets/img/audio_icon.png" alt="audio"></img>
+            <img class="audio audio-in-modal" src="../assets/img/audio_icon.png" alt="audio" loading="lazy"></img>
 
             <div class="inventory-content">
 
@@ -22,19 +22,19 @@
       v-if="item.image" 
       :src="item.image" 
       :alt="item.name" 
-      class="inventory-item-img"
+      class="inventory-item-img" alt="image-item" loading="lazy"
     />
     {{ item.name }}
   </li>
                 </ul>
 
                 <div class="image-container-text">
-                    <img src="../assets/img/text-banner-inventory.png" alt="texte-banniere" class="texte-banner">
+                    <img src="../assets/img/text-banner-inventory.png" alt="texte-banniere" class="texte-banner" loading="lazy">
                     <p class="text" v-if="selectedItem"> {{ selectedItem.description }} </p>
                     <p class="text" v-else> Cliquez sur un objet pour voir sa description.</p>
                 </div>
 
-                <img src="../assets/img/stickman.png" alt="stickman" class="stickman">
+                <img src="../assets/img/stickman.png" alt="stickman" class="stickman" loading="lazy">
 
             </div>
         </div>

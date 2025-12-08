@@ -35,7 +35,7 @@ import AppHeaderGame from '@/components/AppHeaderGame.vue'
 
         <!-- AJOUT DE L'IMAGE DU CHAPITRE -->
         <div class="chapter-image" v-if="currentChapter.image">
-            <img :src="currentChapter.image" alt="image du chapitre">
+            <img :src="currentChapter.image" alt="image du chapitre" loading="lazy">
         </div>
 
         <div class="back-stats">
