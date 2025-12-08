@@ -66,6 +66,7 @@ export default {
   color: white;
   margin-top: 200px;
   text-align: center;
+
 }
 
 
@@ -89,6 +90,11 @@ button:hover {
   transition: .3s;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
+}
+
+button:focus {
+  outline: 2px solid #4A90E2;
+  outline-offset: 2px;
 }
 
 .light {

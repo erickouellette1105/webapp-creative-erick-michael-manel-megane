@@ -55,7 +55,10 @@ export default {
 .credit{
     display: grid;
     gap: 20px;
-    text-align: center;
+
+    justify-content: center;
+    font-family: Medieval ;
+    font-size: 1.5rem;
 }
 
 .credit-img {
@@ -73,9 +76,9 @@ export default {
 }
 
 /* Écran petit */
-@media (max-width: 480px) {
+@media (max-width: 375px) {
     .credit-img {
-    width: 15px;
+    width: 50px;
 }
 }
 
@@ -106,10 +109,12 @@ export default {
 }
 
 ul {
-    list-style-type: none;
+ 
+    text-align: center;
 }
 
 h2 {
-    font-size: 7rem;
+    font-size: 5rem;
+    margin-top: 20%;
 }
 </style>
