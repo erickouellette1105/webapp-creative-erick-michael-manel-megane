@@ -69,7 +69,7 @@
     "title": "L’Armurerie du Chef",
     "text": "Vous vous retrouvé dans la salle d’armes des chef militaires de Velkram. Choisit une arme pour vous préparer au combat.",
     "choices": [
-      { "id": 1, "text": "prendre l'épée crayon", "nextChapter": "11", "inventory": "épée crayon", "description": "Une arme légère mais étonnamment pointue.","image": "/images/epee_crayon.png"},
+      { "id": 1, "text": "prendre l'épée crayon", "nextChapter": "11", "inventory": "épée crayon et armure de papier", "description": "Une arme légère mais étonnamment pointue et une armure faite en papier?","image": "/images/epee_crayon.png"},
       { "id": 1, "text": "prendre des dynamites", "nextChapter": "10", "inventory": "dynamite", "description": "Boom!","image": "/images/dynamite.png"},
       { "id": 1, "text": "ouvrire un coffre mystérieux", "nextChapter": "8"}
     ]
@@ -91,55 +91,55 @@
       { "id": 2, "text": "Attaque des ombres", "nextChapter": "16", "requires": "magie des ombres"  },
       { "id": 3, "text": "utiliser le sort mystérieux", "nextChapter": "19", "requires": "???"  },
       { "id": 4, "text": "utiliser l'épée du maitre goblin", "nextChapter": "14", "requires": "l’épée suprême du maître goblin"},
-      { "id": 5, "text": "utiliser l'épée crayon", "nextChapter": "18", "requires": "épée crayon"},
+      { "id": 5, "text": "utiliser l'épée crayon", "nextChapter": "18", "requires": "épée crayon et armure de papier"},
       { "id": 6, "text": "utiliser les dynamites", "nextChapter": "15", "requires": "dynamite"},
       { "id": 7, "text": "attaque avec votre bras de stickman", "nextChapter": "13" }
     ]
   },
   "12": {
-    "title": "La Mimique Dévoreuse",
+    "title": "Fin: La Mimique Dévoreuse",
     "text": "La mimique était plus fort que vous et vous a mangé.",
     "choices": [
       { "id": 1, "text": "Recommencer", "nextChapter": "1" }
     ]
   },
   "13": {
-    "title": "La Victoire de l’Ombre",
+    "title": "Fin: Le zero",
     "text": "Malgré vos meilleurs efforts, le plan du nécromancien a marché",
     "choices": [
       { "id": 1, "text": "Recommencer", "nextChapter": "1" }
     ]
   },
   "14": {
-    "title": "Le Triomphe Ultime",
+    "title": "Fin: Le Triomphe Ultime",
     "text": "Vous avez vaincu le sorcier ultime et vous êtes maintenant une légende digne de votre nom.",
     "choices": [
       { "id": 1, "text": "Recommencer", "nextChapter": "1" }
     ]
   },
     "15": {
-    "title": "Le Grand Boum",
+    "title": "Fin: Le Grand Boom",
     "text": "BOOM!",
     "choices": [
       { "id": 1, "text": "Recommencer", "nextChapter": "1" }
     ]
   },
     "16": {
-    "title": "Dans l’Ombre",
+    "title": "Fin: Dans l’Ombre",
     "text": "Vous utiliser une magie qui vous engouffre dans les ombres et Velcram vous perd de vue, vous le contourné pour allé sauvé votre frère dans un silence total",
     "choices": [
       { "id": 1, "text": "Recommencer", "nextChapter": "1" }
     ]
   },
   "17": {
-  "title": "Victoire Amère",
+  "title": "Fin: Plume du phoenix",
   "text": "le grimoire se consume en une flame brillant d'un bleu majestique Velcram à son tour Évoque un Golem, après un combat féroce entre les deux évocations vous gagné contre Velcram mais il était trop tard pour sauvé votre frère.",
   "choices": [
     { "id": 1, "text": "Recommencer", "nextChapter": "1" }
   ]
   },
   "18": {
-  "title": "Le Héros en Papier",
+  "title": "Fin: Le bouffon",
   "text": "Velcram vous lance une petite flamèche et vous prenez feu comme une allumette *vraiment vous prenez une armure en papier et un crayon pour vous battre???",
   "choices": [
     { "id": 1, "text": "Recommencer", "nextChapter": "1" }
