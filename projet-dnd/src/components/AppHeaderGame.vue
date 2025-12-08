@@ -1,78 +1,106 @@
 <template>
     <header>
-        <img class="audio" src="../assets/img/audio_icon.png" alt="audio"></img>
-
         <!-- Bouton toggle de l'inventaire-->
         <button @click="toggleInventory" class="btn-toggle">
-            <img src="../assets/coffre.png" alt="coffre" class="coffre-img">
+            <img src="/images/coffre.png" alt="coffre" class="coffre-img" loading="lazy">
         </button>
 
         <!-- Modale de l'inventaire-->
         <div v-if="isOpen" class="inventory-modal">
 
-            <img class="audio audio-in-modal" src="../assets/img/audio_icon.png" alt="audio"></img>
+            <img class="audio audio-in-modal" src="/images/audio_icon.png" alt="audio" loading="lazy"></img>
 
             <div class="inventory-content">
 
                 <div class="image-container-title">
-                    <img src="../assets/img/title-banner-inventory.png" alt="titre-banniere" class="titre-banner">
+                    <img src="/images/title-banner-inventory.png" alt="titre-banniere" class="titre-banner">
                     <p class="text-titre">Inventaire</p>
                 </div>
                 <ul>
-                    <li v-for="item in items" :key="item.id" class="items">
-                        {{ item.name }}
-                    </li>
+                    <li v-for="item in items" :key="item.id" @click="selectItem(item)" class="items">
+    <img 
+      v-if="item.image" 
+      :src="item.image" 
+      :alt="item.name" 
+      class="inventory-item-img" alt="image-item" loading="lazy"
+    />
+    {{ item.name }}
+  </li>
                 </ul>
 
                 <div class="image-container-text">
-                    <img src="../assets/img/text-banner-inventory.png" alt="texte-banniere" class="texte-banner">
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id luctus odio.
-                        Curabitur vitae facilisis augue, ut convallis metus. Mauris convallis eros et lacus viverra
-                        facilisis. Nam sit amet turpis ex. Pellentesque habitant morbi tristique senectus et netus et
-                        malesuada fames ac turpis egestas. Ut leo urna, dapibus a pharetra sed, tempor id dui. Nullam
-                        pharetra velit id mi lacinia, nec congue nisl vestibulum. Suspendisse magna sapien, eleifend in
-                        facilisis id, sagittis eget massa. Aliquam erat volutpat. </p>
+                    <img src="/images/text-banner-inventory.png" alt="texte-banniere" class="texte-banner" loading="lazy">
+                    <p class="text" v-if="selectedItem"> {{ selectedItem.description }} </p>
+                    <p class="text" v-else> Cliquez sur un objet pour voir sa description.</p>
                 </div>
 
-                <img src="../assets/img/stickman.png" alt="stickman" class="stickman">
+                <img src="/images/stickman.png" alt="stickman" class="stickman" loading="lazy">
 
             </div>
         </div>
+        
     </header>
 </template>
 
-<script>
+<script>    
+
+import { mapStores } from 'pinia'
+import { useStoryStore } from '../stores/story'
+import { usePlayerStore } from '../stores/player'
+
 export default {
     data() {
         return {
             isOpen: false,
-            items: [
-                { id: 1, name: "placeholder", img: "" },
-                { id: 2, name: "placeholder", img: "" },
-                { id: 3, name: "placeholder", img: "" },
-            ]
+            selectedItem: null,
+        }
+    },
+    computed: {
+        ...mapStores(useStoryStore),
+        ...mapStores(usePlayerStore),
+
+          items() {
+        return this.playerStore.inventory
         }
     },
     methods: {
         /* Méthode pour ouvrir l'inventaire */
         toggleInventory() {
             this.isOpen = !this.isOpen;
-        }
+        },
+
+        /* selection de l'item dans l'inventaire */
+        selectItem(item) {
+            this.selectedItem = item;
+        },
     }
 }
 </script>
 
 <style scoped>
+
+.inventory-item-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-left: 20px;
+    border-radius: 4px;
+}
+
+
+
 .audio {
-    width: 3vw;
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 30px;
     transition: transform 0.2s;
+    width: clamp(30px, 10vw, 80px);
 }
+
 
 .audio:hover {
     transform: scale(1.1);
+    cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
 }
 
 .btn-toggle {
@@ -89,12 +117,15 @@ export default {
 }
 
 .coffre-img {
+    
     width: 60px;
     transition: transform 0.2s;
+    width: clamp(30px, 10vw, 80px);
 }
 
 .coffre-img:hover {
     transform: scale(1.1);
+    cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
 }
 
 
@@ -104,7 +135,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #6b0f1a;
     z-index: 999;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -116,30 +147,38 @@ export default {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: clamp(32px, 9vw, 100px);
 }
 
 .image-container {
     position: relative;
     display: inline-block;
+    
 }
 
 .titre-banner {
     width: 50vw;
+    min-width: 400px;
+    
 }
 
 .texte-banner {
     width: 50vw;
+    min-width: 500px;
+    
 }
 
 .text {
     position: absolute;
     top: 20px;
     left: 30px;
+    font-size: clamp(12px, 3vw, 20px);
 }
+
 
 .image-container-title {
     position: fixed;
-    top: 120px;
+    top: 150px;
     left: -7px;
 }
 
@@ -167,12 +206,12 @@ export default {
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: clamp(24px, 6vw, 50px);
 }
 
 ul {
     list-style-type: none;
-    
+    margin: -25px;
 }
 
 .items {
@@ -182,10 +221,12 @@ ul {
   color: white;
   width: 50vw;
   height: 6vh;
-  border-radius: 15px;
+  border-radius: 0px 15px 15px 0px ;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 300px;
+  font-size: 18px;
 }
 
 .stickman {
@@ -194,4 +235,5 @@ ul {
     right: 20vw;
     bottom: 0;
 }
+
 </style>

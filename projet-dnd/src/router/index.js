@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import AccueilView from '../views/AccueilView.vue';
 import ChapitresView from '../views/ChapitresView.vue';
 import SauvegardeView from '../views/SauvegardeView.vue';
+import StatistiquesView from '../views/StatistiquesView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,6 +22,11 @@ const router = createRouter({
       path: '/sauvegardes',
       name: 'sauvegardes',
       component: SauvegardeView,
+    },
+    {
+      path: '/statistiques',
+      name: 'statistiques',
+      component: StatistiquesView,
     },
   ],
 });

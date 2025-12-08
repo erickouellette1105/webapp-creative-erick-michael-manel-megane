@@ -1,5 +1,5 @@
 <template>
-<img class="audio" src="../assets/img/audio_icon.png" alt="audio"></img>
+
 </template>
 
 <script>
@@ -40,6 +40,7 @@ export default {
 
 .audio:hover {
     transform: scale(1.1);
+    cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
 }
 
 </style>

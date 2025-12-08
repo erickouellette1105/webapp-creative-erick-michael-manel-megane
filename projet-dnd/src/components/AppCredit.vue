@@ -1,7 +1,7 @@
 <template>
     <!-- Bouton toggle des crédit-->
     <button @click="toggleCredit" class="btn-toggle">
-        <img src="../assets/img/info.svg" alt="credit" class="credit-img">
+        <img src="/images/info.svg" alt="credit" class="credit-img" loading="lazy">
     </button>
 
     <!-- Modale des crédits-->
@@ -82,6 +82,7 @@ export default {
 
 .credit-img:hover {
     transform: scale(1.1);
+    cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
 }
 
 
@@ -100,7 +101,8 @@ export default {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-top: 15vw;
+    margin-top: 7vw;
+    gap: 50px;
 }
 
 ul {

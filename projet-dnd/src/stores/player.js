@@ -1,9 +1,11 @@
 import { defineStore } from 'pinia';
+import chapters from '../data/chapitres-obj.json'
 
 export const usePlayerStore = defineStore('player', {
   state: () => ({
     username: '',        
-    inventory: []       
+    inventory: [] ,
+    choiceHistory: []      
   }),
 
   getters: {
@@ -21,12 +23,26 @@ export const usePlayerStore = defineStore('player', {
       this.inventory.push(item);
     },
 
-    removeItem(item) {
+    /*removeItem(item) {
       this.inventory = this.inventory.filter(i => i !== item);
-    },
+    },*/
 
     clearInventory() {
       this.inventory = [];
-    }
+    },
+
+    //  Méthode d'enregistrement des choix et données vers la page statistiques
+        recordChoice(chapterId, text, inventory ) {
+        this.choiceHistory.push({
+          chapterId,
+          text,
+          inventory
+          
+        });
+      },
+
+      clearRecord() {
+        this.choiceHistory = [];
+      }
   }
 });

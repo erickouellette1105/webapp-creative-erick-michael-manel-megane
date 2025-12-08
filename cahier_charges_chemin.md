@@ -23,26 +23,21 @@
 
 ### 1.1 Concept général
 
-!!! tip "Phase de création"
-    (Ce paragraphe "Conseil" devra être retiré du Cahier de charge final)
-    Pour développer votre concept général, vous devez faire une session de remue-méninges (*brainstorm*) en équipe via *Figjam* avec une carte conceptuelle (*mindmap*) ou encore par la création collaborative et spontanée via des *post-it* individuels et groupés. Il est possible d'utiliser d'autres procédés de création. Vous devrez partager votre processus de création (*brainstorm*) avec votre enseignante. Si c'est virtuel, partagez le lien. Si c'est papier ou sur tableau blanc, veuillez partager une ou des photographie(s) de votre processus.
-
-
-Décrivez en 2-3 paragraphes le concept de votre histoire interactive:
-
-- Quel est le genre narratif? (fantastique, sci-fi, mystère, aventure, etc.)
-- Quelle est l'histoire principale?
-- Qui est le personnage principal?
-- Quel est le mécanisme de choix? (décisions morales, énigmes, actions, etc.)
-
-> L'aventure de Stickman est une histoire interactive fantastique où le joueur incarne John Stickman, un homme pitoyable qui doit sauver son frère des griffes du méchant nécromancien pour stopper son plan machiavélique. Stickman va devoir prendre son courage à deux mains et pénétrer le manoir de Velkar l'impitoyable. 
+L'aventure de Stickman est une histoire interactive fantastique où le joueur incarne John Stickman, un homme pitoyable qui doit sauver son frère des griffes du méchant nécromancien pour stopper son plan diabolique. Stickman va devoir prendre son courage à deux mains et pénétrer le dongeon de l'impitoyable Velkram. 
 
 Le joueur doit faire des choix de tactiques durant des combats et résoudre des énigmes qui vont influencer le progrès de Stickman que ce soit vers sa montée à la gloire où sa descente au purgatoire.  
 
+- fantaisie/comédie/drame
+- aller vaincre Velcram
+- John Stickman
+- Inventaire avec objet qui débloque des choix
+
+
+
 ### 1.2 Public cible
 
-- *Âge: 8-18 ans
-- *Profil:* fans de fantaisie/comédie/drame
+- *Âge: 8-25 ans
+- *Profil:* fans de fantaisie/D&D
 - *Niveau technique:* Utilisateurs grand public
 - *Temps de lecture estimé:* 5-12 minutes
 
@@ -50,7 +45,7 @@ Le joueur doit faire des choix de tactiques durant des combats et résoudre des 
 
 - [ ] Créer une expérience narrative immersive et émotionnelle
 - [ ] Développer un système de choix avec conséquences réelles
-- [ ] Implémenter un système de sauvegarde de progression
+- [ ] Implémenter un système d'inventaire
 - [ ] Démontrer la maîtrise de Vue.js, GSAP et Pinia
 - [ ] Créer une interface accessible et responsive
 
@@ -60,38 +55,14 @@ Le joueur doit faire des choix de tactiques durant des combats et résoudre des 
 
 ### 2.1 Synopsis détaillé
 
-Racontez votre histoire en 1-2 paragraphes (sans spoiler les fins):
-
-Jean-pierre Stickman se fait kidnapper par des bandits du maléfique Velkar. John Stickman doit arrêter le sacrifice de son frère pour stopper l'invoquation d'un démon primordial qui menace l'univers dans son entièreté. Il entre dans le manoir de Velkar et fait face à des multitudes de monstres qu'il doit battre pour progresser et devenir assez puissant pour sauver son frère.
+Jean-pierre Stickman se rend au dongeon du maléfique Velkar. John Stickman doit le vaincre pour pouvoir libéré son frère qui à été kidnapper. Il fait face à des multitudes de monstres qu'il doit battre pour progresser et débloquer des objets magique pour devenir assez puissant pour sauver son frère.
 
 ### 2.2 Arbre narratif
 
 Dessinez ou décrivez l'arbre de décisions de votre histoire:
 
-<img width="3704" height="4456" alt="image" src="https://github.com/user-attachments/assets/c9beefa8-4e6a-45a5-81e5-a09c3a4ec972" />
+<img width="3704" height="4456" alt="image" src="./img/brainstorm.png" />
 
-
-
-*Structure globale:*
-
-- *Acte 1:* Introduction (1-2 chapitres linéaires)
-- *Acte 2:* Développement avec choix (4-6 chapitres avec branches)
-- *Acte 3:* Climax et résolution (2-3 fins différentes)
-
-*Exemple de structure:*
-
-```
-Chapitre 1 (Intro) → Linéaire
-    ↓
-Chapitre 2 (Premier choix)
-    ↓                    ↓
-Branche A            Branche B
-    ↓                    ↓
-Chapitre 3A          Chapitre 3B
-    ↓                    ↓
-Choix majeur         Choix majeur
-    ↓       ↓           ↓       ↓
-Fin 1    Fin 2        Fin 3    Fin 4
 ```
 
 ### 2.3 Liste des chapitres/scènes
@@ -109,12 +80,10 @@ Minimum 8 niveaux (chapitres/scènes). Listez-les avec leurs informations:
 | 4A | [La surprise]| Linéaire | tu te fait téléporter dans une autre chambre| Aucun | t'arrive dans le chapitre 5A|
 | 4B | [Chasse au Goblin]| Linéaire | tu combat les goblin après avoir voler leur butin | auncun | t'arrive en retard pour sauvé jean-Pierre acces à une fin spécial|
 | 4C | [L'apprentis mage]| Linéaire | tu te retrouve dans une pièce avec des sort magique| choix du sort | tu peut apprendre une sort pour aider à combattre le necromance|
-| 4D | [aveugler par l'or]| | | | |
 | 5A | [L'apprentis combatant]| choix |tu te retrouvent dans une pièce avec des armes  | choix d'arme/armure| tu prend des arme pour aider dans le combat contre le nécromance|
 | 5B | [le combat]| linéaire |tu combat le nécromance mais tu est trop tard pour sauvé Jean-Pierre  | Jean-pierre n'est pas sauvé donc il y aurra un autre méchant a combattre| fin anti Héroique|
-| 5C | [le combat]| linéaire| tu combat le nécromance| aucun| fin héroique|
+| 5C | [le combat]| linéaire| tu combat le nécromance| aucun| fin héroique qui dépend des objets|
 | 5D | [le zéro]| linéaire| ta perdu | aucun | perdu|
-| 8 | | | | | |
 
 ### 2.4 Fins possibles
 
@@ -124,19 +93,20 @@ Listez toutes les fins de votre histoire (minimum 3, idéal 4-6):
 
 | # | Nom de la fin | Condition pour l'atteindre | Type (bonne/mauvaise/neutre) |
 |---|--------------|---------------------------|------------------------------|
-| 1 | [Fin Héroïque] | éliminer le necromancer et sauvé Jean-Pierre | Bonne |
-| 2 | [Fin Héro a Zéro] | perdu contre une mimic | Mauvaise |
-| 3 | [Fin anti Héroïque] | éliminer le necromancer et le Demon sans réussir de sauvé Jean-Pierre | Neutre|
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
+| 1 | fin plume du phoenix | aquérir le grimoire de feux | Bonne |
+| 2 | fin mage des ombres | aquérir la magie des ombre | Bonne |
+| 3 | Fin du visionneur passifique | aquérir le sort ??? et l'utiliser deux fois de suite | Neutre|
+| 4 | Bonne fin | aquérir l’épée suprême du maître goblin | Bonne |
+| 5 | fin du bouffon |aquérir l'épée crayon et l'armure papier  | mauvaise |
+| 6 | fin Boom | aquérir la dynamite | Neutre |
+| 7 | Mauvaise fin | utiliser l'attaque de bras de stickman | Mauvaise |
+| 8 | Ouch! | se faire manger par une mimique | mauvaise |
 
 ### 2.5 Personnages principaux
 
 | Nom | Rôle | Description | Apparaît dans |
 |-----|------|-------------|---------------|
 | [John Stickman] | Protagoniste | Guerrier pathétique | Tous les chapitres |
-| [Saour Do] | Allié | Marchand d'armes nucléaire | Menu du marchand|
 | [Velkram] | Antagoniste | Sorcier maléfique | Certaines fins |
 | | | | |
 | | | | |
@@ -174,8 +144,6 @@ playerState: {
 ## 🎨 3. Design et Identité Visuelle
 
 ### 3.1 Moodboard
-
-Insérez ici 3-5 images d'inspiration (ou liens):
 
 - Image 1: Ambiance générale: 
 <br>
@@ -226,22 +194,22 @@ Choisissez un ou plusieurs styles:
 
 ### 3.5 Éléments visuels par chapitre
 
-| Chapitre | Image de fond | Effets visuels | Sons/musique |
-|----------|---------------|----------------|--------------|
-| 1 | [Introduction personnage] | Fade in progressif | Musique douce, intro |
-| 2 | [l'entré qui mènent au donjon et l'intérieur] | zoom in | musique donjon |
-| 3A | [Des goblins qui dorts au sol] | fade in / fade out  | musique donjon  |
-| 3B | [stickman voie un coffre] | fade in / fade out | musique donjon |
-| 4A | [tu te fait téléporter] | fade in / fade out | surprise sound effect |
-| 4B | [combat contre les boblin] | fade in / fade out | musique de combat |
-| 4C | [Stickman trouve une bibliothèque] | fade in / fade out | musique calme |
-| 4D | [le coffre se transforme en mimic] | fade in / fade out | surprise sound effect + musique de combat |
-| 5A | [Stickman trouve La salle d'arme] | fade in / fade out | musique calme |
-| 5B | [tu est en retard] | fade in / fade out | musique stressante |
-| 5C | [Stickman vs necromancer] | fade in / fade out | musique de BOSS |
-| 5D | [tu est mort] | fade to black | you died sound effect |
-| fin (mauvaise) | [chtullu est invoqué et tu dois le combattre] | fade to black | you died sound effect 
-| fin (bonne) | [tu sauve Jean-Pière] | fade in / fade out | win musique |
+| Chapitre | Image de fond | Effets visuels |
+|----------|---------------|----------------|
+| 1 | le personnage avec du texte  |
+| 2 | le personnage avec du texte  |
+| 3A | le personnage avec du texte  |
+| 3B | le personnage avec du texte  |
+| 4A | le personnage avec du texte  |
+| 4B | le personnage avec du texte  |
+| 4C | le personnage avec du texte  |
+| 4D | le personnage avec du texte |
+| 5A | le personnage avec du texte  |
+| 5B | le personnage avec du texte  |
+| 5C | le personnage avec du texte  |
+| 5D | [tu est mort] | le personnage avec du texte  |
+| fin (mauvaise) | le personnage avec du texte |
+| fin (bonne) | le personnage avec du texte  |
 
 
 ## 💻 4. Spécifications Techniques
@@ -268,8 +236,6 @@ Listez vos composants Vue principaux:
 *Composants de layout:*
 
 - `AppHeader.vue` - Navigation et menu
-- `SaveSlotManager.vue` - Gestion des sauvegardes
-- `ProgressBar.vue` - Barre de progression dans l'histoire
 
 *Composants de contenu:*
 
@@ -281,9 +247,8 @@ Listez vos composants Vue principaux:
 
 *Composants système:*
 
-- `InventoryDisplay.vue` - Affichage de l'inventaire
-- `HealthPanel.vue` - Affichage de la vie du joueur
-- `EndingScreen.vue` - Écran de fin avec récapitulatif
+- `AppHeaderGame.vue` - Affichage de l'inventaire
+- `AppCredit.vue` - Affiche des Crédit
 - `Modal.vue` - Fenêtre modale (sauvegarde, options)
 
 *Composants UI:*
@@ -297,10 +262,8 @@ Listez vos composants Vue principaux:
 | Route | Composant | Description | Params |
 |-------|-----------|-------------|--------|
 | `/` | `HomeView.vue` | Menu principal | - |
-| `/nouvelle-partie` | `CharacterSetupView.vue` | Config initiale (nom, etc.) | - |
 | `/chapitre/:id` | `ChapterView.vue` | Vue d'un chapitre | id du chapitre |
 | `/fin/:endingId` | `EndingView.vue` | Écran de fin | id de la fin |
-| `/sauvegardes` | `SavesView.vue` | Gestion des sauvegardes | - |
 | `/credits` | `CreditsView.vue` | Crédits | - |
 
 ### 4.4 Gestion de l'état (Pinia)
@@ -388,16 +351,14 @@ Comment stockez-vous les chapitres et choix?
     "title": "L'arrivé",
     "text": "Vous êtes arrivée devant l'entrer du dongeon...",
     "backgroundImage": "/",
-    "music": "intro-theme.mp3",
     "choices": null,  // Chapitre linéaire
     "nextChapter": "ch-2"
   },
   "ch-2": {
     "id": "ch-2",
     "title": "le premier pas",
-    "text": "Face à un eintersection le choix est le votre",
+    "text": "Face à un intersection le choix est le votre",
     "backgroundImage": "/",
-    "music": "tension-theme.mp3",
     "choices": [
       {
         "id": "doite",
@@ -431,18 +392,18 @@ Comment stockez-vous les chapitres et choix?
 
 *Obligatoires pour la livraison:*
 
-- [ ] *F1 - Lecture de l'histoire*
+- [X] *F1 - Lecture de l'histoire*
   - Affichage du texte narratif chapitre par chapitre
   - Navigation linéaire dans l'intro
   - Transitions fluides entre chapitres
 
-- [ ] *F2 - Système de choix*
+- [X] *F2 - Système de choix*
   - Affichage de 2-4 choix par chapitre décisionnel
   - Sélection d'un choix
   - Redirection vers le chapitre suivant approprié
   - Minimum 8 chapitres avec au moins 3 fins
 
-- [ ] *F3 - Tracking des conséquences*
+- [X] *F3 - Tracking des conséquences*
   - État du joueur (karma/stats/flags)
   - Mise à jour après chaque choix
   - Conditions pour débloquer fins
@@ -453,11 +414,11 @@ Comment stockez-vous les chapitres et choix?
   - Chargement d'une sauvegarde
   - Affichage des infos de sauvegarde (date, progression)
 
-- [ ] *F5 - Historique des choix*
+- [X] *F5 - Historique des choix*
   - Garder trace des décisions prises
   - Affichage dans un menu (optionnel mais recommandé)
 
-- [ ] *F6 - Écrans de fin*
+- [X] *F6 - Écrans de fin*
   - Affichage de la fin atteinte
   - Récapitulatif des choix faits
   - Option de recommencer ou charger
@@ -471,13 +432,13 @@ Comment stockez-vous les chapitres et choix?
   - Apparition progressive du texte (optionnel: effet typewriter)
   - Transitions entre chapitres avec GSAP
 
-- [ ] *F9 - Accessibilité*
+- [X] *F9 - Accessibilité*
   - Navigation au clavier
   - ARIA labels
   - Contraste WCAG AA
   - Option skip animations
 
-- [ ] *F10 - Médias intégrés*
+- [X] *F10 - Médias intégrés*
   - Images de fond par chapitre
   - Musique d'ambiance (avec contrôle volume)
 
@@ -487,7 +448,7 @@ Comment stockez-vous les chapitres et choix?
   - Sauvegarde automatique à chaque chapitre
   - Indication visuelle de la sauvegarde
 
-- [ ] *B2 - Inventaire visuel*
+- [X] *B2 - Inventaire visuel*
   - Affichage graphique des items
   - Description des objets au survol
 
@@ -527,21 +488,15 @@ Comment stockez-vous les chapitres et choix?
 
 2. *US-02:* En tant que joueur, je veux faire des choix qui ont des conséquences afin de sentir que mes décisions comptent.
 
-3. *US-03:* En tant qu'utilisateur, je veux sauvegarder ma progression afin de reprendre plus tard sans perdre mon avancement.
+3. *US-04:* En tant que lecteur, je veux voir l'impact de mes choix afin de comprendre comment ils influencent l'histoire.
 
-4. *US-04:* En tant que lecteur, je veux voir l'impact de mes choix afin de comprendre comment ils influencent l'histoire.
+4. *US-05:* En tant que joueur, je veux atteindre différentes fins afin de découvrir toutes les possibilités de l'histoire.
 
-5. *US-05:* En tant que joueur, je veux atteindre différentes fins afin de découvrir toutes les possibilités de l'histoire.
+5. *US-06:* En tant qu'utilisateur mobile, je veux lire l'histoire sur mon téléphone afin d'en profiter partout.
 
-6. *US-06:* En tant qu'utilisateur mobile, je veux lire l'histoire sur mon téléphone afin d'en profiter partout.
+6. *US-07:* En tant que lecteur, je veux consulter l'historique de mes choix afin de me rappeler mes décisions passées.
 
-7. *US-07:* En tant que lecteur, je veux consulter l'historique de mes choix afin de me rappeler mes décisions passées.
-
-8. *US-08:* En tant que joueur, je veux collecter des objets/débloquer des stats afin de me sentir progresser dans l'aventure.
-
-9. *US-09:* En tant qu'utilisateur, je veux contrôler le volume sonore afin d'adapter l'expérience à mon environnement.
-
-10. [Ajoutez vos user stories]
+7. *US-08:* En tant que joueur, je veux collecter des objets/débloquer afin de me sentir progresser dans l'aventure.
 
 
 ## 📊 6. Maquettes et Wireframes
@@ -564,7 +519,6 @@ Comment stockez-vous les chapitres et choix?
 
 - Apparition progressive du texte
 - Animations des boutons de choix
-- Transition entre chapitres
 - Ouverture de l'inventaire/stats
 - États des boutons (hover, actif, disabled)
 
@@ -576,8 +530,8 @@ Comment stockez-vous les chapitres et choix?
 | Membre | Rôle principal | Responsabilités |
 |--------|----------------|-----------------|
 | [Érick Ouellette] | Chef de projet + Architecture Vue | Coordination, Vue Router, stores Pinia, structure de l'histoire |
-| [Keven Malric] | Design + Animations | CSS, design visuel, animations GSAP, transitions |
-| [Toute l'équipe] | Contenu + Narration | Écriture des chapitres, création de l'arbre narratif, dialogues |
+| [Mégane Rangé] | Design + Animations | CSS, design visuel, animations GSAP, transitions |
+| [Manel Yaya] | Contenu + Narration | Écriture des chapitres, création de l'arbre narratif, dialogues |
 | [Michaël Un Dupré] | Données + Système | Gestion des sauvegardes, LocalStorage, logique de choix, stats |
 
 *Note:* Tous participent au développement, mais chacun a sa spécialité.
@@ -594,57 +548,55 @@ Comment stockez-vous les chapitres et choix?
 
 ### 7.3 Outils de collaboration
 
-- *Git/GitHub:* [Lien du repo]
-- *Gestion de projet:* [Trello / Word / GitHub Projects]
+- *Git/GitHub:* [repo](https://github.com/erickouellette1105/webapp-creative-erick-michael-manel-megane/tree/Fix-accueil)
+- *Gestion de projet:* [Trello](https://trello.com/b/wmsTghPo/projet-web-tracer-votre-chemin)
 - *Communication:* [Teams]
 - *Design:* [Figma]
-- *Documentation:* [Word / Google Docs / README.md]
-- *Écriture collaborative:* [Google Docs / Word]
+- *Documentation:* [README.md]
+- *Écriture collaborative:* [README.md]
 
 
 ## 🚀 8. Critères de Succès
 
 ### 8.1 Critères techniques
 
-- [ ] Application Vue.js fonctionnelle sans erreurs console
-- [ ] Minimum 8 composants Vue bien structurés
-- [ ] Vue Router avec 5+ routes
-- [ ] Pinia implémenté avec state management cohérent
-- [ ] CSS organisé avec variables
+- [X] Application Vue.js fonctionnelle sans erreurs console
+- [X] Minimum 8 composants Vue bien structurés
+- [X] Vue Router avec 5+ routes
+- [X] Pinia implémenté avec state management cohérent
+- [X] CSS organisé avec variables
 - [ ] Animations GSAP fluides
-- [ ] Système de sauvegarde fonctionnel
 - [ ] Code validé (ESLint)
 - [ ] Responsive sur 3 breakpoints
 - [ ] Accessibilité WCAG AA
 
 ### 8.2 Critères narratifs
 
-- [ ] Histoire cohérente du début à la fin
-- [ ] Minimum 8 chapitres/scènes
-- [ ] Au moins 3 fins différentes
-- [ ] Choix ayant un impact réel sur l'histoire
+- [X] Histoire cohérente du début à la fin
+- [X] Minimum 8 chapitres/scènes
+- [X] Au moins 3 fins différentes
+- [X] Choix ayant un impact réel sur l'histoire
 - [ ] Aucune faute d'orthographe majeure
-- [ ] Dialogues naturels et crédibles
-- [ ] Rythme narratif bien dosé
+- [X] Dialogues naturels et crédibles
+- [X] Rythme narratif bien dosé
 
 ### 8.3 Critères de qualité
 
-- [ ] Interface intuitive et facile à utiliser
-- [ ] Design cohérent et esthétique
-- [ ] Lisibilité du texte (taille, contraste, police)
+- [X] Interface intuitive et facile à utiliser
+- [X] Design cohérent et esthétique
+- [X] Lisibilité du texte (taille, contraste, police)
 - [ ] Animations pertinentes (pas excessives)
-- [ ] Temps de chargement < 2 secondes
-- [ ] Aucun bug bloquant
-- [ ] Musique/sons appropriés
-- [ ] Documentation complète (README)
+- [X] Temps de chargement < 2 secondes
+- [X] Aucun bug bloquant
+- [X] Documentation complète (README)
 
 ### 8.4 Critères créatifs
 
-- [ ] Histoire originale et engageante
-- [ ] Personnages mémorables
-- [ ] Twist ou surprise dans l'intrigue
-- [ ] Expérience émotionnelle impactante
-- [ ] Rejouabilité (envie de tester d'autres chemins)
+- [X] Histoire originale et engageante
+- [X] Personnages mémorables
+- [X] Twist ou surprise dans l'intrigue
+- [X] Expérience émotionnelle impactante
+- [X] Rejouabilité (envie de tester d'autres chemins)
 
 
 ## 📅 9. Calendrier du projet: Planning prévisionnel
@@ -668,9 +620,6 @@ Comment stockez-vous les chapitres et choix?
 **Du 22 octobre au 2 novembre environ**
 
 *Remise Phases 2 FONDATION et 3 INTERACTIVITÉ : vendredi 14 novembre | 15%*
-
-!!! tip "Le projet portfolio en parallèle"
-    Notez que mercredi le 29 octobre c'est la remise et présentation de votre portfolio donc nous laissons un peu plus qu'une semaine pour cette phase car vous allez probablement finaliser votre portfolio en même temps.
 
 - Structure des composants de base
 - Vue Router configuré
@@ -814,10 +763,10 @@ Comment stockez-vous les chapitres et choix?
 
 *Signatures:*
 
-- Chef de projet: _______________
-- Membre 2: _______________
-- Membre 3: _______________
-- Membre 4: _______________ (si applicable)
+- Chef de projet: Érick Ouellette
+- Membre 2: Michael Un Dupré
+- Membre 3: Mégane Rangé
+- Membre 4: Manel Yaya
 
 *Validation enseignant:* _______________  
 *Date:* _______________  
@@ -825,5 +774,5 @@ Comment stockez-vous les chapitres et choix?
 
 ---
 
-*Version du document cahier de charge:* 1.0  
-*Dernière mise à jour:* [Écrire ici la date]
+*Version du document cahier de charge:* 2.0  
+*Dernière mise à jour:* 12/7/2025
