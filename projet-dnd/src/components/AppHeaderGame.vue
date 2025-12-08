@@ -7,9 +7,6 @@
 
         <!-- Modale de l'inventaire-->
         <div v-if="isOpen" class="inventory-modal">
-
-            <img class="audio audio-in-modal" src="/images/audio_icon.png" alt="audio" loading="lazy"></img>
-
             <div class="inventory-content">
 
                 <div class="image-container-title">
@@ -89,13 +86,7 @@ export default {
 
 
 
-.audio {
-    position: absolute;
-    top: 50px;
-    left: 30px;
-    transition: transform 0.2s;
-    width: clamp(30px, 10vw, 80px);
-}
+
 
 
 .audio:hover {
