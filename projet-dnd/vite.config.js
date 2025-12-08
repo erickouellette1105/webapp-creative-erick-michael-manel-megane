@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  base: '/webapp-creative-erick-michael-manel-megane/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
