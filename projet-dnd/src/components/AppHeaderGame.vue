@@ -2,7 +2,7 @@
     <header>
         <!-- Bouton toggle de l'inventaire-->
         <button @click="toggleInventory" class="btn-toggle">
-            <img src="../assets/coffre.png" alt="coffre" class="coffre-img">
+            <img src="../assets/img/coffre.png" alt="coffre" class="coffre-img">
         </button>
 
         <!-- Modale de l'inventaire-->
