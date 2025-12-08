@@ -245,10 +245,10 @@ RAS = Rien À Signaler
 - **Description :** [Quand le jeu est commencé (page chapitre) et que le joueur refresh il trouve une page d’erreur]
 - **Étapes pour reproduire :** [Aller à une page chapitre. Refresh la page]
 - **Notre analyse :** [Nous devons fixer ce problème au cas où l'utilisateur auarit ce bug]
-- **Statut actuel (8 décembre) :** ✅ Corrigé / 🔄 En cours / ⏸️ Pas encore fait
+- **Statut actuel (8 décembre) :** 🔄 En cours
 - **Plan de correction :** [Le 8 décembre, nous allons chercher en ligne pour savoir comment régler ce bug.]
 - **Assigné à :** [L'équipe entière]
-- **Date de correction :** [Date si corrigé]
+- **Date de correction :** []
 
 #### 🟡 Bogues Mineurs reçus
 
@@ -258,25 +258,25 @@ RAS = Rien À Signaler
 - **Description :** [Une fin n’apparait pas même quand le joueur prend le choix “utiliser le sort mystérieux“ à chapitre 5C]
 - **Étapes pour reproduire :** [Aller à chapitre 5C. Prendre le choix “utiliser le sort mystérieux“ 2 fois. Une fin ne s’exécute pas]
 - **Notre analyse :** [Ceci était intentionel car le sort mystérieux]
-- **Statut actuel (8 décembre) :** ✅ Corrigé / 🔄 En cours / ⏸️ Pas encore fait
-- **Plan de correction :** [Le 8 décembre, nous allons chercher en ligne pour savoir comment régler ce bug.]
-- **Assigné à :** [L'équipe entière]
-- **Date de correction :** [Date si corrigé]
+- **Statut actuel (8 décembre) :** ✅ Corrigé
+- **Plan de correction :** [Aucune correction nécessaire]
+- **Assigné à :** []
+- **Date de correction :** []
 
 ### Notre réaction aux bugs reçus
 
 **Bogues que nous confirmons :**
 
-- X bugs confirmés comme vrais bugs
+- #1 bugs confirmés comme vrais bugs
 
 **Bogues que nous contestons (avec justification) :**
 
-- [Bogue #X] : Nous pensons que ce n'est pas un bug parce que [raison]
+- [Bogue #2] : Nous pensons que ce n'est pas un bug parce que [cela était prévu comme une fin qui se passe quand on remonte le temps au chapitre 1 et apr`s avoir utilisé le sort encore, la fin se déclenche]
 - [A été discuté avec l'enseignant : décision finale = ...]
 
 **Nouveaux bugs découverts grâce à leurs tests :**
 
-- X bugs qu'on n'aurait jamais trouvés nous-mêmes
+- 0 bugs qu'on n'aurait jamais trouvés nous-mêmes
 - Merci à l'équipe testeuse pour leur regard externe !
 
 ---
@@ -310,16 +310,15 @@ RAS = Rien À Signaler
 
 **Bogues critiques en cours :**
 
-1. **Bogue #X : [Titre]**
-   - Assigné à : [Nom]
-   - Temps estimé : [X] heures
-   - Sera fait : [9 décembre]
-   - Statut actuel : [50% fait / bloqué sur X / presque fini]
+
 
 **Bogues majeurs en cours :**
 
-2. **Bogue #Y : [Titre]**
-   - [Même format]
+1. **Bogue #1 : [404 refresh]**
+   - Assigné à : [L'équipe entière]
+   - Temps estimé : [Maximum 2] heures
+   - Sera fait : [8-9 décembre]
+   - Statut actuel : [Pas encore commencé]
 
 #### ⏸️ Reportés (ferons si temps après les critiques/majeurs)
 
@@ -330,12 +329,10 @@ RAS = Rien À Signaler
 
 #### ❌ Non corrigés (avec justification)
 
-**Bogue #Q : [Titre]**
+**Bogue #2 : [Fin du sort mystérieux]**
 
-- **Pourquoi pas corrigé :** [Raison valable]
-  - Exemple : "Nécessiterait une refonte majeure de l'architecture (20h de travail)"
-  - Exemple : "Après discussion, ce n'est pas un bug mais une limitation de la techno utilisée"
-- **Impact :** [Faible / Utilisateur peut contourner le problème en...]
+- **Pourquoi pas corrigé :** [Ce n'est pas un bug car la fin est prévu après avoir emonté le temps au chapitre 1]
+- **Impact :** [ce n'est pas un problème]
 
 ### Plan de travail (8-10 décembre)
 
