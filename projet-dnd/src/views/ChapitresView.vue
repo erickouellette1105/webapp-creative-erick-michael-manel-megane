@@ -358,7 +358,7 @@ body {
 }
 
 /*Version mobile */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     .stickman img {
         width: 150px;
         left: 80%;
