@@ -10,20 +10,23 @@ const PlayerStore = usePlayerStore();
     <div class="historique">
         <h2>Historique de vos choix</h2>
 
-        <!-- Message quand aucun choix-->
+        <!-- Vérification si l'historique est vide (tableau choiceHistory est vide)-->
         <div v-if="PlayerStore.choiceHistory.length === 0">
             Aucun choix enregistré
         </div>
-        <!-- Messages des données -->
+        <!-- Affichage de la liste si l'historique n'est pas vide -->
         <ul v-else>
+            <!-- Boucle sur chaquee choix eneregistré -->
             <li v-for="(choice, index) in PlayerStore.choiceHistory" :key="index">
-
+                                <!-- Objet choix-->
                 <p>Chapitre : {{ choice.chapterId }} </p>
                 <p>Choix : {{ choice.text }} </p>
+                <!-- Affichage seulement si inventaire est présent-->
                 <p v-if="choice.inventory">Inventaire : {{ choice.inventory }} </p>
 
             </li>
         </ul>
+        <!-- Bouton de retour à l'accueil -->
         <StartButton class="back-button"/>
         
     </div>
@@ -107,7 +110,7 @@ li {
 @media screen and (max-width: 1920px) {
     .historique {
         background-color: #6b0f1a;
-        min-height: 150vh;
+        min-height: 150vh;  /*Ajustement de la hauteur pour que les choix ne déborde pas de la page */
         text-align: center;
     }
 
@@ -136,7 +139,7 @@ li {
 
     .historique {
         background-color: #6b0f1a;
-        min-height: 150vh;
+        min-height: 150vh;      /*Ajustement de la hauteur pour que les choix ne déborde pas de la page */
         text-align: center;
     }
 
@@ -162,7 +165,7 @@ li {
 
     .historique {
         background-color: #6b0f1a;
-        min-height: 200vh;
+        min-height: 200vh; /*Ajustement de la hauteur pour que les choix ne déborde pas de la page */
         text-align: center;
     }
 

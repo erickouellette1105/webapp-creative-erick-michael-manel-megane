@@ -6,6 +6,7 @@
         </button>
 
         <!-- Modale de l'inventaire-->
+        <!-- Ceci s'affiche uniquement si isOpen === true -->
         <div v-if="isOpen" class="inventory-modal">
             <div class="inventory-content">
 
@@ -13,20 +14,20 @@
                     <img src="/images/title-banner-inventory.png" alt="titre-banniere" class="titre-banner">
                     <p class="text-titre">Inventaire</p>
                 </div>
-                <ul>
+                <!-- Boucle sur le tableau d'items-->
+                <ul> <!--Identifiant unique|Envoie dans la méthode selectItem-->
                     <li v-for="item in items" :key="item.id" @click="selectItem(item)" class="items">
-    <img 
-      v-if="item.image" 
-      :src="item.image" 
-      :alt="item.name" 
-      class="inventory-item-img" alt="image-item" loading="lazy"
-    />
-    {{ item.name }}
-  </li>
+                 <!-- Cela affiche l'image seulement si elle existe-->
+                        <img v-if="item.image" :src="item.image" :alt="item.name" class="inventory-item-img"
+                            alt="image-item" loading="lazy" />
+                        {{ item.name }}
+                    </li>
                 </ul>
 
                 <div class="image-container-text">
-                    <img src="/images/text-banner-inventory.png" alt="texte-banniere" class="texte-banner" loading="lazy">
+                    <img src="/images/text-banner-inventory.png" alt="texte-banniere" class="texte-banner"
+                        loading="lazy">
+                        <!-- Si objet est sélectionné, description affichée -->
                     <p class="text" v-if="selectedItem"> {{ selectedItem.description }} </p>
                     <p class="text" v-else> Cliquez sur un objet pour voir sa description.</p>
                 </div>
@@ -35,11 +36,11 @@
 
             </div>
         </div>
-        
+
     </header>
 </template>
 
-<script>    
+<script>
 
 import { mapStores } from 'pinia'
 import { useStoryStore } from '../stores/story'
@@ -56,8 +57,8 @@ export default {
         ...mapStores(useStoryStore),
         ...mapStores(usePlayerStore),
 
-          items() {
-        return this.playerStore.inventory
+        items() {
+            return this.playerStore.inventory
         }
     },
     methods: {
@@ -75,7 +76,6 @@ export default {
 </script>
 
 <style scoped>
-
 .inventory-item-img {
     width: 40px;
     height: 40px;
@@ -98,7 +98,7 @@ export default {
 }
 
 .coffre-img {
-    
+
     width: 60px;
     transition: transform 0.2s;
     width: clamp(30px, 10vw, 80px);
@@ -134,19 +134,19 @@ export default {
 .image-container {
     position: relative;
     display: inline-block;
-    
+
 }
 
 .titre-banner {
     width: 50vw;
     min-width: 400px;
-    
+
 }
 
 .texte-banner {
     width: 50vw;
     min-width: 500px;
-    
+
 }
 
 .text {
@@ -196,19 +196,19 @@ ul {
 }
 
 .items {
-  margin: 1.5vw -2.5vw;
-  background-color: #333138;
-  border: 5px solid #EB5E28;
-  color: white;
-  width: 50vw;
-  height: 6vh;
-  border-radius: 0px 15px 15px 0px ;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 300px;
-  font-size: 18px;
-  font-family: GoldenSwing;
+    margin: 1.5vw -2.5vw;
+    background-color: #333138;
+    border: 5px solid #EB5E28;
+    color: white;
+    width: 50vw;
+    height: 6vh;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    font-size: 18px;
+    font-family: GoldenSwing;
 }
 
 .stickman {
@@ -217,5 +217,4 @@ ul {
     right: 20vw;
     bottom: 0;
 }
-
 </style>
