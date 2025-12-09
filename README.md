@@ -62,8 +62,8 @@ npm run build
 - [Trello](https://trello.com/b/wmsTghPo/paladin)
 
 ## Remerciements et autres crédits
-manel, tu peux mettre les sources de tes images ici
-Polices: MedievalSharp, Baldur, Golden Swing, Darker
+- manel, tu peux mettre les sources de tes images ici
+- Polices: MedievalSharp, Baldur, Golden Swing, Darker
 
 ## Licence
 Projet éducatif - Cégep de Montmorency © 2025
