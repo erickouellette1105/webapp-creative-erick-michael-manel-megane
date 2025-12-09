@@ -15,4 +15,9 @@
     component: SauvegardeView,
     description: page avec trois section de sauvegarde où on peux choisir la sauvegarde du jeu qui ensuite ammène a la page de chapter
 
+    path: '/statistiques',
+    name: 'statistiques',
+    component: StatistiquesView,
+    description: page qui affiche les choix et l'inventaire dépendamment de l'histoire que le joueur a eu
+
  
