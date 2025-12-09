@@ -423,7 +423,7 @@ Comment stockez-vous les chapitres et choix?
   - Récapitulatif des choix faits
   - Option de recommencer ou charger
 
-- [ ] *F7 - Interface responsive*
+- [X] *F7 - Interface responsive*
   - Mobile (320px+)
   - Tablette (768px+)
   - Desktop (1024px+)
@@ -440,7 +440,7 @@ Comment stockez-vous les chapitres et choix?
 
 - [X] *F10 - Médias intégrés*
   - Images de fond par chapitre
-  - Musique d'ambiance (avec contrôle volume)
+
 
 ### 5.2 Fonctionnalités bonus (optionnelles)
 
