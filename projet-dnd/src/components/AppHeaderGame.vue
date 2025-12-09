@@ -57,8 +57,9 @@ export default {
         ...mapStores(useStoryStore),
         ...mapStores(usePlayerStore),
 
-        items() {
-            return this.playerStore.inventory
+        //retourné les items
+          items() {
+        return this.playerStore.inventory
         }
     },
     methods: {
