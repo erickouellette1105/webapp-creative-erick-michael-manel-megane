@@ -127,6 +127,7 @@ export default {
                 choice.inventory
             )
 
+            // ajout des donnée du json dans l'inventaire
             if (choice.inventory) {
                 this.playerStore.addItem({
                     id: Date.now(),
@@ -153,8 +154,8 @@ export default {
         goBack() {
             this.$router.push({ name: 'accueil' });
             const player = usePlayerStore();
-            player.clearInventory();
-            player.clearRecord();
+            player.clearInventory(); //clear l'inventaire
+            player.clearRecord(); //clear les stats
         },
         stats() {
             this.$router.push({ name: 'statistiques' });

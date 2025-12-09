@@ -4,7 +4,7 @@ import chapters from '../data/chapitres-obj.json'
 export const usePlayerStore = defineStore('player', {
   state: () => ({
     username: '',        
-    inventory: [] ,
+    inventory: [] , //tableau vide
     choiceHistory: []      
   }),
 
@@ -19,6 +19,7 @@ export const usePlayerStore = defineStore('player', {
       this.username = name;
     },
 
+    /*ajout du objet dans l'inventaire*/
     addItem(item) {
       this.inventory.push(item);
     },
@@ -27,6 +28,8 @@ export const usePlayerStore = defineStore('player', {
       this.inventory = this.inventory.filter(i => i !== item);
     },*/
 
+
+    /*sert à enlevé les objet de l'inventaire*/
     clearInventory() {
       this.inventory = [];
     },
@@ -37,7 +40,6 @@ export const usePlayerStore = defineStore('player', {
           chapterId,
           text,
           inventory
-          
         });
       },
 
