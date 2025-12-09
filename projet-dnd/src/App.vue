@@ -1,6 +1,5 @@
 <script setup>
-import AppHeaderGame from './components/AppHeaderGame.vue';
-import AppHeaderLobby from './components/AppHeaderLobby.vue';
+
 
 
 </script>

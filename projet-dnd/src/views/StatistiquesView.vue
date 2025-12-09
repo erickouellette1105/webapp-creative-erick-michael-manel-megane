@@ -1,5 +1,6 @@
 <script setup>
 import { usePlayerStore } from '@/stores/player';
+import StartButton from '@/components/StartButton.vue';
 
 const PlayerStore = usePlayerStore();
 </script>
@@ -23,10 +24,8 @@ const PlayerStore = usePlayerStore();
 
             </li>
         </ul>
-
-        <button @click="goBack" class="back-button">
-            ← Retour à l'accueil
-        </button>
+        <StartButton class="back-button"/>
+        
     </div>
 
 </template>
@@ -39,9 +38,7 @@ export default {
         }
     },
     methods: {
-        goBack() {
-            this.$router.push({ name: 'accueil' });
-        },
+       
     }
 }
 </script>

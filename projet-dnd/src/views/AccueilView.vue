@@ -1,7 +1,5 @@
 <script setup>
-import AppHeaderGame from '@/components/AppHeaderGame.vue'
-import AppHeaderLobby from '@/components/AppHeaderLobby.vue'
-import StartButton from '@/components/StartButton.vue';
+import AppLobby from '@/components/AppLobby.vue'
 import SaveButton from '@/components/SaveButton.vue';
 import AppCredit from '@/components/AppCredit.vue';
 /*
@@ -20,7 +18,7 @@ import ClickCursor from '@/assets/cur/Click.cur'
   <div class="container">
     <header class="header-area">
 
-      <AppHeaderLobby />
+      <AppLobby />
       <AppCredit />
 
     </header>

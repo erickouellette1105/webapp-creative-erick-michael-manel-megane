@@ -1,6 +1,6 @@
 <template>
 
-    <button @click="saveBtn" class="saveBtn" alt="saveBtn">Nouvelle partie</button>
+    <button @click="chapterBtn" class="chapterBtn" alt="chapterBtn">Nouvelle partie</button>
 
 </template>
 
@@ -13,7 +13,7 @@ export default {
     },
     methods: {
         /* Méthode pour aller au chapitre 1 */
-        saveBtn() {
+        chapterBtn() {
             this.$router.push({
                 name: 'chapter',
                 params: { id: 1 }
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style scoped>
-    .saveBtn {
+    .chapterBtn {
         width: 25vw;
         height: 7vh;
         font-size: 2vw;
@@ -35,7 +35,7 @@ export default {
         pointer-events: stroke;
     }
 
-    .saveBtn:hover{
+    .chapterBtn:hover{
         transform: scale(1.1);
         transition: .3s;
         cursor: url('/src/assets/cur/PrecisionSelect.cur'), auto;
