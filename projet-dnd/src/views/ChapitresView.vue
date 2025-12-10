@@ -347,7 +347,7 @@ body {
     .stickman img {
         width: 150px;
         left: 80%;
-        top: -250px; 
+        top: -350px; 
     }
 
     .chapter-header h2 {

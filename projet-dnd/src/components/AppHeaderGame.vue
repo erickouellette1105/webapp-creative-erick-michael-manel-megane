@@ -215,8 +215,16 @@ ul {
 .stickman {
     position: absolute;
     width: 15vw;
-    right: 20vw;
+    right: 5vw;
     bottom: 0;
     opacity: 0.5;
 }
+
+/*Version mobile */
+@media screen and (max-width: 376px) {
+    .stickman  {
+        right: 70vw;
+    }
+     }
+        
 </style>
