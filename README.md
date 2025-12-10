@@ -62,7 +62,7 @@ npm run build
 - [Trello](https://trello.com/b/wmsTghPo/paladin)
 
 ## Remerciements et autres crédits
-- manel, tu peux mettre les sources de tes images ici
+-images: https://ca.search.yahoo.com/search?fr=mcafee&type=E210CA1597G0&p=pixabay
 - Polices: MedievalSharp, Baldur, Golden Swing, Darker
 
 ## Licence
