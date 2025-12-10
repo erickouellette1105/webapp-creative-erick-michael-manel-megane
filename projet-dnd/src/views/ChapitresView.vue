@@ -191,7 +191,7 @@ body {
     position: absolute;
     left: 95%;
     transform: translateX(-50%);
-    top: -480px;     /* 👈 MOVE THE STICKMAN UP */
+    top: -370px;     
     width: 200px;
     pointer-events: none;
     opacity: 0.5;
@@ -327,22 +327,6 @@ body {
     gap: 150px;
 }
 
-/* Keep your image visible on large screens */
-.chapter-image {
-    position: absolute;
-    left: clamp(20px, 1%, 180px);
-    top: 70%;
-    transform: translateY(-50%);
-    z-index: 10;
-    pointer-events: none;
-}
-
-.chapter-image img {
-    width: clamp(200px, 15vw, 500px);
-    height: auto;
-}
-
-
 
 /*Version tablette */
 @media screen and (max-width: 768px) {
@@ -363,7 +347,7 @@ body {
     .stickman img {
         width: 150px;
         left: 80%;
-        top: -350px; 
+        top: -250px; 
     }
 
     .chapter-header h2 {

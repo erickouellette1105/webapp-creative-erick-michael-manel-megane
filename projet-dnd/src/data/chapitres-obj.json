@@ -17,7 +17,6 @@
   },
   "3": {
     "title": "Le Repaire des Gobelins",
-    "image": "./images/goblins.webp",
     "text": "Vous arrivez dans un repaire de goblins. Cependant ils ont tous endormis. Que faites-vous?",
     "choices": [
       { "id": 1, "text": "Battre les goblins avec votre force non subtile", "nextChapter": "5" },
@@ -42,7 +41,6 @@
   },
   "6": {
     "title": "L’Épée Suprême",
-    "image": "./images/epee_supreme.png",
     "text": "Vous volez l’épée suprême du maître goblin mais ceci le réveille. Tout à coup, une horde de goblins apparait et vous encerclent. Avec votre nouvelle arme, utiliser l’attaque spéciale : Tornade maléfique.",
     "choices": [
       { "id": 1, "text": "Continuer", "nextChapter": "10" }

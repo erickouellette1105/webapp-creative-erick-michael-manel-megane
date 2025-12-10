@@ -217,5 +217,6 @@ ul {
     width: 15vw;
     right: 20vw;
     bottom: 0;
+    opacity: 0.5;
 }
 </style>
